@@ -1,0 +1,4806 @@
+{
+  "titles": [
+    {
+      "source": "titles",
+      "topic_id": 0,
+      "keywords": [
+        "gaming",
+        "game",
+        "games",
+        "playing",
+        "video",
+        "play",
+        "player",
+        "disorder",
+        "online",
+        "players"
+      ],
+      "label": "Gaming Disorder and Online Behavior",
+      "taxonomy_category": "Healthcare & Bioinformatics",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in the field of psychology and healthcare, particularly in the study of gaming disorder as a mental health concern."
+    },
+    {
+      "source": "titles",
+      "topic_id": 1,
+      "keywords": [
+        "older",
+        "adults",
+        "people",
+        "dementia",
+        "smart",
+        "tv",
+        "elderly",
+        "living",
+        "healthy",
+        "home"
+      ],
+      "label": "Technology for Older Adults",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in HCI research, focusing on accessible and assistive technologies for older adults."
+    },
+    {
+      "source": "titles",
+      "topic_id": 2,
+      "keywords": [
+        "facebook",
+        "instagram",
+        "selfie",
+        "social",
+        "media",
+        "dark",
+        "attachment",
+        "overload",
+        "avoidance",
+        "self"
+      ],
+      "label": "Social Media Impact and Behavior",
+      "taxonomy_category": "Social Sciences",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls under social sciences as it explores the effects of social media on human behavior and psychology."
+    },
+    {
+      "source": "titles",
+      "topic_id": 3,
+      "keywords": [
+        "purchase",
+        "consumer",
+        "shopping",
+        "consumers",
+        "intention",
+        "commerce",
+        "live",
+        "choice",
+        "impulse",
+        "buying"
+      ],
+      "label": "Consumer Purchase Behavior and Commerce",
+      "taxonomy_category": "Social Sciences",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in the field of consumer behavior and marketing, with a focus on understanding consumer intentions and purchasing decisions."
+    },
+    {
+      "source": "titles",
+      "topic_id": 4,
+      "keywords": [
+        "security",
+        "cybersecurity",
+        "information",
+        "employees",
+        "policies",
+        "secure",
+        "behaviour",
+        "keeping",
+        "stresses",
+        "protection"
+      ],
+      "label": "Information Security and Cyber Behaviour",
+      "taxonomy_category": "Cybersecurity",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established within the field of cybersecurity, focusing on employee security awareness and online behaviour."
+    },
+    {
+      "source": "titles",
+      "topic_id": 5,
+      "keywords": [
+        "analytics",
+        "learning",
+        "blended",
+        "students",
+        "education",
+        "higher",
+        "student",
+        "data",
+        "ilearning",
+        "revision"
+      ],
+      "label": "Education Technology Analytics",
+      "taxonomy_category": "Education Technology",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits well within the established research area of education technology, focusing on data-driven learning analytics."
+    },
+    {
+      "source": "titles",
+      "topic_id": 6,
+      "keywords": [
+        "collaborative",
+        "mooc",
+        "learning",
+        "supported",
+        "moocs",
+        "teaching",
+        "regulation",
+        "course",
+        "forums",
+        "project"
+      ],
+      "label": "MOOC Learning and Teaching Strategies",
+      "taxonomy_category": "Education Technology",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls within a well-established research area in education technology, focusing on online learning platforms and instructional design."
+    },
+    {
+      "source": "titles",
+      "topic_id": 7,
+      "keywords": [
+        "eye",
+        "tracking",
+        "reading",
+        "screen",
+        "gaze",
+        "attention",
+        "paradigm",
+        "text",
+        "search",
+        "braindraw"
+      ],
+      "label": "Eye Tracking and Human-Computer Interaction",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls under a well-established research area in Human-Computer Interaction, focusing on user behavior and interface design."
+    },
+    {
+      "source": "titles",
+      "topic_id": 8,
+      "keywords": [
+        "navigation",
+        "map",
+        "wayfinding",
+        "displays",
+        "colour",
+        "spatial",
+        "indoor",
+        "route",
+        "pic",
+        "colides"
+      ],
+      "label": "Wayfinding and Spatial Information Systems",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within established HCI research areas, particularly in spatial information and navigation."
+    },
+    {
+      "source": "titles",
+      "topic_id": 9,
+      "keywords": [
+        "smartphone",
+        "sleep",
+        "well",
+        "problematic",
+        "phone",
+        "panel",
+        "usage",
+        "smartphones",
+        "form",
+        "rude"
+      ],
+      "label": "Smartphone Use and Sleep Impacts",
+      "taxonomy_category": "Healthcare & Bioinformatics",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls under Healthcare & Bioinformatics as it explores the effects of smartphone use on sleep, a well-established area of study in the field."
+    },
+    {
+      "source": "titles",
+      "topic_id": 10,
+      "keywords": [
+        "innovation",
+        "planning",
+        "enterprise",
+        "resource",
+        "business",
+        "information",
+        "enterprises",
+        "management",
+        "firm",
+        "systems"
+      ],
+      "label": "Business and Information Systems Innovation",
+      "taxonomy_category": "Information Systems",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in the field of Information Systems, focusing on the intersection of business and technology."
+    },
+    {
+      "source": "titles",
+      "topic_id": 11,
+      "keywords": [
+        "reality",
+        "virtual",
+        "immersive",
+        "empathy",
+        "presence",
+        "anxiety",
+        "meditation",
+        "realism",
+        "stigma",
+        "stress"
+      ],
+      "label": "Virtual Reality and Mental Health",
+      "taxonomy_category": "Healthcare & Bioinformatics",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within established research areas of healthcare and bioinformatics, particularly in the application of virtual reality for mental health interventions."
+    },
+    {
+      "source": "titles",
+      "topic_id": 12,
+      "keywords": [
+        "privacy",
+        "disclosure",
+        "concerns",
+        "paradox",
+        "networks",
+        "impression",
+        "online",
+        "financial",
+        "transparency",
+        "cultural"
+      ],
+      "label": "Online Privacy and Self-Disclosure",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within established HCI research on user behavior and online interactions."
+    },
+    {
+      "source": "titles",
+      "topic_id": 13,
+      "keywords": [
+        "age",
+        "interfaces",
+        "older",
+        "touch",
+        "icon",
+        "text",
+        "menu",
+        "greek",
+        "tabletop",
+        "device"
+      ],
+      "label": "Human-Computer Interaction for Older Adults",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls within a well-established research area focused on designing accessible and user-friendly interfaces for older adults."
+    },
+    {
+      "source": "titles",
+      "topic_id": 14,
+      "keywords": [
+        "esteem",
+        "narcissism",
+        "depressive",
+        "media",
+        "social",
+        "self",
+        "phubbing",
+        "personality",
+        "facebook",
+        "exposure"
+      ],
+      "label": "Social Media and Mental Health Impact",
+      "taxonomy_category": "Social Sciences",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within established research areas in psychology and sociology."
+    },
+    {
+      "source": "titles",
+      "topic_id": 15,
+      "keywords": [
+        "big",
+        "patient",
+        "care",
+        "healthcare",
+        "health",
+        "records",
+        "medical",
+        "data",
+        "clinical",
+        "electronic"
+      ],
+      "label": "Healthcare Data Analytics and Management",
+      "taxonomy_category": "Healthcare & Bioinformatics",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within an established research area in healthcare information systems and analytics."
+    },
+    {
+      "source": "titles",
+      "topic_id": 16,
+      "keywords": [
+        "usability",
+        "tests",
+        "aloud",
+        "think",
+        "methods",
+        "developers",
+        "tree",
+        "rta",
+        "software",
+        "task"
+      ],
+      "label": "Usability and User Experience Research",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established within the field of Human-Computer Interaction, focusing on usability evaluation and user experience."
+    },
+    {
+      "source": "titles",
+      "topic_id": 17,
+      "keywords": [
+        "knowledge",
+        "communities",
+        "sharing",
+        "community",
+        "virtual",
+        "professional",
+        "technical",
+        "oss",
+        "theory",
+        "exchange"
+      ],
+      "label": "Knowledge Sharing in Virtual Communities",
+      "taxonomy_category": "Information Systems",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within established research areas in Information Systems, particularly in the context of online communities and knowledge management."
+    },
+    {
+      "source": "titles",
+      "topic_id": 18,
+      "keywords": [
+        "ai",
+        "humans",
+        "intelligence",
+        "artificial",
+        "moral",
+        "ais",
+        "human",
+        "making",
+        "believe",
+        "leadership"
+      ],
+      "label": "Human-AI Interaction and Ethics",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic aligns with established research areas in HCI, focusing on the social and moral implications of AI."
+    },
+    {
+      "source": "titles",
+      "topic_id": 19,
+      "keywords": [
+        "reality",
+        "augmented",
+        "virtual",
+        "immersive",
+        "desktop",
+        "environments",
+        "industrial",
+        "learning",
+        "design",
+        "engineering"
+      ],
+      "label": "Immersive Interactive Environments",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within established HCI research areas, focusing on interactive and immersive technologies."
+    },
+    {
+      "source": "titles",
+      "topic_id": 20,
+      "keywords": [
+        "haptic",
+        "auditory",
+        "feedback",
+        "gesture",
+        "hand",
+        "rhythm",
+        "feel",
+        "virtual",
+        "interaction",
+        "vibrotactile"
+      ],
+      "label": "Haptic Feedback in Virtual Environments",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in HCI research, focusing on enhancing user experience through sensory feedback."
+    },
+    {
+      "source": "titles",
+      "topic_id": 21,
+      "keywords": [
+        "continuance",
+        "intention",
+        "blog",
+        "expectation",
+        "confirmation",
+        "blogging",
+        "extended",
+        "students",
+        "usefulness",
+        "determinants"
+      ],
+      "label": "Continuance Intention in Digital Adoption",
+      "taxonomy_category": "Information Systems",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established within the field of Information Systems, particularly in the study of user adoption and continuance of digital technologies."
+    },
+    {
+      "source": "titles",
+      "topic_id": 22,
+      "keywords": [
+        "banking",
+        "mobile",
+        "consumers",
+        "payment",
+        "sector",
+        "payments",
+        "buy",
+        "espoused",
+        "adoption",
+        "channel"
+      ],
+      "label": "Mobile Payment and Banking Adoption",
+      "taxonomy_category": "Finance & Economics",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within the well-established research area of financial technology and its impact on consumer behavior."
+    },
+    {
+      "source": "titles",
+      "topic_id": 23,
+      "keywords": [
+        "conversational",
+        "agents",
+        "agent",
+        "embodied",
+        "chatbots",
+        "voice",
+        "health",
+        "mental",
+        "speakers",
+        "screening"
+      ],
+      "label": "Conversational AI in Health and Mental Support",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls under Human-Computer Interaction as it explores the design and functionality of conversational AI systems for health and mental support applications."
+    },
+    {
+      "source": "titles",
+      "topic_id": 24,
+      "keywords": [
+        "acceptance",
+        "technology",
+        "adoption",
+        "codes",
+        "mandatory",
+        "qr",
+        "model",
+        "adopters",
+        "tools",
+        "service"
+      ],
+      "label": "Technology Acceptance and Adoption",
+      "taxonomy_category": "Information Systems",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within the established research area of Information Systems, specifically focusing on user acceptance and adoption of technology."
+    },
+    {
+      "source": "titles",
+      "topic_id": 25,
+      "keywords": [
+        "aesthetics",
+        "web",
+        "pages",
+        "visual",
+        "icon",
+        "website",
+        "webpage",
+        "lightness",
+        "keep",
+        "complexity"
+      ],
+      "label": "Visual Aesthetics in User Interface Design",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in HCI research, focusing on the design of user interfaces."
+    },
+    {
+      "source": "titles",
+      "topic_id": 26,
+      "keywords": [
+        "chatbot",
+        "chatbots",
+        "bot",
+        "willingness",
+        "ai",
+        "anthropomorphic",
+        "unaccepted",
+        "bots",
+        "personas",
+        "anthropomorphism"
+      ],
+      "label": "Human-Chatbot Interaction Design",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within established research areas in human-computer interaction, particularly in the design and usability of chatbots."
+    },
+    {
+      "source": "titles",
+      "topic_id": 27,
+      "keywords": [
+        "gamification",
+        "gamified",
+        "motivated",
+        "mechanics",
+        "agility",
+        "green",
+        "tie",
+        "punishment",
+        "elements",
+        "competitive"
+      ],
+      "label": "Gamification and Motivation Strategies",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in HCI research, focusing on the design and application of gamification elements to enhance user engagement and motivation."
+    },
+    {
+      "source": "titles",
+      "topic_id": 28,
+      "keywords": [
+        "stress",
+        "technostress",
+        "work",
+        "cope",
+        "losing",
+        "shadows",
+        "labour",
+        "markets",
+        "ict",
+        "computers"
+      ],
+      "label": "Stress Management in Digital Environments",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in HCI research, focusing on the impact of technology on human well-being."
+    },
+    {
+      "source": "titles",
+      "topic_id": 29,
+      "keywords": [
+        "recommender",
+        "search",
+        "recommendations",
+        "link",
+        "coolness",
+        "successful",
+        "scientific",
+        "creating",
+        "centric",
+        "ranking"
+      ],
+      "label": "Personalized Recommendation Systems",
+      "taxonomy_category": "Information Systems",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within established research areas in Information Systems, particularly in the subfield of Human-Computer Interaction."
+    },
+    {
+      "source": "titles",
+      "topic_id": 30,
+      "keywords": [
+        "job",
+        "employee",
+        "media",
+        "enterprise",
+        "social",
+        "work",
+        "contributes",
+        "nonwork",
+        "reporting",
+        "employees"
+      ],
+      "label": "Employee Social Media and Performance",
+      "taxonomy_category": "Social Sciences",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls within the established research area of organizational behavior and human resources management."
+    },
+    {
+      "source": "titles",
+      "topic_id": 31,
+      "keywords": [
+        "experience",
+        "new",
+        "persona",
+        "adding",
+        "user",
+        "evaluation",
+        "assisted",
+        "adaptation",
+        "thinking",
+        "method"
+      ],
+      "label": "Human-Computer Interaction Analysis",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in HCI research, focusing on user experience and interaction with technology."
+    },
+    {
+      "source": "titles",
+      "topic_id": 32,
+      "keywords": [
+        "inclusion",
+        "end",
+        "sustainable",
+        "home",
+        "design",
+        "energy",
+        "household",
+        "programmers",
+        "inclusive",
+        "digital"
+      ],
+      "label": "Sustainable Digital Home Design Inclusion",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within established HCI research on inclusive and sustainable design for digital home environments."
+    },
+    {
+      "source": "titles",
+      "topic_id": 33,
+      "keywords": [
+        "emotion",
+        "emotional",
+        "anger",
+        "emotions",
+        "emoji",
+        "erps",
+        "responses",
+        "generative",
+        "speech",
+        "machine"
+      ],
+      "label": "Emotional Interactions with Artificial Intelligence",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in HCI research, focusing on user emotions and AI interactions."
+    },
+    {
+      "source": "titles",
+      "topic_id": 34,
+      "keywords": [
+        "distance",
+        "course",
+        "term",
+        "solving",
+        "management",
+        "long",
+        "teachers",
+        "short",
+        "memory",
+        "education"
+      ],
+      "label": "Education Technology Applications",
+      "taxonomy_category": "Education Technology",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in the field of education technology, focusing on the application of various technologies to enhance learning."
+    },
+    {
+      "source": "titles",
+      "topic_id": 35,
+      "keywords": [
+        "physical",
+        "activity",
+        "fitness",
+        "scoping",
+        "feasibility",
+        "weight",
+        "tracking",
+        "app",
+        "exercise",
+        "apps"
+      ],
+      "label": "Health Technology and Behavior Change",
+      "taxonomy_category": "Healthcare & Bioinformatics",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls under a well-established research area in healthcare, focusing on the intersection of technology and behavioral interventions."
+    },
+    {
+      "source": "titles",
+      "topic_id": 36,
+      "keywords": [
+        "driving",
+        "drivers",
+        "vehicle",
+        "cooperative",
+        "vehicles",
+        "transport",
+        "autonomous",
+        "visual",
+        "automated",
+        "road"
+      ],
+      "label": "Autonomous Vehicle Technology and Safety",
+      "taxonomy_category": "Robotics & Automation",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within the established research area of robotics and automation, specifically focusing on autonomous vehicles."
+    },
+    {
+      "source": "titles",
+      "topic_id": 37,
+      "keywords": [
+        "privacy",
+        "literacy",
+        "protection",
+        "trust",
+        "apps",
+        "data",
+        "gdpr",
+        "calculus",
+        "concern",
+        "disclosure"
+      ],
+      "label": "Privacy and Data Protection Research",
+      "taxonomy_category": "Cybersecurity",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls under cybersecurity as it primarily deals with data protection, privacy, and trust in digital services."
+    },
+    {
+      "source": "titles",
+      "topic_id": 38,
+      "keywords": [
+        "robots",
+        "robot",
+        "robotics",
+        "intelligence",
+        "ux",
+        "generative",
+        "look",
+        "robotic",
+        "ai",
+        "artificial"
+      ],
+      "label": "Human-Robot Interaction and AI",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within established research areas of human-computer interaction and robotics."
+    },
+    {
+      "source": "titles",
+      "topic_id": 39,
+      "keywords": [
+        "socio",
+        "career",
+        "software",
+        "modelling",
+        "technical",
+        "oriented",
+        "meetings",
+        "agile",
+        "heuristics",
+        "systematic"
+      ],
+      "label": "Software Development and Socio-Technical Systems",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in HCI research, focusing on the intersection of software development and human factors."
+    },
+    {
+      "source": "titles",
+      "topic_id": 40,
+      "keywords": [
+        "children",
+        "creativity",
+        "clips",
+        "design",
+        "participatory",
+        "prototypes",
+        "autonomy",
+        "co",
+        "creative",
+        "members"
+      ],
+      "label": "Participatory Design with Children",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within established HCI research on user-centered design and child-computer interaction."
+    },
+    {
+      "source": "titles",
+      "topic_id": 41,
+      "keywords": [
+        "adoption",
+        "utaut",
+        "services",
+        "affecting",
+        "urban",
+        "community",
+        "factors",
+        "affective",
+        "government",
+        "smart"
+      ],
+      "label": "Technology Adoption and Community Factors",
+      "taxonomy_category": "Information Systems",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in the field of Information Systems, particularly in the context of technology adoption and usage."
+    },
+    {
+      "source": "titles",
+      "topic_id": 42,
+      "keywords": [
+        "loneliness",
+        "smartphone",
+        "nomophobia",
+        "addiction",
+        "anxiety",
+        "sns",
+        "wellbeing",
+        "properties",
+        "problematic",
+        "relationships"
+      ],
+      "label": "Smartphone Addiction and Mental Health",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within established research on the psychological effects of technology use."
+    },
+    {
+      "source": "titles",
+      "topic_id": 43,
+      "keywords": [
+        "loyalty",
+        "retailers",
+        "shopping",
+        "justice",
+        "anchoring",
+        "market",
+        "intentions",
+        "purchasing",
+        "product",
+        "consumer"
+      ],
+      "label": "Consumer Trust and Purchase Behavior",
+      "taxonomy_category": "Social Sciences",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within the well-established research area of consumer behavior and psychology in social sciences."
+    },
+    {
+      "source": "titles",
+      "topic_id": 44,
+      "keywords": [
+        "touchpad",
+        "tablet",
+        "mid",
+        "pen",
+        "air",
+        "input",
+        "force",
+        "target",
+        "right",
+        "robot"
+      ],
+      "label": "Human-Computer Interaction Techniques",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls under a well-established research area in HCI, focusing on novel input methods and interfaces."
+    },
+    {
+      "source": "titles",
+      "topic_id": 45,
+      "keywords": [
+        "health",
+        "monitoring",
+        "mobile",
+        "telemedicine",
+        "aware",
+        "survey",
+        "safety",
+        "patients",
+        "device",
+        "smart"
+      ],
+      "label": "Health Monitoring with Mobile Technologies",
+      "taxonomy_category": "Healthcare & Bioinformatics",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within established research areas in healthcare technology and telemedicine."
+    },
+    {
+      "source": "titles",
+      "topic_id": 46,
+      "keywords": [
+        "internet",
+        "addiction",
+        "problematic",
+        "adolescents",
+        "esem",
+        "use",
+        "pls",
+        "focused",
+        "assess",
+        "population"
+      ],
+      "label": "Internet Addiction and Problematic Use",
+      "taxonomy_category": "Healthcare & Bioinformatics",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in the field of psychology and healthcare, particularly in the study of mental health and behavioral disorders."
+    },
+    {
+      "source": "titles",
+      "topic_id": 47,
+      "keywords": [
+        "communities",
+        "cancer",
+        "doctors",
+        "online",
+        "contributions",
+        "health",
+        "exchange",
+        "patient",
+        "patients",
+        "empathy"
+      ],
+      "label": "Online Health Community Dynamics",
+      "taxonomy_category": "Healthcare & Bioinformatics",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in the field of healthcare and bioinformatics, focusing on the interactions and behaviors within online health communities."
+    },
+    {
+      "source": "titles",
+      "topic_id": 48,
+      "keywords": [
+        "cyberbullying",
+        "bullying",
+        "mim",
+        "adolescents",
+        "lesbian",
+        "hate",
+        "perpetration",
+        "bystander",
+        "harm",
+        "victimisation"
+      ],
+      "label": "Cyberbullying and Online Victimization",
+      "taxonomy_category": "Social Sciences",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in the field of social sciences, particularly in the study of adolescent behavior and online interactions."
+    },
+    {
+      "source": "titles",
+      "topic_id": 49,
+      "keywords": [
+        "knowledge",
+        "owl",
+        "ontology",
+        "designers",
+        "management",
+        "transfer",
+        "roles",
+        "making",
+        "computing",
+        "engineering"
+      ],
+      "label": "Knowledge Management and Engineering",
+      "taxonomy_category": "Information Systems",
+      "classification": "MAPPED",
+      "reasoning": "This topic aligns closely with established research areas in Information Systems, particularly knowledge management and ontology-based systems."
+    },
+    {
+      "source": "titles",
+      "topic_id": 50,
+      "keywords": [
+        "political",
+        "persuasion",
+        "government",
+        "skepticism",
+        "media",
+        "advertisements",
+        "incivility",
+        "antecedents",
+        "diffusion",
+        "mechanisms"
+      ],
+      "label": "Social Media Influence and Misinformation",
+      "taxonomy_category": "Social Sciences",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within established research areas in social sciences, particularly communication studies and political science."
+    },
+    {
+      "source": "titles",
+      "topic_id": 51,
+      "keywords": [
+        "autism",
+        "children",
+        "spectrum",
+        "autistic",
+        "disorder",
+        "play",
+        "augmented",
+        "interventions",
+        "augmentative",
+        "article"
+      ],
+      "label": "Autism Technology Interventions and Education",
+      "taxonomy_category": "Healthcare & Bioinformatics",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in the field of healthcare and bioinformatics, particularly in the subfield of autism research and assistive technologies."
+    },
+    {
+      "source": "titles",
+      "topic_id": 52,
+      "keywords": [
+        "communities",
+        "trust",
+        "release",
+        "co",
+        "creation",
+        "value",
+        "members",
+        "commerce",
+        "authority",
+        "externalities"
+      ],
+      "label": "Social Commerce and Trust Dynamics",
+      "taxonomy_category": "Social Sciences",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls under social sciences as it deals with human behavior, trust, and social interactions in online commerce."
+    },
+    {
+      "source": "titles",
+      "topic_id": 53,
+      "keywords": [
+        "eeg",
+        "wandering",
+        "mind",
+        "cognitive",
+        "thought",
+        "probe",
+        "ergonomics",
+        "slow",
+        "bci",
+        "errors"
+      ],
+      "label": "Cognitive Load and Human-Computer Interaction",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in HCI research, focusing on the intersection of human cognition and computer systems."
+    },
+    {
+      "source": "titles",
+      "topic_id": 54,
+      "keywords": [
+        "fake",
+        "misinformation",
+        "confirmation",
+        "news",
+        "misleading",
+        "editing",
+        "correction",
+        "wikipedia",
+        "content",
+        "detection"
+      ],
+      "label": "Misinformation Detection and Countermeasures",
+      "taxonomy_category": "Information Systems",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls under Information Systems as it involves the study and development of methods to identify and combat misinformation in digital environments."
+    },
+    {
+      "source": "titles",
+      "topic_id": 55,
+      "keywords": [
+        "crisis",
+        "twitter",
+        "pandemic",
+        "conflicts",
+        "media",
+        "breaking",
+        "tweets",
+        "crises",
+        "covid",
+        "emergency"
+      ],
+      "label": "Social Media in Emergency Situations",
+      "taxonomy_category": "Social Sciences",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in the field of social sciences, particularly in the study of social media's impact on emergency response and crisis communication."
+    },
+    {
+      "source": "titles",
+      "topic_id": 56,
+      "keywords": [
+        "crowdsourcing",
+        "contests",
+        "solvers",
+        "participation",
+        "ended",
+        "crowdsourced",
+        "competitive",
+        "collaboration",
+        "problem",
+        "contest"
+      ],
+      "label": "Crowdsourcing Contest Dynamics",
+      "taxonomy_category": "Information Systems",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls under Information Systems as it primarily deals with the design, management, and analysis of crowdsourcing contests."
+    },
+    {
+      "source": "titles",
+      "topic_id": 57,
+      "keywords": [
+        "asynchronous",
+        "synchronous",
+        "students",
+        "forum",
+        "devices",
+        "learning",
+        "academic",
+        "gsm",
+        "classtalk",
+        "cal"
+      ],
+      "label": "Mobile Learning and Education Technology",
+      "taxonomy_category": "Education Technology",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in the field of education technology, focusing on the use of mobile devices and digital tools in educational settings."
+    },
+    {
+      "source": "titles",
+      "topic_id": 58,
+      "keywords": [
+        "greatest",
+        "hoarding",
+        "windows",
+        "intention",
+        "organisational",
+        "gap",
+        "compliance",
+        "business",
+        "management",
+        "definitive"
+      ],
+      "label": "Digital Information Management and Compliance",
+      "taxonomy_category": "Information Systems",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls within the established research area of information systems, focusing on digital data management and organisational compliance."
+    },
+    {
+      "source": "titles",
+      "topic_id": 59,
+      "keywords": [
+        "efficacy",
+        "cloud",
+        "self",
+        "innovativeness",
+        "perceived",
+        "acceptance",
+        "experiment",
+        "eportfolio",
+        "spelling",
+        "mastery"
+      ],
+      "label": "Self-Efficacy in Technology Adoption",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in HCI research, focusing on user attitudes and behaviors towards technology."
+    },
+    {
+      "source": "titles",
+      "topic_id": 60,
+      "keywords": [
+        "cyberloafing",
+        "workplace",
+        "work",
+        "cyberslacking",
+        "neutralisation",
+        "transformation",
+        "cyber",
+        "remote",
+        "satisfaction",
+        "justify"
+      ],
+      "label": "Cyberloafing and Digital Workplace Behavior",
+      "taxonomy_category": "Information Systems",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within the established research area of information systems, specifically focusing on the impact of technology on workplace behavior."
+    },
+    {
+      "source": "titles",
+      "topic_id": 61,
+      "keywords": [
+        "news",
+        "engagement",
+        "billboard",
+        "aiming",
+        "alerts",
+        "randomized",
+        "reddit",
+        "sensitizing",
+        "art",
+        "characterising"
+      ],
+      "label": "Social Media Engagement and User Behavior",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within established HCI research areas, particularly in understanding user interactions and engagement with digital media."
+    },
+    {
+      "source": "titles",
+      "topic_id": 62,
+      "keywords": [
+        "student",
+        "motivation",
+        "learner",
+        "motivational",
+        "english",
+        "engagement",
+        "lens",
+        "media",
+        "flow",
+        "educational"
+      ],
+      "label": "Student Engagement in Educational Media",
+      "taxonomy_category": "Education Technology",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls under a well-established research area in education technology, focusing on the intersection of learning and digital media."
+    },
+    {
+      "source": "titles",
+      "topic_id": 63,
+      "keywords": [
+        "consumer",
+        "iot",
+        "mouse",
+        "consumers",
+        "music",
+        "positive",
+        "colour",
+        "rs",
+        "stores",
+        "surrounding"
+      ],
+      "label": "Consumer IoT Experience and Behavior",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within established HCI research areas, examining consumer interactions with IoT devices and digital assistants."
+    },
+    {
+      "source": "titles",
+      "topic_id": 64,
+      "keywords": [
+        "persuasive",
+        "change",
+        "strategies",
+        "notifications",
+        "motivational",
+        "mhealth",
+        "motivation",
+        "discovery",
+        "deconstructing",
+        "prompts"
+      ],
+      "label": "Persuasive Strategies in Health Technology",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within established HCI research on persuasive systems and user experience in health technology."
+    },
+    {
+      "source": "titles",
+      "topic_id": 65,
+      "keywords": [
+        "workload",
+        "task",
+        "performance",
+        "processing",
+        "aid",
+        "extrapolation",
+        "graphs",
+        "docking",
+        "scrutinising",
+        "takd"
+      ],
+      "label": "Human Performance in Task Management",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in HCI research, focusing on understanding human performance in various tasks and environments."
+    },
+    {
+      "source": "titles",
+      "topic_id": 66,
+      "keywords": [
+        "intimacy",
+        "gratifications",
+        "uses",
+        "thinking",
+        "goal",
+        "automated",
+        "opposite",
+        "desire",
+        "alarming",
+        "grit"
+      ],
+      "label": "Human Behavior in Digital Environments",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within the established research area of HCI, focusing on user behavior and experiences in digital settings."
+    },
+    {
+      "source": "titles",
+      "topic_id": 67,
+      "keywords": [
+        "music",
+        "respiration",
+        "waiting",
+        "arts",
+        "time",
+        "cognition",
+        "biofeedback",
+        "burn",
+        "album",
+        "mandarin"
+      ],
+      "label": "Music and Human Perception Research",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within established HCI research areas, particularly those focusing on user experience and perception."
+    },
+    {
+      "source": "titles",
+      "topic_id": 68,
+      "keywords": [
+        "reviews",
+        "cultural",
+        "translation",
+        "sentiment",
+        "culture",
+        "review",
+        "arabian",
+        "bounded",
+        "dyads",
+        "beer"
+      ],
+      "label": "Online Review Sentiment Analysis",
+      "taxonomy_category": "Information Systems",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within established research areas of information systems and human-computer interaction."
+    },
+    {
+      "source": "titles",
+      "topic_id": 69,
+      "keywords": [
+        "capital",
+        "social",
+        "world",
+        "networking",
+        "sites",
+        "network",
+        "cloud",
+        "hosted",
+        "declining",
+        "economic"
+      ],
+      "label": "Social Capital and Online Networking",
+      "taxonomy_category": "Social Sciences",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within established research areas in social sciences, particularly in the study of social capital and its relationship with online interactions."
+    },
+    {
+      "source": "titles",
+      "topic_id": 70,
+      "keywords": [
+        "brand",
+        "affordances",
+        "charitable",
+        "engagement",
+        "media",
+        "behaviours",
+        "browsing",
+        "social",
+        "al",
+        "civic"
+      ],
+      "label": "Social Media and Brand Engagement",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within established research areas of HCI, specifically user experience and online interactions."
+    },
+    {
+      "source": "titles",
+      "topic_id": 71,
+      "keywords": [
+        "parental",
+        "mediation",
+        "families",
+        "indonesian",
+        "adolescents",
+        "parents",
+        "addiction",
+        "internet",
+        "strategies",
+        "groups"
+      ],
+      "label": "Parental Mediation and Internet Addiction",
+      "taxonomy_category": "Social Sciences",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within established research areas in social sciences, particularly in the study of family dynamics and adolescent behavior."
+    },
+    {
+      "source": "titles",
+      "topic_id": 72,
+      "keywords": [
+        "accessibility",
+        "deaf",
+        "similar",
+        "visually",
+        "web",
+        "impaired",
+        "developers",
+        "guidelines",
+        "practice",
+        "exert"
+      ],
+      "label": "Web Accessibility for Impaired Users",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within established HCI research areas, focusing on user experience and interface design for diverse abilities."
+    },
+    {
+      "source": "titles",
+      "topic_id": 73,
+      "keywords": [
+        "speech",
+        "sketching",
+        "dialogue",
+        "voice",
+        "sound",
+        "conversational",
+        "assistant",
+        "tv",
+        "interfaces",
+        "flows"
+      ],
+      "label": "Voice Interfaces and Conversational Systems",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in HCI research, focusing on designing and improving voice-based interfaces."
+    },
+    {
+      "source": "titles",
+      "topic_id": 74,
+      "keywords": [
+        "website",
+        "web",
+        "grounded",
+        "wide",
+        "quality",
+        "measuring",
+        "customer",
+        "commerce",
+        "world",
+        "accessing"
+      ],
+      "label": "Website Quality and User Experience",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in HCI research, focusing on user satisfaction and usability."
+    },
+    {
+      "source": "titles",
+      "topic_id": 75,
+      "keywords": [
+        "hci",
+        "work",
+        "fit",
+        "influences",
+        "automating",
+        "capture",
+        "dakahlia",
+        "certification",
+        "examine",
+        "front"
+      ],
+      "label": "Human-Computer Interaction and Work Environments",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in HCI research, focusing on design and usability of technology-rich environments."
+    },
+    {
+      "source": "titles",
+      "topic_id": 76,
+      "keywords": [
+        "gender",
+        "pair",
+        "stereotypes",
+        "algorithmic",
+        "person",
+        "interplay",
+        "positive",
+        "misconduct",
+        "nonverbal",
+        "aversion"
+      ],
+      "label": "Bias and Perception in AI Systems",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in HCI research, focusing on the effects of AI on human behavior and perceptions."
+    },
+    {
+      "source": "titles",
+      "topic_id": 77,
+      "keywords": [
+        "presence",
+        "capabilities",
+        "social",
+        "innovation",
+        "les",
+        "avids",
+        "anonymous",
+        "fans",
+        "merging",
+        "microworlds"
+      ],
+      "label": "Social Media and User Innovation Dynamics",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within established HCI research areas, particularly social media and user engagement."
+    },
+    {
+      "source": "titles",
+      "topic_id": 78,
+      "keywords": [
+        "ergonomic",
+        "phones",
+        "hedonic",
+        "cell",
+        "product",
+        "aesthetic",
+        "mobile",
+        "aesthetics",
+        "iphone",
+        "photowork"
+      ],
+      "label": "Human-Computer Interaction Design",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in HCI research, focusing on user experience and design of mobile devices."
+    },
+    {
+      "source": "titles",
+      "topic_id": 79,
+      "keywords": [
+        "team",
+        "teams",
+        "virtuality",
+        "virtual",
+        "conflict",
+        "face",
+        "compared",
+        "consolidating",
+        "intragroup",
+        "global"
+      ],
+      "label": "Virtual Team Dynamics and Collaboration",
+      "taxonomy_category": "Social Sciences",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within established research areas in organizational behavior and psychology."
+    },
+    {
+      "source": "titles",
+      "topic_id": 80,
+      "keywords": [
+        "humanoid",
+        "robot",
+        "error",
+        "explanations",
+        "preference",
+        "assistant",
+        "appearance",
+        "event",
+        "cyborg",
+        "dictation"
+      ],
+      "label": "Humanoid AI Interaction and Explanation",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls under HCI as it focuses on the interaction and explanation aspects of humanoid AI systems."
+    },
+    {
+      "source": "titles",
+      "topic_id": 81,
+      "keywords": [
+        "fraud",
+        "identity",
+        "empowerment",
+        "protection",
+        "decentralised",
+        "multiplicity",
+        "recommended",
+        "resilient",
+        "relational",
+        "suspects"
+      ],
+      "label": "Decentralised Identity Protection and Empowerment",
+      "taxonomy_category": "Cybersecurity",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls under cybersecurity as it deals with fraud, identity protection, and decentralised data management."
+    },
+    {
+      "source": "titles",
+      "topic_id": 82,
+      "keywords": [
+        "planned",
+        "sexting",
+        "sext",
+        "theory",
+        "gender",
+        "applying",
+        "behaviour",
+        "addressee",
+        "cultivation",
+        "cyberharassment"
+      ],
+      "label": "Cyberharassment and Online Behaviour",
+      "taxonomy_category": "Social Sciences",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls within the established research area of social sciences, particularly in the study of human behaviour and interactions online."
+    },
+    {
+      "source": "titles",
+      "topic_id": 83,
+      "keywords": [
+        "password",
+        "authentication",
+        "passwords",
+        "keystroke",
+        "meters",
+        "secure",
+        "hybrid",
+        "incorporated",
+        "restrictive",
+        "shoulder"
+      ],
+      "label": "Secure Authentication Methods Development",
+      "taxonomy_category": "Cybersecurity",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls under a well-established research area in cybersecurity, focusing on improving authentication methods."
+    },
+    {
+      "source": "titles",
+      "topic_id": 84,
+      "keywords": [
+        "ai",
+        "machines",
+        "teammate",
+        "affordance",
+        "anthropomorphism",
+        "human",
+        "generative",
+        "teams",
+        "handshakes",
+        "competences"
+      ],
+      "label": "Human-AI Interaction and Collaboration",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within established research areas in human-computer interaction, focusing on user experience and collaboration with AI systems."
+    },
+    {
+      "source": "titles",
+      "topic_id": 85,
+      "keywords": [
+        "piracy",
+        "software",
+        "liar",
+        "copyright",
+        "peer",
+        "africa",
+        "copying",
+        "desirability",
+        "files",
+        "console"
+      ],
+      "label": "Software Piracy and Copyright Research",
+      "taxonomy_category": "Information Systems",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls under Information Systems as it deals with the intersection of technology, law, and human behavior in the context of software piracy and copyright infringement."
+    },
+    {
+      "source": "titles",
+      "topic_id": 86,
+      "keywords": [
+        "transfer",
+        "credibility",
+        "trust",
+        "advertising",
+        "commerce",
+        "hrm",
+        "attribute",
+        "reverse",
+        "ditv",
+        "disadvantaged"
+      ],
+      "label": "Trust in Digital Commerce and Advertising",
+      "taxonomy_category": "Information Systems",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within the established research area of Information Systems, specifically focusing on trust and commerce in digital contexts."
+    },
+    {
+      "source": "titles",
+      "topic_id": 87,
+      "keywords": [
+        "visualisation",
+        "personalisation",
+        "skeuomorphism",
+        "logic",
+        "representing",
+        "qualitatively",
+        "last",
+        "derived",
+        "communicating",
+        "triage"
+      ],
+      "label": "Human-Computer Interaction Design",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in HCI research, focusing on design principles and user experience."
+    },
+    {
+      "source": "titles",
+      "topic_id": 88,
+      "keywords": [
+        "success",
+        "customer",
+        "trading",
+        "expectations",
+        "electronic",
+        "measuring",
+        "organisational",
+        "eastern",
+        "newcomers",
+        "socialisation"
+      ],
+      "label": "Organisational Information Systems Adoption",
+      "taxonomy_category": "Information Systems",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within a well-established research area in Information Systems, specifically focusing on organisational adoption and socialisation."
+    },
+    {
+      "source": "titles",
+      "topic_id": 89,
+      "keywords": [
+        "serious",
+        "game",
+        "environmental",
+        "psychophysiological",
+        "video",
+        "experience",
+        "games",
+        "mci",
+        "asd",
+        "drama"
+      ],
+      "label": "Serious Games and Environmental Experience",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls under HCI as it involves the design and evaluation of interactive systems for environmental and cognitive purposes."
+    },
+    {
+      "source": "titles",
+      "topic_id": 90,
+      "keywords": [
+        "location",
+        "city",
+        "spatial",
+        "mon",
+        "pok",
+        "go",
+        "games",
+        "exploration",
+        "placemaking",
+        "navigator"
+      ],
+      "label": "Location-Based Games and Spatial Experience",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in HCI research, particularly in the context of gamification and spatial interaction."
+    },
+    {
+      "source": "titles",
+      "topic_id": 91,
+      "keywords": [
+        "storytelling",
+        "story",
+        "narrative",
+        "events",
+        "digital",
+        "entice",
+        "criticism",
+        "emotive",
+        "audiences",
+        "harvey"
+      ],
+      "label": "Digital Storytelling and Engagement",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within established HCI research on interactive narratives and user engagement."
+    },
+    {
+      "source": "titles",
+      "topic_id": 92,
+      "keywords": [
+        "phishing",
+        "frames",
+        "optimism",
+        "scam",
+        "judgements",
+        "email",
+        "employing",
+        "conscientiousness",
+        "blacklist",
+        "authentic"
+      ],
+      "label": "Online Scam Detection and Prevention",
+      "taxonomy_category": "Cybersecurity",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls under a well-established research area in cybersecurity, focusing on protecting users from online threats."
+    },
+    {
+      "source": "titles",
+      "topic_id": 93,
+      "keywords": [
+        "affordances",
+        "animated",
+        "agentsin",
+        "artifacts",
+        "apis",
+        "statistics",
+        "venturing",
+        "distribution",
+        "composite",
+        "expressed"
+      ],
+      "label": "Human-Computer Interaction Analysis",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in HCI research, focusing on user experience and interaction with digital systems."
+    },
+    {
+      "source": "titles",
+      "topic_id": 94,
+      "keywords": [
+        "leadership",
+        "climate",
+        "goal",
+        "systems",
+        "creativity",
+        "nonlinear",
+        "charismatic",
+        "propositions",
+        "group",
+        "job"
+      ],
+      "label": "Leadership in Digital Systems and Innovation",
+      "taxonomy_category": "Information Systems",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within the well-established research area of information systems, focusing on leadership and innovation in digital contexts."
+    },
+    {
+      "source": "titles",
+      "topic_id": 95,
+      "keywords": [
+        "chinese",
+        "taiwan",
+        "networking",
+        "sites",
+        "continued",
+        "tetra",
+        "postgraduate",
+        "reposting",
+        "stick",
+        "vaping"
+      ],
+      "label": "Social Media and Human Behavior",
+      "taxonomy_category": "Social Sciences",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within established research areas in social sciences, focusing on human behavior and interactions on social media platforms."
+    },
+    {
+      "source": "titles",
+      "topic_id": 96,
+      "keywords": [
+        "function",
+        "distress",
+        "among",
+        "older",
+        "adults",
+        "psychological",
+        "bonding",
+        "moods",
+        "distancing",
+        "race"
+      ],
+      "label": "Mental Health in Older Adults",
+      "taxonomy_category": "Healthcare & Bioinformatics",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in the field of gerontology and healthcare research."
+    },
+    {
+      "source": "titles",
+      "topic_id": 97,
+      "keywords": [
+        "informal",
+        "learning",
+        "organisational",
+        "success",
+        "org",
+        "hierarchy",
+        "secol",
+        "nn",
+        "creation",
+        "company"
+      ],
+      "label": "Organisational Learning and Education Technology",
+      "taxonomy_category": "Education Technology",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within the established research area of education technology, focusing on organisational learning and digital education systems."
+    },
+    {
+      "source": "titles",
+      "topic_id": 98,
+      "keywords": [
+        "oss",
+        "studies",
+        "contexts",
+        "development",
+        "ecologies",
+        "disciplinary",
+        "cyberinfrastructure",
+        "artifact",
+        "platforming",
+        "un"
+      ],
+      "label": "Human-Centered Cyberinfrastructure Development",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established within HCI, focusing on user experience and design in digital environments."
+    },
+    {
+      "source": "titles",
+      "topic_id": 99,
+      "keywords": [
+        "guide",
+        "mobile",
+        "location",
+        "interface",
+        "angle",
+        "bend",
+        "banners",
+        "presentations",
+        "refresh",
+        "necessarily"
+      ],
+      "label": "Mobile User Interface Design and Experience",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in HCI research, focusing on user experience and interface design for mobile devices."
+    },
+    {
+      "source": "titles",
+      "topic_id": 100,
+      "keywords": [
+        "attestation",
+        "decision",
+        "trust",
+        "certifications",
+        "advancing",
+        "observable",
+        "peripheral",
+        "ita",
+        "revisable",
+        "artificial"
+      ],
+      "label": "Human-Computer Trust and Decision Support",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in HCI research, focusing on trust, decision-making, and user interaction with technology."
+    },
+    {
+      "source": "titles",
+      "topic_id": 101,
+      "keywords": [
+        "interruptions",
+        "contextual",
+        "messaging",
+        "mediated",
+        "inadequacies",
+        "imprudent",
+        "cmc",
+        "delineator",
+        "callers",
+        "annoying"
+      ],
+      "label": "Communication and Human Interaction Challenges",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within established HCI research areas, focusing on user experience and communication issues."
+    },
+    {
+      "source": "titles",
+      "topic_id": 102,
+      "keywords": [
+        "arabia",
+        "saudi",
+        "academia",
+        "carbon",
+        "higher",
+        "education",
+        "dealing",
+        "flying",
+        "rapid",
+        "qudwa"
+      ],
+      "label": "Education in Saudi Arabia and Sustainability",
+      "taxonomy_category": "Education Technology",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in the field of education technology, focusing on the intersection of education and sustainability in Saudi Arabia."
+    },
+    {
+      "source": "titles",
+      "topic_id": 103,
+      "keywords": [
+        "avatar",
+        "face",
+        "avatars",
+        "coaches",
+        "changers",
+        "embarrassing",
+        "evocation",
+        "customization",
+        "discussing",
+        "dancing"
+      ],
+      "label": "Avatar Human Interaction Studies",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within established HCI research on user experience and interface design."
+    },
+    {
+      "source": "titles",
+      "topic_id": 104,
+      "keywords": [
+        "gender",
+        "algorithmic",
+        "differences",
+        "experiencing",
+        "ensemble",
+        "classifiers",
+        "openness",
+        "preliminary",
+        "writing",
+        "presence"
+      ],
+      "label": "Human Behavior in Digital Environments",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within established HCI research areas, examining user experiences and interactions with digital systems."
+    },
+    {
+      "source": "titles",
+      "topic_id": 105,
+      "keywords": [
+        "advertising",
+        "ads",
+        "pop",
+        "skipping",
+        "appear",
+        "allow",
+        "option",
+        "react",
+        "msg",
+        "sn"
+      ],
+      "label": "Advertising User Experience and Behavior",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in HCI research, focusing on user interactions with advertisements."
+    },
+    {
+      "source": "titles",
+      "topic_id": 106,
+      "keywords": [
+        "mental",
+        "health",
+        "dta",
+        "alliance",
+        "hacking",
+        "hacker",
+        "illicit",
+        "scholars",
+        "mm",
+        "maternal"
+      ],
+      "label": "Mental Health Technology and Research",
+      "taxonomy_category": "Healthcare & Bioinformatics",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls within established research areas in healthcare and bioinformatics, particularly in the application of technology for mental health."
+    },
+    {
+      "source": "titles",
+      "topic_id": 107,
+      "keywords": [
+        "renqing",
+        "donation",
+        "cultural",
+        "government",
+        "interpretations",
+        "isd",
+        "moviegoers",
+        "republic",
+        "malaysia",
+        "conative"
+      ],
+      "label": "Cultural and Social Commerce Dynamics",
+      "taxonomy_category": "Social Sciences",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within the established research area of social sciences, particularly in the study of cultural influences on consumer behavior and social interactions."
+    },
+    {
+      "source": "titles",
+      "topic_id": 108,
+      "keywords": [
+        "dating",
+        "affordances",
+        "got",
+        "actualisation",
+        "confining",
+        "daters",
+        "gig",
+        "female",
+        "expectancies",
+        "enduring"
+      ],
+      "label": "Online Dating and Human-Computer Interaction",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-represented in HCI research, particularly in the context of user experience and interface design."
+    },
+    {
+      "source": "titles",
+      "topic_id": 109,
+      "keywords": [
+        "reactive",
+        "coping",
+        "curse",
+        "cheat",
+        "ameliorative",
+        "inward",
+        "volunteers",
+        "quo",
+        "epidemic",
+        "darkness"
+      ],
+      "label": "Human Coping with Technology Stress",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within established HCI research on user experience and technology adoption."
+    },
+    {
+      "source": "titles",
+      "topic_id": 110,
+      "keywords": [
+        "home",
+        "assistants",
+        "family",
+        "handoffs",
+        "lifestyles",
+        "needing",
+        "unlearning",
+        "optimised",
+        "homecare",
+        "care"
+      ],
+      "label": "Home Care and Assistive Technologies",
+      "taxonomy_category": "Healthcare & Bioinformatics",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in the field of healthcare and bioinformatics, particularly in the subfield of gerontechnology and assistive technologies."
+    },
+    {
+      "source": "titles",
+      "topic_id": 111,
+      "keywords": [
+        "balance",
+        "healthy",
+        "cityquest",
+        "bird",
+        "coach",
+        "aimed",
+        "custom",
+        "fall",
+        "designed",
+        "teleoperations"
+      ],
+      "label": "Healthy Aging and Balance Technology",
+      "taxonomy_category": "Healthcare & Bioinformatics",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in the field of healthcare, focusing on the intersection of technology and aging."
+    },
+    {
+      "source": "titles",
+      "topic_id": 112,
+      "keywords": [
+        "clustering",
+        "informatics",
+        "line",
+        "lowering",
+        "paradigms",
+        "cohesion",
+        "incidental",
+        "relevance",
+        "efficient",
+        "maintenance"
+      ],
+      "label": "Human-Computer Interaction Research",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in HCI research, focusing on user behavior, system design, and interaction paradigms."
+    },
+    {
+      "source": "titles",
+      "topic_id": 113,
+      "keywords": [
+        "conferencing",
+        "video",
+        "classes",
+        "disabled",
+        "ms",
+        "attraction",
+        "skype",
+        "zoom",
+        "dependence",
+        "google"
+      ],
+      "label": "Video Conferencing and Accessibility",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within established research areas of HCI, particularly in accessibility and usability."
+    },
+    {
+      "source": "titles",
+      "topic_id": 114,
+      "keywords": [
+        "ability",
+        "autonomy",
+        "patients",
+        "worker",
+        "relatedness",
+        "death",
+        "aptitude",
+        "diagnostics",
+        "forecasting",
+        "tales"
+      ],
+      "label": "Human-Centered Healthcare Technology",
+      "taxonomy_category": "Healthcare & Bioinformatics",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in the intersection of healthcare and technology research."
+    },
+    {
+      "source": "titles",
+      "topic_id": 115,
+      "keywords": [
+        "smartwatches",
+        "smartwatch",
+        "uniqueness",
+        "pick",
+        "combined",
+        "clothing",
+        "moderators",
+        "qualities",
+        "situ",
+        "cluster"
+      ],
+      "label": "Smart Wearable Technology and User Preferences",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls under Human-Computer Interaction as it focuses on the design, user experience, and preferences of smart wearable devices."
+    },
+    {
+      "source": "titles",
+      "topic_id": 116,
+      "keywords": [
+        "editorial",
+        "guest",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "label": "Editorial and Guest Editorial Content",
+      "taxonomy_category": "Information Systems",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in the field of information systems, particularly in the context of academic publishing."
+    },
+    {
+      "source": "titles",
+      "topic_id": 117,
+      "keywords": [
+        "diabetic",
+        "retinopathy",
+        "menu",
+        "selection",
+        "earphone",
+        "alarm",
+        "prone",
+        "conversation",
+        "collision",
+        "timing"
+      ],
+      "label": "Human-Computer Interaction for Accessibility",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in HCI research, focusing on designing accessible interfaces for users with disabilities."
+    },
+    {
+      "source": "titles",
+      "topic_id": 118,
+      "keywords": [
+        "creativity",
+        "brainstorming",
+        "ideation",
+        "parallel",
+        "stimulation",
+        "increased",
+        "inducing",
+        "enhanced",
+        "proteus",
+        "cost"
+      ],
+      "label": "AI-Driven Creativity Enhancement Techniques",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within established research on human-computer interaction, specifically focusing on AI's impact on cognitive processes."
+    },
+    {
+      "source": "titles",
+      "topic_id": 119,
+      "keywords": [
+        "emoticon",
+        "emoticons",
+        "hotel",
+        "construal",
+        "youth",
+        "instant",
+        "reviews",
+        "level",
+        "messaging",
+        "enhancing"
+      ],
+      "label": "Emoticon Use in Human-Computer Interaction",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in HCI research, focusing on user behavior and online communication."
+    }
+  ],
+  "abstracts": [
+    {
+      "source": "abstracts",
+      "topic_id": 0,
+      "keywords": [
+        "security",
+        "phishing",
+        "employees",
+        "information",
+        "threats",
+        "isec",
+        "compliance",
+        "behaviour",
+        "cybersecurity",
+        "role"
+      ],
+      "label": "Cybersecurity Awareness and Information Protection",
+      "taxonomy_category": "Cybersecurity",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established within the field of cybersecurity, focusing on employee behavior, information security awareness, and cybersecurity outcomes."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 1,
+      "keywords": [
+        "analytics",
+        "learning",
+        "students",
+        "student",
+        "education",
+        "data",
+        "academic",
+        "la",
+        "educational",
+        "teachers"
+      ],
+      "label": "Education Technology and Learning Analytics",
+      "taxonomy_category": "Education Technology",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls under a well-established research area in education technology, focusing on the application of technology to enhance learning and teaching."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 2,
+      "keywords": [
+        "internet",
+        "adolescents",
+        "addiction",
+        "piu",
+        "parents",
+        "ia",
+        "parental",
+        "sexting",
+        "problematic",
+        "adolescent"
+      ],
+      "label": "Internet Addiction and Adolescent Behavior",
+      "taxonomy_category": "Social Sciences",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls under social sciences as it involves the study of human behavior, particularly the impact of internet use on adolescents."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 3,
+      "keywords": [
+        "ai",
+        "human",
+        "generative",
+        "artificial",
+        "teammates",
+        "intelligence",
+        "genai",
+        "decision",
+        "matchmaking",
+        "humans"
+      ],
+      "label": "Human-AI Collaboration and Trust",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within the established research area of human-computer interaction, focusing on the collaboration and trust between humans and artificial intelligence systems."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 4,
+      "keywords": [
+        "capital",
+        "blog",
+        "social",
+        "brand",
+        "identity",
+        "bloggers",
+        "microblogs",
+        "sharing",
+        "theory",
+        "creators"
+      ],
+      "label": "Social Media and Influencer Dynamics",
+      "taxonomy_category": "Social Sciences",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls within the established research area of social psychology and communication studies."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 5,
+      "keywords": [
+        "children",
+        "asd",
+        "skills",
+        "game",
+        "autistic",
+        "design",
+        "parents",
+        "co",
+        "learning",
+        "autism"
+      ],
+      "label": "Autism and Assistive Learning Technologies",
+      "taxonomy_category": "Education Technology",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls under a well-established research area in education technology, focusing on the use of assistive technologies to support children with autism."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 6,
+      "keywords": [
+        "conversational",
+        "agents",
+        "chatbot",
+        "cas",
+        "dialogue",
+        "agent",
+        "human",
+        "user",
+        "values",
+        "voice"
+      ],
+      "label": "Conversational AI and Human Interaction",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established within the field of Human-Computer Interaction, focusing on the design and usability of conversational interfaces."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 7,
+      "keywords": [
+        "learning",
+        "students",
+        "teachers",
+        "lms",
+        "teaching",
+        "blended",
+        "education",
+        "course",
+        "instructors",
+        "student"
+      ],
+      "label": "Education Technology in the Digital Age",
+      "taxonomy_category": "Education Technology",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls under a well-established research area, focusing on the intersection of technology and education."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 8,
+      "keywords": [
+        "cyberloafing",
+        "work",
+        "employees",
+        "job",
+        "stress",
+        "nonwork",
+        "email",
+        "employee",
+        "workload",
+        "exhaustion"
+      ],
+      "label": "Employee Digital Stress and Productivity",
+      "taxonomy_category": "Information Systems",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within the established research area of information systems, specifically focusing on the impact of digital technologies on employee well-being and productivity."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 9,
+      "keywords": [
+        "visual",
+        "colour",
+        "visualisation",
+        "eye",
+        "interface",
+        "displays",
+        "task",
+        "sonification",
+        "visualisations",
+        "map"
+      ],
+      "label": "Visualisation and Human-Computer Interaction",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits well within established research areas in HCI, focusing on visualisation, interface design, and user experience."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 10,
+      "keywords": [
+        "shopping",
+        "customer",
+        "commerce",
+        "purchase",
+        "customers",
+        "consumers",
+        "website",
+        "online",
+        "shoppers",
+        "internet"
+      ],
+      "label": "E-commerce Consumer Behavior Analysis",
+      "taxonomy_category": "Information Systems",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls under Information Systems as it primarily deals with the study of online shopping behaviors, consumer interactions, and e-commerce platform design."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 11,
+      "keywords": [
+        "privacy",
+        "political",
+        "disclosure",
+        "concerns",
+        "im",
+        "online",
+        "protection",
+        "personal",
+        "avatar",
+        "risks"
+      ],
+      "label": "Online Privacy and Protection Concerns",
+      "taxonomy_category": "Social Sciences",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls within the well-established research area of social sciences, specifically focusing on human behavior and online interactions."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 12,
+      "keywords": [
+        "fitness",
+        "health",
+        "exercise",
+        "weight",
+        "wearables",
+        "notifications",
+        "mhealth",
+        "wearable",
+        "smartwatches",
+        "apps"
+      ],
+      "label": "Mobile Health and Wearable Technology",
+      "taxonomy_category": "Healthcare & Bioinformatics",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls under a well-established research area in healthcare, focusing on the intersection of mobile technology and health outcomes."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 13,
+      "keywords": [
+        "design",
+        "case",
+        "work",
+        "dsd",
+        "needs",
+        "stakeholders",
+        "cyberinfrastructure",
+        "method",
+        "systems",
+        "interaction"
+      ],
+      "label": "Human-Centered Design and Interaction",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic focuses on the design and development of interactive systems with a human-centered approach, fitting within the established research area of Human-Computer Interaction."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 14,
+      "keywords": [
+        "privacy",
+        "data",
+        "concerns",
+        "protection",
+        "disclosure",
+        "personal",
+        "access",
+        "calculus",
+        "opl",
+        "information"
+      ],
+      "label": "Online Privacy and Data Protection",
+      "taxonomy_category": "Social Sciences",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls within the well-established research area of social sciences, specifically focusing on human behavior and interactions in digital environments."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 15,
+      "keywords": [
+        "gaming",
+        "gamers",
+        "game",
+        "igd",
+        "games",
+        "video",
+        "players",
+        "aggression",
+        "problematic",
+        "player"
+      ],
+      "label": "Gaming Disorder and Psychological Implications",
+      "taxonomy_category": "Healthcare & Bioinformatics",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls under the broader category of healthcare and bioinformatics due to its focus on the psychological effects and implications of gaming disorder."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 16,
+      "keywords": [
+        "continuance",
+        "learning",
+        "students",
+        "intention",
+        "moocs",
+        "model",
+        "use",
+        "perceived",
+        "acceptance",
+        "satisfaction"
+      ],
+      "label": "Student Technology Adoption and Utilization",
+      "taxonomy_category": "Education Technology",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in the field of education technology, focusing on students' adoption and utilization of various technologies in educational settings."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 17,
+      "keywords": [
+        "chatbots",
+        "chatbot",
+        "ai",
+        "voice",
+        "siri",
+        "anthropomorphism",
+        "empathy",
+        "bot",
+        "trust",
+        "human"
+      ],
+      "label": "Chatbot Human-Computer Interaction",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in the field of Human-Computer Interaction, focusing on the design and user experience of chatbots."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 18,
+      "keywords": [
+        "smartphone",
+        "sleep",
+        "psu",
+        "use",
+        "smartphones",
+        "usage",
+        "problematic",
+        "mental",
+        "health",
+        "phone"
+      ],
+      "label": "Smartphone Use and Mental Health",
+      "taxonomy_category": "Healthcare & Bioinformatics",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in the field of healthcare and bioinformatics, with a focus on the psychological and social impacts of smartphone use."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 19,
+      "keywords": [
+        "gestures",
+        "gesture",
+        "gaze",
+        "feedback",
+        "force",
+        "mouse",
+        "interaction",
+        "touch",
+        "input",
+        "experiment"
+      ],
+      "label": "Human-Computer Interaction Techniques",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls within the well-established research area of HCI, focusing on various interaction methods and techniques."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 20,
+      "keywords": [
+        "oss",
+        "software",
+        "developers",
+        "development",
+        "service",
+        "agile",
+        "dsms",
+        "family",
+        "design",
+        "project"
+      ],
+      "label": "Software Development and Human Interaction",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in HCI research, focusing on the design and usability of software systems."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 21,
+      "keywords": [
+        "learning",
+        "learners",
+        "online",
+        "course",
+        "learner",
+        "students",
+        "dropout",
+        "mooc",
+        "regulated",
+        "courses"
+      ],
+      "label": "Online Learning and Educational Technology",
+      "taxonomy_category": "Education Technology",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in the field of education technology, focusing on the design, implementation, and analysis of online learning systems."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 22,
+      "keywords": [
+        "vr",
+        "reality",
+        "virtual",
+        "training",
+        "ar",
+        "hmd",
+        "augmented",
+        "visualisation",
+        "environments",
+        "pretraining"
+      ],
+      "label": "Virtual Reality and Augmented Reality",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls under Human-Computer Interaction as it primarily focuses on the design, usability, and user experience of virtual and augmented reality technologies."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 23,
+      "keywords": [
+        "erp",
+        "innovation",
+        "post",
+        "enterprise",
+        "crm",
+        "es",
+        "performance",
+        "system",
+        "success",
+        "business"
+      ],
+      "label": "Enterprise Information Systems Adoption",
+      "taxonomy_category": "Information Systems",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits well within the established research area of Information Systems, specifically focusing on the adoption and usage of enterprise-level information systems."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 24,
+      "keywords": [
+        "mobile",
+        "payment",
+        "services",
+        "banking",
+        "consumers",
+        "commerce",
+        "adoption",
+        "adopter",
+        "perceived",
+        "service"
+      ],
+      "label": "Mobile Commerce and Payment Adoption",
+      "taxonomy_category": "Information Systems",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within the established research area of Information Systems, specifically focusing on the adoption and usage of mobile commerce and payment services."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 25,
+      "keywords": [
+        "gamification",
+        "gamified",
+        "game",
+        "mechanics",
+        "design",
+        "annotation",
+        "transformative",
+        "intrinsic",
+        "cooperation",
+        "dynamics"
+      ],
+      "label": "Gamification and Engagement Strategies",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls under HCI as it focuses on the design and application of gamification in various contexts to enhance user engagement and motivation."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 26,
+      "keywords": [
+        "search",
+        "pages",
+        "web",
+        "colides",
+        "eye",
+        "browsing",
+        "attention",
+        "pic",
+        "page",
+        "information"
+      ],
+      "label": "Human-Computer Interaction and Search",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in HCI research, focusing on user behavior, attention, and search strategies in digital environments."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 27,
+      "keywords": [
+        "game",
+        "games",
+        "players",
+        "esports",
+        "play",
+        "player",
+        "playing",
+        "gaming",
+        "curiosity",
+        "self"
+      ],
+      "label": "Gaming and Player Behavior",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls under Human-Computer Interaction as it explores the psychological and social aspects of gaming and player behavior."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 28,
+      "keywords": [
+        "emergency",
+        "crisis",
+        "messages",
+        "tweets",
+        "media",
+        "covid",
+        "disaster",
+        "twitter",
+        "vaccine",
+        "disasters"
+      ],
+      "label": "Crisis Communication and Public Health",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within established HCI research areas, particularly in understanding user behavior and designing interventions for crisis situations."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 29,
+      "keywords": [
+        "acceptance",
+        "investors",
+        "banking",
+        "technology",
+        "financial",
+        "blockchain",
+        "services",
+        "tam",
+        "iot",
+        "government"
+      ],
+      "label": "Financial Technology Adoption and Acceptance",
+      "taxonomy_category": "Finance & Economics",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls under a well-established research area in finance and economics, specifically focusing on the adoption and acceptance of financial technologies."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 30,
+      "keywords": [
+        "adoption",
+        "technology",
+        "acceptance",
+        "cloud",
+        "storage",
+        "organisations",
+        "green",
+        "diffusion",
+        "technologies",
+        "organisational"
+      ],
+      "label": "Technology Adoption and Acceptance",
+      "taxonomy_category": "Information Systems",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in the field of Information Systems, with a focus on understanding how technologies are adopted and accepted within organisations."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 31,
+      "keywords": [
+        "older",
+        "elderly",
+        "people",
+        "adults",
+        "technology",
+        "digital",
+        "tv",
+        "living",
+        "caregivers",
+        "gerontechnology"
+      ],
+      "label": "Gerontechnology and Older Adults",
+      "taxonomy_category": "Healthcare & Bioinformatics",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in the field of healthcare and bioinformatics, focusing on the intersection of technology and aging populations."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 32,
+      "keywords": [
+        "recommender",
+        "reviews",
+        "product",
+        "ewom",
+        "purchase",
+        "consumers",
+        "review",
+        "ratings",
+        "bw",
+        "purchasing"
+      ],
+      "label": "E-commerce and Consumer Behavior",
+      "taxonomy_category": "Social Sciences",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in the field of consumer behavior and marketing, with a focus on understanding consumer decision-making processes in e-commerce contexts."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 33,
+      "keywords": [
+        "ai",
+        "artificial",
+        "human",
+        "intelligence",
+        "hcai",
+        "digital",
+        "nudges",
+        "resilience",
+        "toward",
+        "nudging"
+      ],
+      "label": "Human-Centered AI and Digital Nudges",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "NOVEL",
+      "reasoning": "This topic represents an emerging theme that combines human-centered AI with digital nudges, which is not well-represented in standard taxonomies."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 34,
+      "keywords": [
+        "facebook",
+        "social",
+        "capital",
+        "sns",
+        "bonding",
+        "bridging",
+        "capabilities",
+        "networking",
+        "presence",
+        "media"
+      ],
+      "label": "Social Media and Networking Dynamics",
+      "taxonomy_category": "Social Sciences",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls under the well-established research area of social sciences, specifically focusing on the effects of social media on human behavior and relationships."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 35,
+      "keywords": [
+        "job",
+        "media",
+        "work",
+        "employees",
+        "social",
+        "remote",
+        "esm",
+        "ostracism",
+        "employee",
+        "performance"
+      ],
+      "label": "Remote Work and Social Media Impact",
+      "taxonomy_category": "Social Sciences",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within established research areas in organizational behavior and communication studies."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 36,
+      "keywords": [
+        "facebook",
+        "social",
+        "selfie",
+        "jealousy",
+        "instagram",
+        "comparison",
+        "media",
+        "anxiety",
+        "esteem",
+        "self"
+      ],
+      "label": "Social Media and Mental Health",
+      "taxonomy_category": "Social Sciences",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in the field of social sciences, particularly in the study of human behavior and psychology."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 37,
+      "keywords": [
+        "knowledge",
+        "management",
+        "hiding",
+        "sharing",
+        "km",
+        "employee",
+        "ks",
+        "organisational",
+        "transfer",
+        "leadership"
+      ],
+      "label": "Knowledge Management and Sharing",
+      "taxonomy_category": "Information Systems",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in the field of Information Systems, focusing on the creation, storage, and dissemination of knowledge within organizations."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 38,
+      "keywords": [
+        "ux",
+        "design",
+        "hci",
+        "experience",
+        "flow",
+        "user",
+        "uxcmms",
+        "framework",
+        "interactive",
+        "different"
+      ],
+      "label": "Human-Computer Interaction Design",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established within HCI, focusing on user experience, interface design, and interactive systems."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 39,
+      "keywords": [
+        "older",
+        "adults",
+        "care",
+        "physical",
+        "frailty",
+        "technology",
+        "elderly",
+        "use",
+        "health",
+        "acceptance"
+      ],
+      "label": "Technology and Older Adult Care",
+      "taxonomy_category": "Healthcare & Bioinformatics",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established within the field of healthcare and bioinformatics, focusing on the intersection of technology and gerontology."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 40,
+      "keywords": [
+        "accessibility",
+        "disabilities",
+        "web",
+        "impaired",
+        "people",
+        "websites",
+        "cane",
+        "government",
+        "accessible",
+        "guidelines"
+      ],
+      "label": "Accessibility in Digital Environments",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls under a well-established research area in Human-Computer Interaction, focusing on designing accessible digital products and services."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 41,
+      "keywords": [
+        "misinformation",
+        "news",
+        "fake",
+        "media",
+        "political",
+        "message",
+        "correction",
+        "rrms",
+        "social",
+        "tiktok"
+      ],
+      "label": "Misinformation and Social Media Manipulation",
+      "taxonomy_category": "Social Sciences",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within established research areas in social sciences, particularly in the study of online behavior and its effects on society."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 42,
+      "keywords": [
+        "vr",
+        "immersive",
+        "reality",
+        "ar",
+        "virtual",
+        "hypnosis",
+        "speaking",
+        "anxiety",
+        "experiences",
+        "stigma"
+      ],
+      "label": "Virtual Reality and Human Experience",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls within the established research area of human-computer interaction, specifically focusing on the effects of virtual reality on human behavior and emotions."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 43,
+      "keywords": [
+        "aesthetics",
+        "aesthetic",
+        "visual",
+        "website",
+        "websites",
+        "cool",
+        "coolness",
+        "appeal",
+        "luxury",
+        "complexity"
+      ],
+      "label": "Human-Computer Interaction Aesthetics",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in HCI research, focusing on the design and evaluation of user interfaces."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 44,
+      "keywords": [
+        "driving",
+        "drivers",
+        "driver",
+        "vehicle",
+        "safety",
+        "autonomous",
+        "automation",
+        "road",
+        "street",
+        "car"
+      ],
+      "label": "Autonomous Vehicle Safety Research",
+      "taxonomy_category": "Robotics & Automation",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within the well-established research area of robotics and automation, specifically focusing on the safety aspects of autonomous vehicles."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 45,
+      "keywords": [
+        "media",
+        "social",
+        "content",
+        "news",
+        "propagation",
+        "networks",
+        "diffusion",
+        "reporting",
+        "network",
+        "hashtags"
+      ],
+      "label": "Social Media and Online Content Analysis",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established within the field of Human-Computer Interaction, focusing on user behavior and online content."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 46,
+      "keywords": [
+        "community",
+        "satisfaction",
+        "oc",
+        "continuance",
+        "online",
+        "virtual",
+        "members",
+        "communities",
+        "loyalty",
+        "intention"
+      ],
+      "label": "Virtual Community Dynamics and Engagement",
+      "taxonomy_category": "Information Systems",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within established research areas in information systems, particularly in the subfields of human-computer interaction and online communities."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 47,
+      "keywords": [
+        "smart",
+        "end",
+        "home",
+        "iot",
+        "devices",
+        "office",
+        "consumption",
+        "homes",
+        "siot",
+        "programmers"
+      ],
+      "label": "Smart Home and IoT Technology",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls under Human-Computer Interaction as it focuses on the design, adoption, and user experiences of smart home devices and IoT technology."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 48,
+      "keywords": [
+        "commerce",
+        "purchase",
+        "streaming",
+        "live",
+        "streamer",
+        "credibility",
+        "consumers",
+        "social",
+        "contributor",
+        "product"
+      ],
+      "label": "Social Commerce and User Behavior",
+      "taxonomy_category": "Information Systems",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in the field of Information Systems, particularly in the subfield of e-commerce and online behavior."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 49,
+      "keywords": [
+        "patient",
+        "patients",
+        "care",
+        "ehr",
+        "handover",
+        "telemedicine",
+        "nurses",
+        "clinicians",
+        "physicians",
+        "clinical"
+      ],
+      "label": "Healthcare Technology and Clinical Practice",
+      "taxonomy_category": "Healthcare & Bioinformatics",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in the field of healthcare and bioinformatics, focusing on the intersection of technology and clinical practice."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 50,
+      "keywords": [
+        "memory",
+        "fcm",
+        "aloud",
+        "think",
+        "wandering",
+        "rta",
+        "mind",
+        "task",
+        "recall",
+        "thought"
+      ],
+      "label": "Human Memory and Cognition in HCI",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in the field of Human-Computer Interaction, focusing on how users interact with technology and how it affects their cognitive processes."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 51,
+      "keywords": [
+        "menu",
+        "pen",
+        "menus",
+        "text",
+        "width",
+        "input",
+        "entry",
+        "selection",
+        "icon",
+        "keys"
+      ],
+      "label": "Human-Computer Interaction Design",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in HCI research, focusing on menu design and user interface optimization."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 52,
+      "keywords": [
+        "cyberbullying",
+        "bullying",
+        "victimisation",
+        "trolling",
+        "aggressive",
+        "humour",
+        "dark",
+        "exposure",
+        "perpetration",
+        "narcissism"
+      ],
+      "label": "Cyberbullying and Aggressive Online Behaviour",
+      "taxonomy_category": "Social Sciences",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within the established research area of social psychology and criminology, examining the causes and effects of cyberbullying and aggressive online behaviour."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 53,
+      "keywords": [
+        "usability",
+        "problems",
+        "evaluation",
+        "methods",
+        "software",
+        "uim",
+        "issues",
+        "severity",
+        "evaluators",
+        "developers"
+      ],
+      "label": "Usability Evaluation and Human-Computer Interaction",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established within the field of Human-Computer Interaction, focusing on usability evaluation methods and their applications."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 54,
+      "keywords": [
+        "emotions",
+        "emotional",
+        "affective",
+        "ei",
+        "ml",
+        "states",
+        "machine",
+        "interaction",
+        "ac",
+        "emotion"
+      ],
+      "label": "Emotion Detection and Human-Computer Interaction",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within the established research area of Human-Computer Interaction, specifically focusing on emotion detection and adaptive interactions."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 55,
+      "keywords": [
+        "icons",
+        "waiting",
+        "icon",
+        "metaphor",
+        "concreteness",
+        "loading",
+        "speech",
+        "visual",
+        "auditory",
+        "audio"
+      ],
+      "label": "Human-Computer Interaction Techniques",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in the field of Human-Computer Interaction, focusing on design and user experience principles."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 56,
+      "keywords": [
+        "intention",
+        "continuance",
+        "pbc",
+        "tam",
+        "personality",
+        "carbon",
+        "ch",
+        "behaviour",
+        "implants",
+        "model"
+      ],
+      "label": "Human Technology Interaction and Adoption",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within the established research area of Human-Computer Interaction, focusing on user behavior, adoption, and interaction with technology."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 57,
+      "keywords": [
+        "mobile",
+        "phone",
+        "phones",
+        "cell",
+        "rendezvous",
+        "callers",
+        "calls",
+        "design",
+        "aesthetics",
+        "usability"
+      ],
+      "label": "Mobile Device Design and User Experience",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in the field of Human-Computer Interaction, focusing on the design and usability of mobile devices."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 58,
+      "keywords": [
+        "persuasive",
+        "change",
+        "strategies",
+        "features",
+        "persuasiveness",
+        "effectiveness",
+        "psd",
+        "support",
+        "systems",
+        "submissive"
+      ],
+      "label": "Persuasive Systems Design and Behaviour Change",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established within the field of Human-Computer Interaction, focusing on designing systems that influence user behaviour."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 59,
+      "keywords": [
+        "robots",
+        "robot",
+        "humanoid",
+        "human",
+        "appearances",
+        "service",
+        "anthropomorphism",
+        "algorithmic",
+        "preferred",
+        "humans"
+      ],
+      "label": "Human-Robot Interaction and Abuse",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls under HCI as it explores the relationship between humans and robots, including their interactions, abuse, and emotional regulation."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 60,
+      "keywords": [
+        "innovation",
+        "employees",
+        "workplace",
+        "eb",
+        "telework",
+        "technology",
+        "digital",
+        "climate",
+        "collar",
+        "towards"
+      ],
+      "label": "Digital Workplace Productivity and Well-being",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in HCI research, focusing on the impact of technology on employee productivity and well-being in the workplace."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 61,
+      "keywords": [
+        "symptoms",
+        "narcissism",
+        "depressive",
+        "social",
+        "smu",
+        "depressed",
+        "depression",
+        "media",
+        "overload",
+        "esteem"
+      ],
+      "label": "Mental Health and Social Media",
+      "taxonomy_category": "Healthcare & Bioinformatics",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in the field of healthcare and bioinformatics, with numerous studies exploring the impact of social media on mental health."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 62,
+      "keywords": [
+        "loneliness",
+        "nomophobia",
+        "smartphone",
+        "problematic",
+        "isolation",
+        "adaptability",
+        "addiction",
+        "adolescents",
+        "anxiety",
+        "wellbeing"
+      ],
+      "label": "Smartphone Addiction and Mental Health",
+      "taxonomy_category": "Healthcare & Bioinformatics",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in the field of healthcare and bioinformatics, particularly in the study of technology addiction and its effects on mental health."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 63,
+      "keywords": [
+        "empathy",
+        "sms",
+        "emoticon",
+        "anger",
+        "emoticons",
+        "telepresence",
+        "ott",
+        "viewer",
+        "film",
+        "vc"
+      ],
+      "label": "Human-Computer Interaction and Emotions",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic explores the psychological and social aspects of human-computer interaction, particularly in the context of emotions and empathy."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 64,
+      "keywords": [
+        "crowdsourcing",
+        "solvers",
+        "contests",
+        "participation",
+        "contest",
+        "worker",
+        "crowd",
+        "task",
+        "ideas",
+        "performance"
+      ],
+      "label": "Crowdsourcing and Human Participation Dynamics",
+      "taxonomy_category": "Information Systems",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within the established research area of Information Systems, specifically focusing on human-computer interaction and collaborative work."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 65,
+      "keywords": [
+        "collaborative",
+        "learning",
+        "cscl",
+        "students",
+        "peer",
+        "student",
+        "ssrl",
+        "pm",
+        "gat",
+        "learners"
+      ],
+      "label": "Collaborative Learning in Education",
+      "taxonomy_category": "Education Technology",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in the field of education technology, focusing on computer-supported collaborative learning and its applications in educational settings."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 66,
+      "keywords": [
+        "older",
+        "adults",
+        "website",
+        "computer",
+        "search",
+        "redesign",
+        "elderly",
+        "senior",
+        "intelligence",
+        "design"
+      ],
+      "label": "Design for Older Adults",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in HCI research, focusing on designing accessible and usable technologies for older adults."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 67,
+      "keywords": [
+        "navigation",
+        "route",
+        "wayfinding",
+        "instructions",
+        "gps",
+        "mhp",
+        "rt",
+        "landmarks",
+        "indoor",
+        "map"
+      ],
+      "label": "Wayfinding and Navigation Systems",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in HCI research, focusing on designing and improving navigation systems for various environments and user groups."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 68,
+      "keywords": [
+        "reading",
+        "hypertext",
+        "text",
+        "characters",
+        "character",
+        "spacing",
+        "comprehension",
+        "read",
+        "column",
+        "dyslexia"
+      ],
+      "label": "Reading and Text Comprehension",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in HCI research, focusing on how digital interfaces affect reading performance and comprehension."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 69,
+      "keywords": [
+        "conversations",
+        "prompts",
+        "home",
+        "opera",
+        "nli",
+        "listen",
+        "story",
+        "speakers",
+        "cell",
+        "annoying"
+      ],
+      "label": "Human-Computer Interaction in Smart Environments",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls under a well-established research area in HCI, focusing on user experiences and interactions with smart devices and assistants."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 70,
+      "keywords": [
+        "mentoring",
+        "learning",
+        "career",
+        "artes",
+        "saudi",
+        "aeils",
+        "tutoring",
+        "stem",
+        "llms",
+        "teaching"
+      ],
+      "label": "Education Technology and Learning Systems",
+      "taxonomy_category": "Education Technology",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established within the field of education technology, focusing on various aspects of learning systems and their applications."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 71,
+      "keywords": [
+        "mental",
+        "health",
+        "dta",
+        "app",
+        "compassionate",
+        "digital",
+        "covid",
+        "smileapp",
+        "fathers",
+        "travel"
+      ],
+      "label": "Digital Mental Health Interventions",
+      "taxonomy_category": "Healthcare & Bioinformatics",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls under a well-established research area in healthcare, focusing on digital tools and technologies for mental health support and intervention."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 72,
+      "keywords": [
+        "resistance",
+        "healthcare",
+        "ehealth",
+        "ssts",
+        "clinician",
+        "hospital",
+        "hit",
+        "implementation",
+        "medical",
+        "hcp"
+      ],
+      "label": "Healthcare Information Systems Adoption",
+      "taxonomy_category": "Information Systems",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in the field of Information Systems, particularly in the subfield of Healthcare Information Systems."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 73,
+      "keywords": [
+        "smart",
+        "perceived",
+        "city",
+        "adoption",
+        "intention",
+        "nfc",
+        "mds",
+        "scs",
+        "biometrics",
+        "services"
+      ],
+      "label": "Smart Technology Adoption and Acceptance",
+      "taxonomy_category": "Information Systems",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within the well-established research area of Information Systems, specifically focusing on the adoption and acceptance of smart technologies."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 74,
+      "keywords": [
+        "icts",
+        "sc",
+        "sis",
+        "teleworking",
+        "ict",
+        "manufacturing",
+        "telecommuting",
+        "profile",
+        "scm",
+        "ism"
+      ],
+      "label": "Information Systems and Teleworking",
+      "taxonomy_category": "Information Systems",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within the established research area of Information Systems, specifically focusing on the intersection of technology and work practices."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 75,
+      "keywords": [
+        "tactile",
+        "hand",
+        "feedback",
+        "haptic",
+        "sensation",
+        "vr",
+        "virtual",
+        "interaction",
+        "pm",
+        "system"
+      ],
+      "label": "Virtual Reality Haptic Interaction",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls under a well-established research area in Human-Computer Interaction, focusing on the design and evaluation of haptic feedback in virtual reality environments."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 76,
+      "keywords": [
+        "older",
+        "adults",
+        "museum",
+        "balance",
+        "cognitive",
+        "game",
+        "museums",
+        "mci",
+        "artefacts",
+        "sg"
+      ],
+      "label": "Cognitive Health in Aging Populations",
+      "taxonomy_category": "Healthcare & Bioinformatics",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established within the field of healthcare and bioinformatics, focusing on the intersection of aging and cognitive function."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 77,
+      "keywords": [
+        "donation",
+        "communities",
+        "trust",
+        "community",
+        "online",
+        "questioners",
+        "contribution",
+        "interpersonal",
+        "knowledge",
+        "donors"
+      ],
+      "label": "Online Philanthropy and Community Trust",
+      "taxonomy_category": "Social Sciences",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within established research areas in social sciences, particularly in the study of human behavior, trust, and community interactions."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 78,
+      "keywords": [
+        "learning",
+        "companies",
+        "organisational",
+        "company",
+        "knowledge",
+        "competence",
+        "employees",
+        "wiki",
+        "reflection",
+        "sois"
+      ],
+      "label": "Organisational Learning and Knowledge Management",
+      "taxonomy_category": "Information Systems",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within the established research area of Information Systems, specifically focusing on organisational learning and knowledge management."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 79,
+      "keywords": [
+        "piracy",
+        "software",
+        "moral",
+        "sdb",
+        "ethical",
+        "files",
+        "pirate",
+        "disengagement",
+        "tpb",
+        "illegal"
+      ],
+      "label": "Digital Piracy and Ethical Behavior",
+      "taxonomy_category": "Social Sciences",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls under the broader category of social sciences, specifically examining human behavior and ethics in digital contexts."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 80,
+      "keywords": [
+        "cognitive",
+        "load",
+        "programming",
+        "pair",
+        "programmers",
+        "task",
+        "counterfactual",
+        "debiasing",
+        "cps",
+        "novice"
+      ],
+      "label": "Cognitive Load in Programming and Learning",
+      "taxonomy_category": "Education Technology",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in the field of educational technology, focusing on understanding and mitigating cognitive load in learning environments."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 81,
+      "keywords": [
+        "game",
+        "respiration",
+        "rhythm",
+        "video",
+        "music",
+        "players",
+        "prsr",
+        "biofeedback",
+        "games",
+        "sounds"
+      ],
+      "label": "Game-Based Mental Health Interventions",
+      "taxonomy_category": "Education Technology",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls under education technology as it involves the use of games for therapeutic purposes in mental health interventions."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 82,
+      "keywords": [
+        "addiction",
+        "sns",
+        "addictive",
+        "snss",
+        "regulation",
+        "fphubbing",
+        "depression",
+        "fomo",
+        "self",
+        "media"
+      ],
+      "label": "Social Media Addiction and Mental Health",
+      "taxonomy_category": "Social Sciences",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls under the well-established research area of social sciences, specifically focusing on the psychological impacts of social media usage."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 83,
+      "keywords": [
+        "dating",
+        "wom",
+        "qol",
+        "cops",
+        "ended",
+        "questions",
+        "arm",
+        "intimacy",
+        "mate",
+        "algorithm"
+      ],
+      "label": "Algorithmic Dating and Relationships",
+      "taxonomy_category": "Social Sciences",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls within the well-established research area of social sciences, specifically focusing on human behavior and relationships in the context of online dating and algorithmic systems."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 84,
+      "keywords": [
+        "website",
+        "web",
+        "satisfaction",
+        "attributes",
+        "quality",
+        "business",
+        "content",
+        "customer",
+        "ecological",
+        "sites"
+      ],
+      "label": "Website Quality and User Satisfaction",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within the established research area of Human-Computer Interaction, focusing on the design and evaluation of websites to improve user experience."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 85,
+      "keywords": [
+        "flaming",
+        "self",
+        "ethno",
+        "racial",
+        "online",
+        "identity",
+        "reactions",
+        "prosocial",
+        "bystander",
+        "shyness"
+      ],
+      "label": "Online Social Behaviour and Identity",
+      "taxonomy_category": "Social Sciences",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within established research areas in social psychology and sociology, examining online interactions and identity formation."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 86,
+      "keywords": [
+        "trust",
+        "algorithm",
+        "xai",
+        "suspicion",
+        "dss",
+        "task",
+        "biases",
+        "engineers",
+        "revisability",
+        "system"
+      ],
+      "label": "Human Trust in Artificial Intelligence",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls under Human-Computer Interaction as it explores the psychological and behavioral aspects of trust in AI systems."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 87,
+      "keywords": [
+        "faces",
+        "emoji",
+        "algorithmic",
+        "folk",
+        "frt",
+        "emojis",
+        "amplitudes",
+        "congruent",
+        "incongruent",
+        "interactivity"
+      ],
+      "label": "Human-Computer Interaction and Emotion",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in HCI research, focusing on the emotional and interactive aspects of human-computer interaction."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 88,
+      "keywords": [
+        "trust",
+        "abms",
+        "stage",
+        "cui",
+        "attestation",
+        "iot",
+        "medicine",
+        "usage",
+        "accountability",
+        "cycle"
+      ],
+      "label": "Trust in Information Systems Development",
+      "taxonomy_category": "Information Systems",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established within the field of Information Systems, focusing on trust development and its impact on user behavior and system adoption."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 89,
+      "keywords": [
+        "malaria",
+        "healthcare",
+        "care",
+        "monitoring",
+        "health",
+        "gps",
+        "bd",
+        "ncds",
+        "cloud",
+        "technology"
+      ],
+      "label": "Healthcare Technology and Monitoring",
+      "taxonomy_category": "Healthcare & Bioinformatics",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls within a well-established research area, leveraging technology to improve healthcare outcomes and patient care."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 90,
+      "keywords": [
+        "team",
+        "teams",
+        "virtual",
+        "virtuality",
+        "digtei",
+        "conflict",
+        "collaboration",
+        "tei",
+        "configuration",
+        "members"
+      ],
+      "label": "Virtual Team Collaboration and Leadership",
+      "taxonomy_category": "Social Sciences",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls under the well-established research area of organizational behavior and team dynamics within social sciences."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 91,
+      "keywords": [
+        "urban",
+        "cities",
+        "city",
+        "stations",
+        "landmarks",
+        "playful",
+        "neighbourhood",
+        "station",
+        "mon",
+        "pok"
+      ],
+      "label": "Urban Experience and Playful Interactions",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in HCI research, focusing on the intersection of technology and urban environments."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 92,
+      "keywords": [
+        "thinking",
+        "students",
+        "robot",
+        "stem",
+        "learning",
+        "robots",
+        "dbl",
+        "genai",
+        "school",
+        "educational"
+      ],
+      "label": "Educational Robotics and AI Integration",
+      "taxonomy_category": "Education Technology",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls under a well-established research area in education technology, focusing on the integration of AI and robotics in educational settings."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 93,
+      "keywords": [
+        "digital",
+        "exclusion",
+        "broadband",
+        "inclusion",
+        "efs",
+        "value",
+        "innovations",
+        "adaptation",
+        "transformation",
+        "ict"
+      ],
+      "label": "Digital Inclusion and Transformation",
+      "taxonomy_category": "Social Sciences",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in social sciences, focusing on the impact of digital technologies on society and individuals."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 94,
+      "keywords": [
+        "doctors",
+        "ohcs",
+        "cancer",
+        "health",
+        "patients",
+        "patient",
+        "advice",
+        "followers",
+        "sh",
+        "poc"
+      ],
+      "label": "Healthcare Online Communities",
+      "taxonomy_category": "Healthcare & Bioinformatics",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established within the field of healthcare and bioinformatics, focusing on the role of online communities in healthcare."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 95,
+      "keywords": [
+        "advertising",
+        "app",
+        "advertisements",
+        "ads",
+        "mobile",
+        "splash",
+        "mlba",
+        "skip",
+        "ad",
+        "advertisement"
+      ],
+      "label": "Mobile Advertising and User Experience",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within the established research area of human-computer interaction, specifically focusing on user experience and advertising in mobile applications."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 96,
+      "keywords": [
+        "advertising",
+        "unreliable",
+        "anchoring",
+        "fixation",
+        "pop",
+        "brand",
+        "attention",
+        "sites",
+        "eye",
+        "tracking"
+      ],
+      "label": "Online Advertising and User Behavior",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within established HCI research areas, examining user experiences and interactions with online advertising and websites."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 97,
+      "keywords": [
+        "snsas",
+        "finding",
+        "networking",
+        "knowledge",
+        "smll",
+        "sns",
+        "social",
+        "academic",
+        "tuenti",
+        "saudi"
+      ],
+      "label": "Social Media in Education",
+      "taxonomy_category": "Education Technology",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in the field of education technology, with a focus on the use of social media in educational settings."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 98,
+      "keywords": [
+        "password",
+        "passwords",
+        "authentication",
+        "memorability",
+        "security",
+        "login",
+        "attacks",
+        "passnum",
+        "pin",
+        "verbal"
+      ],
+      "label": "Secure Authentication Methods",
+      "taxonomy_category": "Cybersecurity",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in the field of cybersecurity, focusing on improving password security and authentication methods."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 99,
+      "keywords": [
+        "coping",
+        "jit",
+        "chatgpt",
+        "mood",
+        "emas",
+        "detection",
+        "abnormal",
+        "suppression",
+        "receptivity",
+        "messages"
+      ],
+      "label": "Mental Health Technology and Coping",
+      "taxonomy_category": "Healthcare & Bioinformatics",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in the field of healthcare and bioinformatics, focusing on the intersection of technology and mental health."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 100,
+      "keywords": [
+        "older",
+        "adults",
+        "pda",
+        "younger",
+        "skeuomorph",
+        "offs",
+        "design",
+        "complexity",
+        "navigation",
+        "flat"
+      ],
+      "label": "Design for Older Adults",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls within a well-established research area in HCI, focusing on accessibility and usability for older adults."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 101,
+      "keywords": [
+        "multitasking",
+        "video",
+        "form",
+        "videos",
+        "short",
+        "attentional",
+        "conferencing",
+        "addicted",
+        "avoidance",
+        "attention"
+      ],
+      "label": "Attention and Media Multitasking Effects",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in the field of Human-Computer Interaction, examining the impact of media on human attention and behavior."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 102,
+      "keywords": [
+        "learning",
+        "media",
+        "educational",
+        "engagement",
+        "moocs",
+        "signals",
+        "social",
+        "face",
+        "blended",
+        "authentic"
+      ],
+      "label": "Social Media in Educational Settings",
+      "taxonomy_category": "Education Technology",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls under a well-established research area in education technology, focusing on the use of social media for learning and educational purposes."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 103,
+      "keywords": [
+        "creativity",
+        "creative",
+        "erep",
+        "dialogic",
+        "stimuli",
+        "acquisition",
+        "idea",
+        "feedback",
+        "csds",
+        "musicking"
+      ],
+      "label": "Human Creativity Support Systems",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in HCI research, focusing on designing systems to enhance human creativity."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 104,
+      "keywords": [
+        "cultures",
+        "multilingual",
+        "collectivistic",
+        "nss",
+        "cultural",
+        "outcome",
+        "surveys",
+        "lingual",
+        "websites",
+        "negotiation"
+      ],
+      "label": "Cultural Influence on Web Design",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within the established research area of human-computer interaction, specifically focusing on cultural differences and their impact on web design."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 105,
+      "keywords": [
+        "semantic",
+        "knowledge",
+        "architecture",
+        "ontology",
+        "ontologies",
+        "bases",
+        "base",
+        "know",
+        "ds",
+        "owl"
+      ],
+      "label": "Knowledge Representation and Ontologies",
+      "taxonomy_category": "Information Systems",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within the established research area of Information Systems, specifically focusing on knowledge representation and ontology-based systems."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 106,
+      "keywords": [
+        "names",
+        "tlx",
+        "chosen",
+        "workload",
+        "mwl",
+        "relaxed",
+        "subscales",
+        "conflict",
+        "aloud",
+        "editing"
+      ],
+      "label": "Human-Computer Interaction Metrics and Workload",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established within the field of Human-Computer Interaction, focusing on metrics and workload in various contexts."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 107,
+      "keywords": [
+        "recsys",
+        "food",
+        "gai",
+        "value",
+        "epistemic",
+        "das",
+        "consumer",
+        "perceived",
+        "emoticons",
+        "trust"
+      ],
+      "label": "Consumer Trust in AI and RecSys",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls under Human-Computer Interaction as it focuses on the interaction between consumers and AI-powered systems, including RecSys."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 108,
+      "keywords": [
+        "presence",
+        "anxiety",
+        "education",
+        "distance",
+        "environments",
+        "ote",
+        "students",
+        "crisis",
+        "asde",
+        "classmates"
+      ],
+      "label": "Distance Education and Presence",
+      "taxonomy_category": "Education Technology",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in the field of education technology, focusing on the impact of distance learning on student presence and engagement."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 109,
+      "keywords": [
+        "youth",
+        "caf",
+        "digital",
+        "cyp",
+        "divide",
+        "born",
+        "ze",
+        "divides",
+        "modes",
+        "operation"
+      ],
+      "label": "Digital Divide in Youth Populations",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in HCI research, focusing on the intersection of technology and youth development."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 110,
+      "keywords": [
+        "sharing",
+        "knowledge",
+        "wikipedia",
+        "motivations",
+        "climate",
+        "trust",
+        "relatedness",
+        "members",
+        "influences",
+        "communities"
+      ],
+      "label": "Collaborative Knowledge Sharing Motivations",
+      "taxonomy_category": "Information Systems",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in the field of Information Systems, particularly in the subfield of knowledge management."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 111,
+      "keywords": [
+        "avatar",
+        "proteus",
+        "avatars",
+        "identity",
+        "cues",
+        "creative",
+        "bond",
+        "uab",
+        "esteem",
+        "customisation"
+      ],
+      "label": "Avatar Influence and Human Behavior",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls under HCI as it explores the effects of avatars on human behavior and interactions with virtual agents."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 112,
+      "keywords": [
+        "cloud",
+        "ethical",
+        "computing",
+        "acceptance",
+        "ethics",
+        "attitude",
+        "internet",
+        "mandatory",
+        "education",
+        "behavioural"
+      ],
+      "label": "Technology Acceptance and Ethics",
+      "taxonomy_category": "Information Systems",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within the established research area of Information Systems, specifically focusing on the acceptance and ethics of technology adoption."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 113,
+      "keywords": [
+        "translation",
+        "sign",
+        "metroweb",
+        "intuitiveness",
+        "gsl",
+        "language",
+        "interface",
+        "designers",
+        "greek",
+        "intuitive"
+      ],
+      "label": "Human-Computer Interface Design and Translation",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic falls under a well-established research area in Human-Computer Interaction, focusing on the design and translation of user interfaces."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 114,
+      "keywords": [
+        "abstract",
+        "available",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "label": "Missing or Unavailable Data",
+      "taxonomy_category": "Information Systems",
+      "classification": "NOVEL",
+      "reasoning": "This topic represents an emerging theme related to data accessibility and availability."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 115,
+      "keywords": [
+        "multitasking",
+        "discounting",
+        "delay",
+        "impulsive",
+        "sns",
+        "rewards",
+        "media",
+        "preferred",
+        "mmi",
+        "monetary"
+      ],
+      "label": "Impulsive Decision Making and Media Use",
+      "taxonomy_category": "Social Sciences",
+      "classification": "MAPPED",
+      "reasoning": "This topic fits within the well-established research area of behavioral economics and psychology of media consumption."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 116,
+      "keywords": [
+        "refresh",
+        "hz",
+        "procedure",
+        "scrolling",
+        "rate",
+        "tasks",
+        "screen",
+        "cm",
+        "extrapolated",
+        "tapping"
+      ],
+      "label": "Human-Computer Interaction Studies",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in HCI research, focusing on user experience and performance with various devices and interfaces."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 117,
+      "keywords": [
+        "steering",
+        "touchpad",
+        "handed",
+        "right",
+        "vehicle",
+        "touchscreen",
+        "tasks",
+        "dofs",
+        "armrest",
+        "drive"
+      ],
+      "label": "Human-Computer Interaction in Vehicles",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in the field of Human-Computer Interaction, particularly in the context of in-vehicle systems and user experience."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 118,
+      "keywords": [
+        "notification",
+        "advice",
+        "cs",
+        "redundancy",
+        "interruptions",
+        "warnings",
+        "adjust",
+        "response",
+        "warning",
+        "winning"
+      ],
+      "label": "Human-Computer Interaction Design",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in HCI research, focusing on designing effective notification systems and user interfaces."
+    },
+    {
+      "source": "abstracts",
+      "topic_id": 119,
+      "keywords": [
+        "riot",
+        "drama",
+        "viewer",
+        "series",
+        "slice",
+        "thin",
+        "experience",
+        "television",
+        "reports",
+        "sensitive"
+      ],
+      "label": "User Experience in Interactive Media",
+      "taxonomy_category": "Human-Computer Interaction",
+      "classification": "MAPPED",
+      "reasoning": "This topic is well-established in HCI, focusing on user experience and interaction in various media formats."
+    }
+  ]
+}
