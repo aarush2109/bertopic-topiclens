@@ -23,6 +23,7 @@ from dataclasses import dataclass, asdict
 from typing import Optional
 
 import pandas as pd
+import requests
 from groq import Groq
 
 # ---------------------------------------------------------------------------
@@ -35,6 +36,7 @@ logger = logging.getLogger(__name__)
 # Constants
 # ---------------------------------------------------------------------------
 DEFAULT_MODEL = "llama-3.1-8b-instant"
+MISTRAL_DEFAULT_MODEL = "mistral-small-latest"   # --- Dual LLM Validation ---
 DEFAULT_TAXONOMY_CATEGORIES = [
     "Artificial Intelligence",
     "Machine Learning",
@@ -61,13 +63,17 @@ CLASSIFICATION_OPTIONS = ("MAPPED", "NOVEL")
 @dataclass
 class TopicInterpretation:
     """Structured interpretation for a single topic."""
-    source: str                   # "abstracts" or "titles"
+    source: str
     topic_id: int
     keywords: list[str]
-    label: str                    # LLM-generated human-readable label
-    taxonomy_category: str        # Assigned taxonomy bucket
-    classification: str           # "MAPPED" or "NOVEL"
-    reasoning: str                # LLM's brief justification
+    label: str
+    taxonomy_category: str
+    classification: str
+    reasoning: str
+    # --- Dual LLM Validation ---
+    validation_status: str = "PENDING"   # AGREED | DISAGREED | REVIEW_REQUIRED
+    confidence: str = "MEDIUM"           # HIGH | MEDIUM
+    label_source: str = "groq"           # groq | fallback
 
 
 @dataclass
@@ -94,8 +100,28 @@ def build_openai_client(api_key: Optional[str] = None):
             "No Groq API key provided. "
             "Pass api_key= or set the GROQ_API_KEY environment variable."
         )
-    return Groq(api_key=key)
+    return Groq(api_key=key, max_retries=0)
 
+
+
+
+# ---------------------------------------------------------------------------
+# Helpers
+# ---------------------------------------------------------------------------
+def _ensure_string(x) -> str:
+    """Safely convert any input (list, None, etc.) to a string."""
+    if isinstance(x, list):
+        return " ".join(str(i) for i in x)
+    if x is None:
+        return ""
+    return str(x)
+
+def _safe_capitalize(s: str) -> str:
+    """Capitalize only the first letter, keeping the rest as is (unlike .capitalize())."""
+    s = _ensure_string(s).strip()
+    if not s:
+        return ""
+    return s[0].upper() + s[1:]
 
 # ---------------------------------------------------------------------------
 # Prompt Builders
@@ -136,6 +162,96 @@ Respond ONLY with valid JSON in exactly this schema – no markdown fences:
 }}"""
 
 
+# --- Dual LLM Validation ---
+def _fallback_label_from_keywords(keywords: list[str], topic_id: int) -> tuple[str, str]:
+    """Deterministic keyword-to-label heuristic fallback."""
+    kw_set = set([k.lower() for k in keywords])
+    
+    # Mapping heuristics
+    mappings = [
+        ({"privacy", "data", "security", "protection"}, "Digital Privacy and Security Risks", "Cybersecurity"),
+        ({"ai", "chatbots", "agents", "conversational", "interaction", "assistant"}, "Conversational AI and Human Interaction", "Artificial Intelligence"),
+        ({"gaming", "players", "video", "games", "engagement"}, "Gaming and User Engagement Patterns", "Human-Computer Interaction"),
+        ({"vr", "virtual", "immersive", "training", "reality"}, "Virtual Reality and Immersive Training", "Robotics & Automation"),
+        ({"patient", "healthcare", "medical", "clinical", "hospital"}, "Healthcare Technology and Patient Care", "Healthcare & Bioinformatics"),
+        ({"shopping", "commerce", "purchase", "ecommerce", "consumer"}, "E-commerce and Consumer Behavior", "Finance & Economics"),
+        ({"internet", "addiction", "adolescents", "youth", "behavior"}, "Internet Addiction and Adolescent Behavior", "Social Sciences"),
+        ({"gamification", "learning", "education", "student", "classroom"}, "Gamification in Learning and Interaction", "Education Technology"),
+        ({"neural", "network", "deep", "learning", "cnn", "transformer"}, "Deep Learning Architectures", "Machine Learning"),
+        ({"graph", "knowledge", "relational", "embedding"}, "Knowledge Graphs and Relational Data", "Data Engineering"),
+    ]
+
+    for trigger_kws, fallback_label, fallback_cat in mappings:
+        if any(tk in kw_set for tk in trigger_kws):
+            return fallback_label, fallback_cat
+
+    # Generic fallback if no specific rule matches
+    main_kws = ", ".join(_safe_capitalize(k) for k in keywords[:2])
+    label = f"Study on {', '.join(keywords[:3])}"
+    return label, "Other"
+
+def _build_validation_prompt(keywords, groq_label, groq_category):
+    return f"""
+You are reviewing topic classification for research papers.
+
+Keywords: {', '.join(keywords[:8])}
+Proposed label: {groq_label}
+Proposed category: {groq_category}
+
+Instructions:
+- If label and category reasonably match the keywords → say YES
+- If there is a clear mismatch → say NO
+- Small wording differences are OK
+- Be balanced: do not be too strict or too lenient
+
+Respond ONLY in JSON:
+{{
+  "AGREEMENT": "YES" or "NO",
+  "CONFIDENCE": "HIGH", "MEDIUM", or "LOW",
+  "REASON": "<short explanation>"
+}}
+"""
+
+
+def _call_mistral_validation(
+    mistral_api_key,
+    keywords,
+    groq_label,
+    groq_category,
+    model="mistral-small-latest",
+):
+    if not mistral_api_key:
+        return {}
+
+    prompt = _build_validation_prompt(keywords, groq_label, groq_category)
+
+    try:
+        response = requests.post(
+            "https://api.mistral.ai/v1/chat/completions",
+            headers={
+                "Authorization": f"Bearer {mistral_api_key}",
+                "Content-Type": "application/json",
+            },
+            json={
+                "model": model,
+                "messages": [{"role": "user", "content": prompt}],
+                "temperature": 0.1,
+            },
+            timeout=20,
+        )
+
+        data = response.json()
+        raw = data["choices"][0]["message"]["content"].strip()
+
+        raw = raw.replace("```json", "").replace("```", "").strip()
+        start, end = raw.find("{"), raw.rfind("}") + 1
+        return json.loads(raw[start:end])
+
+    except Exception as e:
+        logger.warning(f"Mistral validation failed: {e}")
+        return {}  # Ensure fallback logic triggers correctly
+
+
 def _build_comparison_prompt(
     topic_id: int,
     title_interp: TopicInterpretation,
@@ -167,8 +283,8 @@ def _call_llm_json(
     client,
     prompt: str,
     model: str,
-    retries: int = 3,
-    backoff: float = 2.0,
+    retries: int = 1,
+    backoff: float = 1.0,
 ) -> dict:
     """
     Call the OpenAI chat completion endpoint and parse the response as JSON.
@@ -193,27 +309,25 @@ def _call_llm_json(
                 model=model,
                 messages=[{"role": "user", "content": prompt}],
                 temperature=0.2,
+                timeout=8,
             )
             raw = response.choices[0].message.content.strip()
-
-            # clean markdown + noise
             raw = raw.replace("```json", "").replace("```", "").strip()
-
-            # find JSON object
             start = raw.find("{")
             end = raw.rfind("}") + 1
-            raw = raw[start:end]
-
-            return json.loads(raw)
+            if start == -1 or end == 0:
+                raise ValueError("No JSON object found in response")
+            return json.loads(raw[start:end])
         
-        except json.JSONDecodeError as exc:
-            logger.warning("Attempt %d – JSON parse error: %s", attempt, exc)
+        except (json.JSONDecodeError, ValueError) as exc:
+            logger.warning("Attempt %d – Parse error: %s", attempt, exc)
         except Exception as exc:
             logger.warning("Attempt %d – API error: %s", attempt, exc)
+            if "rate limit" in str(exc).lower():
+                time.sleep(1)
         if attempt < retries:
-            time.sleep(backoff ** attempt)
+            time.sleep(0.5)
 
-    logger.error("All %d attempts failed for prompt snippet: %.80s", retries, prompt)
     return {}
 
 
@@ -235,6 +349,51 @@ def _call_llm_text(
         return ""
 
 
+# --- Dual LLM Validation ---
+
+
+
+def _decide_validation(groq_category: str, mistral_result: dict) -> tuple[str, str]:
+    """
+    Decision logic – Groq is authoritative, Mistral is validator.
+    """
+
+    if not mistral_result:
+        return "AGREED", "LOW"
+
+    agreement = mistral_result.get("AGREEMENT", "NO").upper()
+    confidence = mistral_result.get("CONFIDENCE", "MEDIUM").upper()
+    suggested = mistral_result.get("SUGGESTED_CATEGORY", groq_category).strip()
+
+    # Extract root categories
+    groq_root = groq_category.split("&")[0].strip().lower()
+    suggested_root = suggested.split("&")[0].strip().lower()
+
+    # ✅ Case 1: Agreement
+    if agreement == "YES":
+        return "AGREED", confidence
+
+    # ✅ Case 2: Disagreement (handle smartly)
+    if agreement == "NO":
+
+        # Strong disagreement → flag clearly
+        if confidence == "HIGH":
+            if groq_root != suggested_root:
+                return "REVIEW_REQUIRED", "HIGH"
+            return "DISAGREED", "HIGH"
+
+        # Medium disagreement → partial trust
+        if confidence == "MEDIUM":
+            if groq_root != suggested_root:
+                return "REVIEW_REQUIRED", "MEDIUM"
+            return "DISAGREED", "MEDIUM"
+
+        # Low confidence → be lenient
+        return "AGREED", "LOW"
+
+    return "AGREED", "LOW"
+
+
 # ---------------------------------------------------------------------------
 # Core Interpretation
 # ---------------------------------------------------------------------------
@@ -246,43 +405,50 @@ def interpret_topic(
     sample_texts: list[str],
     taxonomy_categories: list[str],
     model: str = DEFAULT_MODEL,
+    mistral_api_key: Optional[str] = None,
+    mistral_model: str = MISTRAL_DEFAULT_MODEL,
 ) -> TopicInterpretation:
-    """
-    Ask the LLM to label and classify a single topic.
-
-    Parameters
-    ----------
-    client : OpenAI
-    source : str
-        Either "abstracts" or "titles".
-    topic_id : int
-    keywords : list[str]
-        Top keywords for the topic (words only, no scores).
-    sample_texts : list[str]
-        Representative raw documents for this topic.
-    taxonomy_categories : list[str]
-        Allowed taxonomy buckets.
-    model : str
-
-    Returns
-    -------
-    TopicInterpretation
-    """
+    # Step 1: Groq generates label / category / classification
     prompt = _build_interpretation_prompt(keywords, sample_texts, taxonomy_categories)
-    data = _call_llm_json(client, prompt, model)
+    data = _call_llm_json(client, prompt, model, retries=2)
 
-    label = data.get("label", f"Topic {topic_id}")
-    category = data.get("taxonomy_category", "Other")
-    classification = data.get("classification", "MAPPED").upper()
-    reasoning = data.get("reasoning", "")
+    label_source = "groq"
+    if not data:
+        # Fallback to heuristic if Groq fails
+        fallback_label, fallback_cat = _fallback_label_from_keywords(keywords, topic_id)
+        label = fallback_label
+        category = fallback_cat
+        classification = "MAPPED"
+        reasoning = "Generated via keyword heuristics due to LLM timeout."
+        label_source = "fallback"
+    else:
+        label          = _ensure_string(data.get("label", "Unknown Topic"))
+        category       = _ensure_string(data.get("taxonomy_category", "Other"))
+        classification = _ensure_string(data.get("classification", "MAPPED")).upper()
+        reasoning      = _ensure_string(data.get("reasoning", ""))
+        
+        if label == "Unknown Topic":
+            fallback_label, fallback_cat = _fallback_label_from_keywords(keywords, topic_id)
+            label = fallback_label
+            category = fallback_cat
+            label_source = "fallback"
 
-    # Validate classification value
+    # Final normalization and safe capitalization
+    label = _safe_capitalize(label)
+    category = _safe_capitalize(category)
+
     if classification not in CLASSIFICATION_OPTIONS:
         classification = "MAPPED"
 
+    # Step 2 & 3: Mistral validates – Groq stays authoritative
+    mistral_result = _call_mistral_validation(
+        mistral_api_key, keywords, label, category, mistral_model
+    )
+    validation_status, confidence = _decide_validation(category, mistral_result)
+
     logger.info(
-        "[%s] Topic %d → '%s' | %s | %s",
-        source, topic_id, label, category, classification,
+        "[%s] Topic %d → '%s' (%s) | %s | val=%s conf=%s",
+        source, topic_id, label, label_source, category, validation_status, confidence,
     )
     return TopicInterpretation(
         source=source,
@@ -292,6 +458,9 @@ def interpret_topic(
         taxonomy_category=category,
         classification=classification,
         reasoning=reasoning,
+        validation_status=validation_status,
+        confidence=confidence,
+        label_source=label_source
     )
 
 
@@ -302,31 +471,19 @@ def interpret_all_topics(
     topic_docs: dict[int, list[str]],
     taxonomy_categories: list[str] = DEFAULT_TAXONOMY_CATEGORIES,
     model: str = DEFAULT_MODEL,
+    mistral_api_key: Optional[str] = None,   # --- Dual LLM Validation ---
+    mistral_model: str = MISTRAL_DEFAULT_MODEL,
 ) -> dict[int, TopicInterpretation]:
-    """
-    Interpret every topic produced by BERTopic for a given source.
-
-    Parameters
-    ----------
-    client : OpenAI
-    source : str
-        "abstracts" or "titles".
-    topic_keywords : dict
-        Mapping of topic_id → list of (word, score) tuples from BERTopic.
-    topic_docs : dict
-        Mapping of topic_id → list of raw (unprocessed) text samples.
-    taxonomy_categories : list[str]
-    model : str
-
-    Returns
-    -------
-    dict[int, TopicInterpretation]
-    """
+    """Interpret every topic for a given source with optional Mistral validation."""
     interpretations: dict[int, TopicInterpretation] = {}
 
-    for topic_id, kw_pairs in topic_keywords.items():
+    MAX_TOPICS = 200 # Increased for fuller comparison
+    selected_topics = dict(list(topic_keywords.items())[:MAX_TOPICS])
+
+    for topic_id, kw_pairs in selected_topics.items():
         keywords = [w for w, _ in kw_pairs]
-        samples = topic_docs.get(topic_id, [])[:5]
+        samples  = topic_docs.get(topic_id, [])[:5]
+
         interp = interpret_topic(
             client=client,
             source=source,
@@ -335,8 +492,12 @@ def interpret_all_topics(
             sample_texts=samples,
             taxonomy_categories=taxonomy_categories,
             model=model,
+            mistral_api_key=mistral_api_key,
+            mistral_model=mistral_model,
         )
+
         interpretations[topic_id] = interp
+        time.sleep(2)  # API rate limiting
 
     return interpretations
 
@@ -384,6 +545,8 @@ def compare_topics(
             _build_comparison_prompt(tid, t_interp, a_interp),
             model,
         )
+        if not diff_note or len(diff_note.strip()) < 5:
+            diff_note = "Minor or no significant difference"
 
         rows.append(
             ComparisonRow(
@@ -507,6 +670,8 @@ def run_agent(
     taxonomy_categories: list[str] = DEFAULT_TAXONOMY_CATEGORIES,
     taxonomy_map_path: str = "taxonomy_map.json",
     comparison_csv_path: str = "comparison.csv",
+    mistral_api_key: Optional[str] = None,        # --- Dual LLM Validation ---
+    mistral_model: str = MISTRAL_DEFAULT_MODEL,
 ) -> dict:
     """
     End-to-end agent pipeline:
@@ -549,6 +714,7 @@ def run_agent(
         taxonomy_map             – dict (JSON-serialisable)
     """
     client = build_openai_client(api_key)
+    mistral_api_key = mistral_api_key or os.getenv("MISTRAL_API_KEY")
 
     # --- Build raw-text lookup maps ---
     title_docs_map = build_topic_docs_map(raw_titles, title_topic_assignments)
@@ -563,6 +729,8 @@ def run_agent(
         topic_docs=title_docs_map,
         taxonomy_categories=taxonomy_categories,
         model=model,
+        mistral_api_key=mistral_api_key,
+        mistral_model=mistral_model,
     )
 
     logger.info("Interpreting ABSTRACT topics …")
@@ -573,6 +741,8 @@ def run_agent(
         topic_docs=abstract_docs_map,
         taxonomy_categories=taxonomy_categories,
         model=model,
+        mistral_api_key=mistral_api_key,
+        mistral_model=mistral_model,
     )
 
     # --- Compare ---

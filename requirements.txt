@@ -12,3 +12,4 @@ scipy
 json5
 plotly
 nltk
+requests
