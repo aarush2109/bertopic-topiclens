@@ -1,0 +1,775 @@
+[
+  {
+    "topic_id": 135,
+    "label": "User Experience and System Design",
+    "category": "Human-Computer Interaction",
+    "classification": "MAPPED",
+    "paper_count": 212,
+    "keywords": [
+      "user",
+      "users",
+      "study",
+      "information",
+      "taylor",
+      "francis",
+      "design",
+      "usability",
+      "group",
+      "systems"
+    ]
+  },
+  {
+    "topic_id": 136,
+    "label": "Technology Acceptance and AI Adoption",
+    "category": "Information Systems",
+    "classification": "MAPPED",
+    "paper_count": 318,
+    "keywords": [
+      "study",
+      "model",
+      "use",
+      "perceived",
+      "intention",
+      "online",
+      "research",
+      "users",
+      "technology",
+      "taylor"
+    ]
+  },
+  {
+    "topic_id": 93,
+    "label": "Data visualization and human-computer interaction",
+    "category": "Human-Computer Interaction",
+    "classification": "MAPPED",
+    "paper_count": 17,
+    "keywords": [
+      "data",
+      "visualisation",
+      "information",
+      "group",
+      "francis",
+      "taylor",
+      "uk",
+      "trading",
+      "limited",
+      "informa"
+    ]
+  },
+  {
+    "topic_id": 99,
+    "label": "Music and user interaction",
+    "category": "Human-Computer Interaction",
+    "classification": "MAPPED",
+    "paper_count": 11,
+    "keywords": [
+      "music",
+      "using",
+      "rhythm",
+      "respiration",
+      "sonification",
+      "user",
+      "taylor",
+      "limited",
+      "interaction",
+      "video"
+    ]
+  },
+  {
+    "topic_id": 41,
+    "label": "Social Media in Crisis Management",
+    "category": "Healthcare & Bioinformatics",
+    "classification": "MAPPED",
+    "paper_count": 23,
+    "keywords": [
+      "social",
+      "media",
+      "health",
+      "information",
+      "emergency",
+      "tweets",
+      "taylor",
+      "francis",
+      "crisis",
+      "group"
+    ]
+  },
+  {
+    "topic_id": 137,
+    "label": "Collaborative Learning in Online Education",
+    "category": "Education Technology",
+    "classification": "MAPPED",
+    "paper_count": 86,
+    "keywords": [
+      "learning",
+      "students",
+      "group",
+      "study",
+      "based",
+      "taylor",
+      "francis",
+      "design",
+      "collaborative",
+      "online"
+    ]
+  },
+  {
+    "topic_id": 133,
+    "label": "Social Media and Compulsive Use",
+    "category": "Social Sciences",
+    "classification": "MAPPED",
+    "paper_count": 155,
+    "keywords": [
+      "social",
+      "media",
+      "online",
+      "study",
+      "users",
+      "use",
+      "group",
+      "francis",
+      "taylor",
+      "limited"
+    ]
+  },
+  {
+    "topic_id": 132,
+    "label": "AR/VR in health and tech",
+    "category": "Healthcare & Bioinformatics",
+    "classification": "MAPPED",
+    "paper_count": 228,
+    "keywords": [
+      "design",
+      "study",
+      "group",
+      "francis",
+      "taylor",
+      "limited",
+      "uk",
+      "trading",
+      "informa",
+      "technology"
+    ]
+  },
+  {
+    "topic_id": 30,
+    "label": "Human-Computer Interaction Design",
+    "category": "Human-Computer Interaction",
+    "classification": "MAPPED",
+    "paper_count": 116,
+    "keywords": [
+      "users",
+      "results",
+      "francis",
+      "taylor",
+      "user",
+      "study",
+      "performance",
+      "interaction",
+      "task",
+      "visual"
+    ]
+  },
+  {
+    "topic_id": 127,
+    "label": "Social media personality analysis",
+    "category": "Social Sciences",
+    "classification": "MAPPED",
+    "paper_count": 13,
+    "keywords": [
+      "online",
+      "social",
+      "facebook",
+      "phubbing",
+      "study",
+      "narcissism",
+      "group",
+      "media",
+      "personality",
+      "humour"
+    ]
+  },
+  {
+    "topic_id": 83,
+    "label": "Human-robot interaction and social robotics",
+    "category": "Human-Computer Interaction",
+    "classification": "MAPPED",
+    "paper_count": 20,
+    "keywords": [
+      "robot",
+      "robots",
+      "human",
+      "study",
+      "group",
+      "social",
+      "interaction",
+      "service",
+      "limited",
+      "taylor"
+    ]
+  },
+  {
+    "topic_id": 110,
+    "label": "Human-Centered Learning Analytics Approach",
+    "category": "Education Technology",
+    "classification": "MAPPED",
+    "paper_count": 15,
+    "keywords": [
+      "learning",
+      "teaching",
+      "based",
+      "course",
+      "approach",
+      "design",
+      "needs",
+      "study",
+      "francis",
+      "taylor"
+    ]
+  },
+  {
+    "topic_id": 34,
+    "label": "Team creativity and AI collaboration",
+    "category": "Human-Computer Interaction",
+    "classification": "MAPPED",
+    "paper_count": 11,
+    "keywords": [
+      "group",
+      "team",
+      "identity",
+      "francis",
+      "social",
+      "feedback",
+      "learning",
+      "taylor",
+      "research",
+      "study"
+    ]
+  },
+  {
+    "topic_id": 128,
+    "label": "Data Security and Privacy in AI",
+    "category": "Cybersecurity",
+    "classification": "MAPPED",
+    "paper_count": 123,
+    "keywords": [
+      "privacy",
+      "security",
+      "information",
+      "users",
+      "study",
+      "data",
+      "behaviour",
+      "taylor",
+      "francis",
+      "group"
+    ]
+  },
+  {
+    "topic_id": 7,
+    "label": "Digital innovation adoption & performance",
+    "category": "Information Systems",
+    "classification": "MAPPED",
+    "paper_count": 20,
+    "keywords": [
+      "innovation",
+      "research",
+      "digital",
+      "study",
+      "taylor",
+      "group",
+      "francis",
+      "performance",
+      "technology",
+      "information"
+    ]
+  },
+  {
+    "topic_id": 138,
+    "label": "Smartphone addiction and social impact",
+    "category": "Social Sciences",
+    "classification": "MAPPED",
+    "paper_count": 178,
+    "keywords": [
+      "use",
+      "social",
+      "study",
+      "internet",
+      "smartphone",
+      "self",
+      "group",
+      "addiction",
+      "francis",
+      "taylor"
+    ]
+  },
+  {
+    "topic_id": 28,
+    "label": "Crowdsourcing contests dynamics",
+    "category": "Social Sciences",
+    "classification": "MAPPED",
+    "paper_count": 19,
+    "keywords": [
+      "crowdsourcing",
+      "solvers",
+      "participation",
+      "performance",
+      "task",
+      "contests",
+      "group",
+      "study",
+      "feedback",
+      "taylor"
+    ]
+  },
+  {
+    "topic_id": 19,
+    "label": "Human-AI collaboration in autonomous driving",
+    "category": "Robotics & Automation",
+    "classification": "MAPPED",
+    "paper_count": 26,
+    "keywords": [
+      "driving",
+      "drivers",
+      "study",
+      "driver",
+      "information",
+      "vehicle",
+      "taylor",
+      "visual",
+      "francis",
+      "group"
+    ]
+  },
+  {
+    "topic_id": 29,
+    "label": "Cyberbullying behavior analysis",
+    "category": "Social Sciences",
+    "classification": "MAPPED",
+    "paper_count": 24,
+    "keywords": [
+      "cyberbullying",
+      "online",
+      "study",
+      "bullying",
+      "behaviour",
+      "francis",
+      "taylor",
+      "relationship",
+      "media",
+      "use"
+    ]
+  },
+  {
+    "topic_id": 46,
+    "label": "Password security usability research",
+    "category": "Cybersecurity",
+    "classification": "MAPPED",
+    "paper_count": 14,
+    "keywords": [
+      "password",
+      "users",
+      "security",
+      "passwords",
+      "authentication",
+      "user",
+      "study",
+      "names",
+      "use",
+      "taylor"
+    ]
+  },
+  {
+    "topic_id": 73,
+    "label": "Knowledge sharing & hiding behaviors",
+    "category": "Social Sciences",
+    "classification": "MAPPED",
+    "paper_count": 11,
+    "keywords": [
+      "knowledge",
+      "sharing",
+      "organisational",
+      "study",
+      "social",
+      "theory",
+      "employee",
+      "hiding",
+      "results",
+      "research"
+    ]
+  },
+  {
+    "topic_id": 131,
+    "label": "Older adults mobile usability",
+    "category": "Human-Computer Interaction",
+    "classification": "MAPPED",
+    "paper_count": 24,
+    "keywords": [
+      "older",
+      "design",
+      "adults",
+      "user",
+      "users",
+      "people",
+      "study",
+      "based",
+      "interaction",
+      "usability"
+    ]
+  },
+  {
+    "topic_id": 44,
+    "label": "Software Piracy Study",
+    "category": "Information Systems",
+    "classification": "MAPPED",
+    "paper_count": 17,
+    "keywords": [
+      "piracy",
+      "software",
+      "moral",
+      "study",
+      "ethical",
+      "behaviour",
+      "privacy",
+      "students",
+      "research",
+      "online"
+    ]
+  },
+  {
+    "topic_id": 97,
+    "label": "Online dating algorithms and user experience",
+    "category": "Social Sciences",
+    "classification": "MAPPED",
+    "paper_count": 5,
+    "keywords": [
+      "dating",
+      "online",
+      "users",
+      "algorithms",
+      "perceived",
+      "matchmaking",
+      "ai",
+      "effectiveness",
+      "awareness",
+      "relationship"
+    ]
+  },
+  {
+    "topic_id": 98,
+    "label": "Trust in Online Crowdfunding Platforms",
+    "category": "Social Sciences",
+    "classification": "MAPPED",
+    "paper_count": 9,
+    "keywords": [
+      "information",
+      "donation",
+      "online",
+      "trust",
+      "group",
+      "study",
+      "social",
+      "based",
+      "media",
+      "users"
+    ]
+  },
+  {
+    "topic_id": 79,
+    "label": "Aging and HCI in tech",
+    "category": "Human-Computer Interaction",
+    "classification": "MAPPED",
+    "paper_count": 14,
+    "keywords": [
+      "users",
+      "performance",
+      "computer",
+      "information",
+      "older",
+      "search",
+      "adults",
+      "mobile",
+      "experience",
+      "user"
+    ]
+  },
+  {
+    "topic_id": 6,
+    "label": "Online community participation dynamics",
+    "category": "Social Sciences",
+    "classification": "MAPPED",
+    "paper_count": 15,
+    "keywords": [
+      "community",
+      "online",
+      "social",
+      "communities",
+      "study",
+      "members",
+      "research",
+      "taylor",
+      "participation",
+      "francis"
+    ]
+  },
+  {
+    "topic_id": 106,
+    "label": "VR games for older adults' health",
+    "category": "Human-Computer Interaction",
+    "classification": "MAPPED",
+    "paper_count": 12,
+    "keywords": [
+      "game",
+      "older",
+      "adults",
+      "cognitive",
+      "group",
+      "study",
+      "balance",
+      "participants",
+      "experience",
+      "user"
+    ]
+  },
+  {
+    "topic_id": 134,
+    "label": "Knowledge management systems",
+    "category": "Information Systems",
+    "classification": "MAPPED",
+    "paper_count": 21,
+    "keywords": [
+      "knowledge",
+      "information",
+      "management",
+      "francis",
+      "taylor",
+      "technology",
+      "systems",
+      "sharing",
+      "study",
+      "learning"
+    ]
+  },
+  {
+    "topic_id": 125,
+    "label": "Smartphone sleep impact study",
+    "category": "Healthcare & Bioinformatics",
+    "classification": "MAPPED",
+    "paper_count": 6,
+    "keywords": [
+      "sleep",
+      "smartphone",
+      "usage",
+      "data",
+      "group",
+      "awareness",
+      "mental",
+      "use",
+      "quality",
+      "study"
+    ]
+  },
+  {
+    "topic_id": 70,
+    "label": "Phishing threat analysis and user behavior",
+    "category": "Cybersecurity",
+    "classification": "MAPPED",
+    "paper_count": 9,
+    "keywords": [
+      "phishing",
+      "information",
+      "users",
+      "group",
+      "taylor",
+      "bias",
+      "francis",
+      "social",
+      "web",
+      "security"
+    ]
+  },
+  {
+    "topic_id": 77,
+    "label": "Recommender systems user experience",
+    "category": "Human-Computer Interaction",
+    "classification": "MAPPED",
+    "paper_count": 10,
+    "keywords": [
+      "user",
+      "users",
+      "recommender",
+      "recommendations",
+      "systems",
+      "recommendation",
+      "online",
+      "results",
+      "content",
+      "product"
+    ]
+  },
+  {
+    "topic_id": 130,
+    "label": "Virtual Team Performance and Collaboration",
+    "category": "Information Systems",
+    "classification": "MAPPED",
+    "paper_count": 20,
+    "keywords": [
+      "team",
+      "virtual",
+      "teams",
+      "study",
+      "ai",
+      "group",
+      "human",
+      "performance",
+      "communication",
+      "research"
+    ]
+  },
+  {
+    "topic_id": 103,
+    "label": "Programming and personality",
+    "category": "Education Technology",
+    "classification": "MAPPED",
+    "paper_count": 8,
+    "keywords": [
+      "programming",
+      "study",
+      "pair",
+      "personality",
+      "developers",
+      "dsms",
+      "code",
+      "programmers",
+      "gender",
+      "individual"
+    ]
+  },
+  {
+    "topic_id": 63,
+    "label": "Navigation systems and user experience",
+    "category": "Human-Computer Interaction",
+    "classification": "MAPPED",
+    "paper_count": 23,
+    "keywords": [
+      "navigation",
+      "participants",
+      "route",
+      "francis",
+      "taylor",
+      "information",
+      "results",
+      "using",
+      "study",
+      "search"
+    ]
+  },
+  {
+    "topic_id": 61,
+    "label": "Reading performance and layout",
+    "category": "Human-Computer Interaction",
+    "classification": "MAPPED",
+    "paper_count": 17,
+    "keywords": [
+      "reading",
+      "text",
+      "screen",
+      "characters",
+      "character",
+      "study",
+      "participants",
+      "visual",
+      "taylor",
+      "time"
+    ]
+  },
+  {
+    "topic_id": 89,
+    "label": "Mobile usability factors",
+    "category": "Human-Computer Interaction",
+    "classification": "MAPPED",
+    "paper_count": 20,
+    "keywords": [
+      "mobile",
+      "usability",
+      "phones",
+      "use",
+      "user",
+      "factors",
+      "phone",
+      "users",
+      "design",
+      "study"
+    ]
+  },
+  {
+    "topic_id": 129,
+    "label": "Semantic web and organizational learning",
+    "category": "Information Systems",
+    "classification": "MAPPED",
+    "paper_count": 16,
+    "keywords": [
+      "knowledge",
+      "based",
+      "learning",
+      "web",
+      "information",
+      "empirical",
+      "semantic",
+      "users",
+      "francis",
+      "taylor"
+    ]
+  },
+  {
+    "topic_id": 108,
+    "label": "User experience in HCI",
+    "category": "Human-Computer Interaction",
+    "classification": "MAPPED",
+    "paper_count": 8,
+    "keywords": [
+      "users",
+      "emotional",
+      "design",
+      "product",
+      "user",
+      "mobile",
+      "coolness",
+      "factors",
+      "experience",
+      "products"
+    ]
+  },
+  {
+    "topic_id": 111,
+    "label": "Open Source Software Development Community",
+    "category": "Information Systems",
+    "classification": "MAPPED",
+    "paper_count": 5,
+    "keywords": [
+      "oss",
+      "development",
+      "software",
+      "community",
+      "communities",
+      "users",
+      "source",
+      "virtual",
+      "open",
+      "case"
+    ]
+  },
+  {
+    "topic_id": 112,
+    "label": "Editorial and Abstract Availability",
+    "category": "Information Systems",
+    "classification": "MAPPED",
+    "paper_count": 5,
+    "keywords": [
+      "editorial",
+      "available",
+      "abstract",
+      "guest"
+    ]
+  }
+]

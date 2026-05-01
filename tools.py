@@ -18,6 +18,8 @@ from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 from nltk.corpus import stopwords
 import nltk
+from sklearn.feature_extraction.text import CountVectorizer
+from collections import defaultdict, Counter
 
 # ---------------------------------------------------------------------------
 # Logging
@@ -85,11 +87,10 @@ def build_bertopic_model(embedding_model: SentenceTransformer, min_topic_size: i
         random_state=42,
     )
 
-    # Tuned HDBSCAN: smaller min_cluster_size allows more granular clusters;
-    # reduced min_samples makes the model less strict about noise.
+    # Updated HDBSCAN constraints
     hdbscan_model = HDBSCAN(
-        min_cluster_size=max(min_topic_size, 5),
-        min_samples=2,
+        min_cluster_size=5,
+        min_samples=3,
         metric="euclidean",
         cluster_selection_method="eom",
         prediction_data=True,
@@ -99,10 +100,10 @@ def build_bertopic_model(embedding_model: SentenceTransformer, min_topic_size: i
         embedding_model=embedding_model,
         umap_model=umap_model,
         hdbscan_model=hdbscan_model,
-        min_topic_size=max(min_topic_size, 5),
+        min_topic_size=5,
         verbose=False,
     )
-    logger.info("BERTopic model created with tuned HDBSCAN (min_cluster_size=%d).", max(min_topic_size, 5))
+    logger.info("BERTopic model created with HDBSCAN (min_cluster_size=5, min_samples=3).")
     return model
 
 
@@ -125,7 +126,7 @@ def _split_large_cluster(
     next_id: int,
 ) -> int:
     """Split an oversized cluster into 2 sub-clusters via KMeans. Returns next available ID."""
-    if len(doc_indices) < 4:
+    if len(doc_indices) < 10:  # Minimum threshold to split
         return next_id
     sub_embs = embeddings[doc_indices]
     km = KMeans(n_clusters=2, random_state=42, n_init=5)
@@ -143,87 +144,254 @@ def _merge_small_cluster(
     doc_indices: list[int],
     cluster_centroids: dict[int, np.ndarray],
     topics: list[int],
-) -> None:
-    """Merge a tiny cluster into the nearest cluster by cosine similarity."""
-    if not cluster_centroids:
-        return
+    similarity_threshold: float = 0.5,
+) -> bool:
+    """Merge a tiny cluster into the nearest cluster by cosine similarity if threshold met."""
+    if not cluster_centroids or topic_id not in cluster_centroids:
+        return False
     src_centroid = cluster_centroids[topic_id].reshape(1, -1)
     other_ids = [tid for tid in cluster_centroids if tid != topic_id]
     if not other_ids:
-        return
+        return False
     other_centroids = np.vstack([cluster_centroids[tid] for tid in other_ids])
     sims = cosine_similarity(src_centroid, other_centroids)[0]
-    nearest = other_ids[int(np.argmax(sims))]
-    for idx in doc_indices:
-        topics[idx] = nearest
-    logger.info("Merged small cluster %d → cluster %d.", topic_id, nearest)
+    best_idx = int(np.argmax(sims))
+    max_sim = sims[best_idx]
+    
+    if max_sim >= similarity_threshold:
+        nearest = other_ids[best_idx]
+        for idx in doc_indices:
+            topics[idx] = nearest
+        logger.info("Merged small cluster %d → cluster %d (sim=%.2f).", topic_id, nearest, max_sim)
+        return True
+    return False
 
 
 def balance_clusters(
     topics: list[int],
     documents: list[str],
     embedding_model: SentenceTransformer,
-    large_factor: float = 2.0,
-    small_threshold: int = 3,
+    embeddings: Optional[np.ndarray] = None,
 ) -> list[int]:
     """
-    --- Cluster Balancing Logic ---
-    Post-process HDBSCAN topic assignments to reduce extreme size imbalance.
-
-    - Splits clusters > large_factor × median size (via KMeans sub-split).
-    - Merges clusters < small_threshold into their nearest neighbour.
-    Does NOT enforce equal sizes.
+    Enforce cluster size limits: MIN=5, MAX=30.
     """
     try:
-        # Ensure balance_clusters actually runs and uses embedding_model.encode
-        embeddings = embedding_model.encode(documents, show_progress_bar=False)
+        if embeddings is None:
+            embeddings = embedding_model.encode(documents, show_progress_bar=False)
 
         topics = list(topics)
-        sizes = _get_cluster_sizes(topics)
-        if not sizes:
-            return topics
+        MIN_CLUSTER_SIZE = 5
+        MAX_CLUSTER_SIZE = 30
 
-        counts = list(sizes.values())
-        median_size = float(np.median(counts))
-        large_cutoff = large_factor * median_size
+        for _ in range(3):  # Iterative refinement
+            sizes = _get_cluster_sizes(topics)
+            if not sizes:
+                break
 
-        # Build per-cluster document index lists
+            cluster_docs: dict[int, list[int]] = {}
+            for idx, tid in enumerate(topics):
+                if tid != -1:
+                    cluster_docs.setdefault(tid, []).append(idx)
+
+            centroids: dict[int, np.ndarray] = {
+                tid: embeddings[idxs].mean(axis=0)
+                for tid, idxs in cluster_docs.items()
+            }
+
+            next_id = max(sizes.keys()) + 1 if sizes else 0
+            changed = False
+
+            # Split oversized clusters
+            for tid, size in list(sizes.items()):
+                if size > MAX_CLUSTER_SIZE:
+                    old_next_id = next_id
+                    next_id = _split_large_cluster(
+                        tid, cluster_docs[tid], embeddings, topics, next_id
+                    )
+                    if next_id > old_next_id:
+                        changed = True
+
+            # Merge undersized clusters
+            sizes = _get_cluster_sizes(topics)
+            for tid, size in list(sizes.items()):
+                if size < MIN_CLUSTER_SIZE and tid in cluster_docs:
+                    if _merge_small_cluster(tid, cluster_docs[tid], centroids, topics, similarity_threshold=0.5):
+                        changed = True
+            
+            if not changed:
+                break
+
+        return topics
+    except Exception as e:
+        logger.error("Cluster balancing error: %s", e)
+        return topics
+
+
+def enforce_total_clusters(
+    topics: list[int],
+    embeddings: np.ndarray,
+    min_clusters: int = 15,
+    max_clusters: int = 30,
+) -> list[int]:
+    """Iteratively split or merge to keep total clusters between 15 and 30."""
+    topics = list(topics)
+    
+    while True:
+        unique_clusters = [t for t in set(topics) if t != -1]
+        count = len(unique_clusters)
+        
+        if min_clusters <= count <= max_clusters:
+            break
+            
         cluster_docs: dict[int, list[int]] = {}
         for idx, tid in enumerate(topics):
             if tid != -1:
                 cluster_docs.setdefault(tid, []).append(idx)
+        
+        if not cluster_docs:
+            break
 
-        # Compute centroids for merge step
         centroids: dict[int, np.ndarray] = {
             tid: embeddings[idxs].mean(axis=0)
             for tid, idxs in cluster_docs.items()
         }
 
-        next_id = max(sizes.keys()) + 1
+        if count > max_clusters:
+            # Merge two closest clusters
+            ids = list(centroids.keys())
+            c_matrix = np.vstack([centroids[tid] for tid in ids])
+            sim_matrix = cosine_similarity(c_matrix)
+            np.fill_diagonal(sim_matrix, -1)
+            
+            i, j = np.unravel_index(np.argmax(sim_matrix), sim_matrix.shape)
+            tid_i, tid_j = ids[i], ids[j]
+            
+            # Merge tid_i into tid_j
+            for idx in cluster_docs[tid_i]:
+                topics[idx] = tid_j
+            logger.info("Reduced clusters: Merged %d and %d (count: %d -> %d)", tid_i, tid_j, count, count-1)
+            
+        elif count < min_clusters:
+            # Split largest cluster
+            sizes = _get_cluster_sizes(topics)
+            largest_tid = max(sizes, key=sizes.get)
+            next_id = max(unique_clusters) + 1
+            _split_large_cluster(largest_tid, cluster_docs[largest_tid], embeddings, topics, next_id)
+            logger.info("Increased clusters: Split %d (count: %d -> %d)", largest_tid, count, count+1)
+            
+    final_count = len([t for t in set(topics) if t != -1])
+    logger.info("Final cluster count: %d", final_count)
+    print(f"Final cluster count: {final_count}")
+            
+    return topics
 
-        # Split oversized clusters
-        for tid, size in list(sizes.items()):
-            if size > large_cutoff:
-                next_id = _split_large_cluster(
-                    tid, cluster_docs[tid], embeddings, topics, next_id
-                )
 
-        # Re-compute sizes after splits for merge step
-        sizes = _get_cluster_sizes(topics)
-        cluster_docs = {}
-        for idx, tid in enumerate(topics):
-            if tid != -1:
-                cluster_docs.setdefault(tid, []).append(idx)
+def get_top_3_central_docs(
+    topics: list[int],
+    embeddings: np.ndarray,
+    documents: list[str],
+) -> dict[int, list[str]]:
+    """Select top 3 documents closest to centroid for each topic."""
+    cluster_docs_idx: dict[int, list[int]] = {}
+    for idx, tid in enumerate(topics):
+        if tid != -1:
+            cluster_docs_idx.setdefault(tid, []).append(idx)
+            
+    representative_docs = {}
+    for tid, idxs in cluster_docs_idx.items():
+        cluster_embs = embeddings[idxs]
+        centroid = cluster_embs.mean(axis=0).reshape(1, -1)
+        sims = cosine_similarity(centroid, cluster_embs)[0]
+        
+        # Get top 3 indices
+        top_local_idxs = np.argsort(sims)[-3:][::-1]
+        representative_docs[tid] = [documents[idxs[li]] for li in top_local_idxs]
+        
+    return representative_docs
 
-        # Merge undersized clusters
-        for tid, size in list(sizes.items()):
-            if size < small_threshold and tid in cluster_docs:
-                _merge_small_cluster(tid, cluster_docs[tid], centroids, topics)
 
+def rebuild_topic_keywords(
+    topics: list[int],
+    documents: list[str],
+) -> dict[int, list[tuple[str, float]]]:
+    """
+    Rebuild topic keywords based on updated cluster assignments using CountVectorizer.
+    Skips clusters with fewer than 3 documents.
+    """
+    cluster_docs: dict = defaultdict(list)
+    for doc, t in zip(documents, topics):
+        if t != -1:
+            cluster_docs[t].append(doc)
+
+    topic_keywords = {}
+    for topic_id, docs in cluster_docs.items():
+        if len(docs) < 2:
+            continue
+        vectorizer = CountVectorizer(stop_words='english', max_features=50)
+        try:
+            X = vectorizer.fit_transform(docs)
+            words = vectorizer.get_feature_names_out()
+            scores = X.sum(axis=0).A1
+            top_idx = scores.argsort()[::-1][:10]
+            topic_keywords[topic_id] = [
+                (words[i], float(scores[i])) for i in top_idx
+            ]
+        except Exception as e:
+            logger.warning("rebuild_topic_keywords failed for topic %d: %s", topic_id, e)
+
+    return topic_keywords
+
+
+def reassign_outliers(
+    topics: list[int],
+    embeddings: np.ndarray,
+    similarity_threshold: float = 0.5,
+) -> list[int]:
+    """
+    Reassign outlier documents (topic == -1) to the nearest cluster centroid
+    if cosine similarity >= similarity_threshold AND cluster size < MAX_CLUSTER_SIZE.
+    Otherwise keep as -1.
+    """
+    topics = list(topics)
+    MAX_CLUSTER_SIZE = 150
+
+    # Build centroid map and current sizes
+    cluster_docs: dict[int, list[int]] = {}
+    current_sizes: dict[int, int] = {}
+    for idx, tid in enumerate(topics):
+        if tid != -1:
+            cluster_docs.setdefault(tid, []).append(idx)
+            current_sizes[tid] = current_sizes.get(tid, 0) + 1
+
+    if not cluster_docs:
         return topics
-    except Exception as e:
-        print("Cluster balancing error:", e)
-        raise e
+
+    cluster_ids = list(cluster_docs.keys())
+    centroids = np.vstack([
+        embeddings[cluster_docs[tid]].mean(axis=0)
+        for tid in cluster_ids
+    ])  # shape: (n_clusters, embed_dim)
+
+    outlier_indices = [idx for idx, tid in enumerate(topics) if tid == -1]
+    reassigned = 0
+
+    for idx in outlier_indices:
+        doc_emb = embeddings[idx].reshape(1, -1)
+        sims = cosine_similarity(doc_emb, centroids)[0]  # (n_clusters,)
+        best_i = int(np.argmax(sims))
+        
+        target_tid = cluster_ids[best_i]
+        if sims[best_i] >= similarity_threshold and current_sizes.get(target_tid, 0) < MAX_CLUSTER_SIZE:
+            topics[idx] = target_tid
+            current_sizes[target_tid] = current_sizes.get(target_tid, 0) + 1
+            reassigned += 1
+
+    logger.info(
+        "Outlier reassignment: %d / %d outliers reassigned (threshold=%.2f, max_size=%d).",
+        reassigned, len(outlier_indices), similarity_threshold, MAX_CLUSTER_SIZE
+    )
+    return topics
 
 
 # ---------------------------------------------------------------------------
@@ -233,45 +401,54 @@ def extract_topics(
     model: BERTopic,
     documents: list[str],
     embedding_model: SentenceTransformer,
-    label: str = "documents",
 ) -> dict:
 
     valid_docs = [d if d.strip() else "empty" for d in documents]
+    embeddings = embedding_model.encode(valid_docs, show_progress_bar=False)
 
-    topics, _ = model.fit_transform(valid_docs)
+    topics, _ = model.fit_transform(valid_docs, embeddings=embeddings)
 
-    # --- Cluster Balancing Logic ---
-    # Attempt to balance clusters but move ahead if it fails
-    try:
-        topics = balance_clusters(topics, valid_docs, embedding_model)
-    except Exception as e:
-        logger.error("Cluster balancing failed (moving ahead with original topics): %s", e)
+    # 1. Balance cluster sizes (5-30)
+    topics = balance_clusters(topics, valid_docs, embedding_model, embeddings=embeddings)
+    
+    # 2. Enforce total cluster count (15-30)
+    topics = enforce_total_clusters(topics, embeddings, min_clusters=15, max_clusters=30)
 
-    topic_info: pd.DataFrame = model.get_topic_info()
+    # 3. Reassign outliers to nearest cluster (threshold=0.55)
+    topics = reassign_outliers(topics, embeddings, similarity_threshold=0.55)
 
-    topic_keywords: dict[int, list[tuple[str, float]]] = {}
-    for topic_id in topic_info["Topic"].tolist():
-        if topic_id == -1:
-            continue
-        words = model.get_topic(topic_id)
-        if words:
-            topic_keywords[topic_id] = words
+    # 3.5 Re-balance after reassignment (Ensures clusters remain within limits)
+    topics = balance_clusters(topics, valid_docs, embedding_model, embeddings=embeddings)
 
-    topic_freq: dict[int, int] = (
-        topic_info.set_index("Topic")["Count"].to_dict()
-    )
+    # 4. Rebuild keywords from final cluster assignments
+    topic_keywords = rebuild_topic_keywords(topics, valid_docs)
+    
+    # 5. Recompute topic_freq from FINAL topics
+    topic_freq = Counter(t for t in topics if t != -1)
+    
+    # 6. Get top-3 central documents
+    representative_docs = get_top_3_central_docs(topics, embeddings, documents)
 
-    logger.info(
-        "Extracted %d topic(s) from %s.",
-        len(topic_keywords),
-        label,
-    )
+    # Final Validation & Logs
+    total_docs = len(topics)
+    total_counted = sum(topic_freq.values())
+    print(f"total_docs = {total_docs}")
+    print(f"total_counted = {total_counted}")
+    
+    final_cluster_count = len([t for t in set(topics) if t != -1])
+    final_topic_count = len(topic_keywords)
+    
+    print(f"Cluster count: {final_cluster_count}")
+    print(f"Topic count: {final_topic_count}")
+    
+    if final_cluster_count != final_topic_count:
+        logger.error(f"CONSISTENCY ERROR: {final_cluster_count} clusters != {final_topic_count} topics")
 
     return {
         "topics": topics,
-        "topic_info": topic_info,
         "topic_keywords": topic_keywords,
         "topic_freq": topic_freq,
+        "representative_docs": representative_docs,
     }
 
 
@@ -284,23 +461,21 @@ def run_topic_modeling(
 ) -> dict:
 
     df = load_csv(filepath)
+    
+    # Combined column
+    df["combined"] = df["title"].fillna("") + ". " + df["abstract"].fillna("")
+    clean_docs = preprocess_text(df["combined"])
 
-    clean_abstracts = preprocess_text(df["abstract"])
-    clean_titles = preprocess_text(df["title"])
+    # New embedding model
+    embedding_model = SentenceTransformer("allenai/specter2_base")
 
-    # Create embedding model once to be shared across steps
-    embedding_model = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
-
-    abstract_model = build_bertopic_model(embedding_model, min_topic_size=min_topic_size)
-    title_model = build_bertopic_model(embedding_model, min_topic_size=min_topic_size)
-
-    abstract_results = extract_topics(abstract_model, clean_abstracts, embedding_model, label="abstracts")
-    title_results = extract_topics(title_model, clean_titles, embedding_model, label="titles")
+    model = build_bertopic_model(embedding_model, min_topic_size=min_topic_size)
+    results = extract_topics(model, clean_docs, embedding_model)
 
     return {
-        "abstracts": abstract_results,
-        "titles": title_results,
+        "documents": results
     }
+
 
 
 # ---------------------------------------------------------------------------

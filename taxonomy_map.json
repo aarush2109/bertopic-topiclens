@@ -18,7 +18,8 @@
       "label": "Digital Privacy and Disclosure Concerns",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in HCI research, focusing on user interactions and online behaviors.",
+      "reasoning": "This topic is well-established in HCI research, focusing on user interactions and experiences with technology.",
+      "paper_count": 55,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -42,6 +43,7 @@
       "taxonomy_category": "Healthcare & Bioinformatics",
       "classification": "MAPPED",
       "reasoning": "This topic is well-established in the field of psychology and healthcare, particularly in the study of mental health and behavioral disorders.",
+      "paper_count": 52,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -64,7 +66,8 @@
       "label": "Technology Adoption and Acceptance Factors",
       "taxonomy_category": "Information Systems",
       "classification": "MAPPED",
-      "reasoning": "This topic falls under Information Systems as it deals with the factors influencing the adoption and acceptance of various technologies.",
+      "reasoning": "This topic fits within the well-established research area of Information Systems, specifically focusing on the adoption and acceptance of various technologies.",
+      "paper_count": 47,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -87,7 +90,8 @@
       "label": "Human-Computer Interaction Techniques",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in HCI research, focusing on novel interaction methods and feedback mechanisms.",
+      "reasoning": "This topic is well-established in the field of Human-Computer Interaction, focusing on innovative ways to interact with digital systems.",
+      "paper_count": 45,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -107,10 +111,11 @@
         "behaviour",
         "cyber"
       ],
-      "label": "Cybersecurity and Information Protection",
+      "label": "Cybersecurity and Employee Behaviour",
       "taxonomy_category": "Cybersecurity",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established within the field of cybersecurity, focusing on employee behavior, policies, and awareness.",
+      "reasoning": "This topic is well-established in the field of cybersecurity, focusing on employee awareness and behaviour.",
+      "paper_count": 41,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -133,7 +138,8 @@
       "label": "Consumer Behavior in E-commerce",
       "taxonomy_category": "Social Sciences",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in the field of consumer behavior and e-commerce research.",
+      "reasoning": "This topic is well-established in the field of consumer psychology and marketing research.",
+      "paper_count": 38,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -156,7 +162,8 @@
       "label": "Gamification and Motivation in Learning",
       "taxonomy_category": "Education Technology",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within the established research area of educational technology, specifically focusing on gamification's impact on learning and motivation.",
+      "reasoning": "This topic fits within established research areas of educational technology and gamification in learning environments.",
+      "paper_count": 29,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -176,10 +183,11 @@
         "esem",
         "families"
       ],
-      "label": "Internet Addiction in Adolescents",
+      "label": "Internet Addiction in Adolescents and Families",
       "taxonomy_category": "Healthcare & Bioinformatics",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within established research areas in psychology and healthcare, specifically studying the effects of internet use on adolescent mental health.",
+      "reasoning": "This topic fits within established research areas of internet addiction and adolescent psychology.",
+      "paper_count": 28,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -202,7 +210,8 @@
       "label": "Knowledge Sharing in Virtual Communities",
       "taxonomy_category": "Information Systems",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within the established research area of Information Systems, specifically focusing on online communities and knowledge exchange.",
+      "reasoning": "This topic is well-established in the field of Information Systems, particularly in the context of online communities and knowledge management.",
+      "paper_count": 27,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -225,7 +234,8 @@
       "label": "Human-Computer Interaction in Software Development",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in the field of Human-Computer Interaction, focusing on software development methodologies and user experience.",
+      "reasoning": "This topic is well-established in the field of Human-Computer Interaction, focusing on software development and user experience.",
+      "paper_count": 23,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -245,12 +255,13 @@
         "resilience",
         "overuse"
       ],
-      "label": "Enterprise Social Media and Employee Resilience",
+      "label": "Employee Resilience and Social Media",
       "taxonomy_category": "Social Sciences",
       "classification": "MAPPED",
       "reasoning": "This topic falls within the established research area of organizational behavior and social psychology.",
+      "paper_count": 22,
       "validation_status": "AGREED",
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "label_source": "groq"
     },
     {
@@ -268,10 +279,11 @@
         "moderated",
         "purchase"
       ],
-      "label": "Chatbot Design and Human Interaction",
+      "label": "Chatbot Anthropomorphism and Trust",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in HCI research, focusing on the design and effects of chatbots on human users.",
+      "reasoning": "This topic fits within established research on human-computer interaction, specifically the design and trust of chatbots.",
+      "paper_count": 21,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -294,7 +306,8 @@
       "label": "Wayfinding and Navigation Systems",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within established HCI research areas, particularly in spatial cognition and user experience.",
+      "reasoning": "This topic is well-established in HCI research, focusing on user experience and accessibility in navigation systems.",
+      "paper_count": 21,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -318,6 +331,7 @@
       "taxonomy_category": "Education Technology",
       "classification": "MAPPED",
       "reasoning": "This topic is well-established in the field of education technology, focusing on the application of analytics and AI in educational settings.",
+      "paper_count": 21,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -341,6 +355,7 @@
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
       "reasoning": "This topic is well-established in HCI research, focusing on the emotional aspects of human-computer interaction.",
+      "paper_count": 20,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -363,7 +378,8 @@
       "label": "Visual Aesthetics in User Interface Design",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic fits well within established research areas in Human-Computer Interaction, specifically focusing on user experience and interface design principles.",
+      "reasoning": "This topic fits within established research on user experience and interface design principles.",
+      "paper_count": 20,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -386,7 +402,8 @@
       "label": "Sustainable Design and Energy Efficiency",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within established HCI research areas, focusing on user-centered design and technology's impact on daily life.",
+      "reasoning": "This topic fits within established HCI research areas, focusing on designing sustainable and energy-efficient systems and practices.",
+      "paper_count": 20,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -406,10 +423,11 @@
         "road",
         "transportation"
       ],
-      "label": "Autonomous Vehicle Technology",
+      "label": "Autonomous Vehicle Technology and Transportation",
       "taxonomy_category": "Robotics & Automation",
       "classification": "MAPPED",
       "reasoning": "This topic falls under a well-established research area in robotics and automation, specifically focusing on autonomous vehicles.",
+      "paper_count": 20,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -432,7 +450,8 @@
       "label": "Smartphone Addiction and Mental Wellbeing",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-represented in HCI research, focusing on the psychological effects of technology use.",
+      "reasoning": "This topic fits within the established research area of HCI, specifically examining the psychological impacts of technology use.",
+      "paper_count": 18,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -452,11 +471,12 @@
         "millennial",
         "norwegian"
       ],
-      "label": "Cyberloafing and Digital Workplace Wellness",
+      "label": "Cyberloafing and Digital Workplace Stress",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within the established research area of HCI, focusing on the intersection of technology and human behavior in the workplace.",
-      "validation_status": "AGREED",
+      "reasoning": "This topic fits within established HCI research on the impact of technology on workplace behavior and employee well-being.",
+      "paper_count": 18,
+      "validation_status": "DISAGREED",
       "confidence": "HIGH",
       "label_source": "groq"
     },
@@ -478,7 +498,8 @@
       "label": "Online Learning and Motivation Strategies",
       "taxonomy_category": "Education Technology",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in the field of education technology, focusing on online learning environments and student motivation.",
+      "reasoning": "This topic fits within established research areas in education technology, focusing on online learning environments and student motivation.",
+      "paper_count": 17,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -501,7 +522,8 @@
       "label": "Conversational AI in Healthcare Applications",
       "taxonomy_category": "Healthcare & Bioinformatics",
       "classification": "MAPPED",
-      "reasoning": "This topic falls under a well-established research area in healthcare, focusing on the intersection of AI and healthcare services.",
+      "reasoning": "This topic falls within an established research area of applying AI in healthcare settings.",
+      "paper_count": 17,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -524,7 +546,8 @@
       "label": "Crowdsourcing and Contest Participation",
       "taxonomy_category": "Information Systems",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established within the field of Information Systems, particularly in the subfield of Human-Computer Interaction.",
+      "reasoning": "This topic is well-established in the field of Information Systems, particularly in the subfield of Human-Computer Interaction.",
+      "paper_count": 17,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -547,7 +570,8 @@
       "label": "Web Accessibility for Impaired Users",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in HCI research, focusing on designing accessible interfaces for users with disabilities.",
+      "reasoning": "This topic is well-established in the field of Human-Computer Interaction, focusing on designing accessible web interfaces for users with disabilities.",
+      "paper_count": 17,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -570,7 +594,8 @@
       "label": "Social Media and Political Engagement",
       "taxonomy_category": "Social Sciences",
       "classification": "MAPPED",
-      "reasoning": "This topic aligns with established research areas in social sciences, particularly in political communication and civic engagement.",
+      "reasoning": "This topic falls within the well-established research area of political science and communication studies.",
+      "paper_count": 17,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -593,7 +618,8 @@
       "label": "Gerontechnology and Aging Support",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in HCI research, focusing on technology's impact on older adults' lives.",
+      "reasoning": "This topic falls within the established research area of HCI, focusing on technology's impact on older adults' lives.",
+      "paper_count": 16,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -613,10 +639,11 @@
         "commit",
         "serving"
       ],
-      "label": "Online Health Communities and Empathy",
+      "label": "Online Health Community Dynamics",
       "taxonomy_category": "Healthcare & Bioinformatics",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within established research areas in healthcare and bioinformatics, particularly in the study of online health communities and their impact on patient-doctor relationships.",
+      "reasoning": "This topic is well-established in the field of healthcare and bioinformatics, particularly in the study of online health communities and their impact on patient care.",
+      "paper_count": 16,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -639,7 +666,8 @@
       "label": "Mobile Device User Experience",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic aligns with established HCI research on user interaction and experience with mobile devices.",
+      "reasoning": "This topic is well-established in HCI research, focusing on user interactions with mobile devices.",
+      "paper_count": 16,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -659,10 +687,11 @@
         "map",
         "displays"
       ],
-      "label": "Visual Search and Information Design",
+      "label": "Visual Information Design and Perception",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic falls within established HCI research areas, specifically visual perception and user interface design.",
+      "reasoning": "This topic falls within established HCI research areas, particularly in visual perception and interface design.",
+      "paper_count": 16,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -682,10 +711,11 @@
         "extrapolation",
         "formula"
       ],
-      "label": "Human Mental Workload and Performance",
+      "label": "Human Mental Workload and Task Performance",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in the field of Human-Computer Interaction, focusing on understanding and mitigating the effects of mental workload on human performance.",
+      "reasoning": "This topic is well-established in the field of Human-Computer Interaction, which studies the interaction between humans and computers.",
+      "paper_count": 16,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -709,6 +739,7 @@
       "taxonomy_category": "Social Sciences",
       "classification": "MAPPED",
       "reasoning": "This topic fits within established research areas in social sciences, particularly in the study of human behavior and social interactions.",
+      "paper_count": 15,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -731,7 +762,8 @@
       "label": "Social Media and Mental Health",
       "taxonomy_category": "Healthcare & Bioinformatics",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in the field of healthcare, particularly in the study of psychological distress and mental health outcomes.",
+      "reasoning": "This topic is well-established in research, with numerous studies examining the relationship between social media use and mental health outcomes.",
+      "paper_count": 14,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -751,10 +783,11 @@
         "change",
         "requirements"
       ],
-      "label": "Health Behaviour Change and Technology",
+      "label": "Physical Activity and Weight Loss Interventions",
       "taxonomy_category": "Healthcare & Bioinformatics",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in the field of healthcare and bioinformatics, focusing on the intersection of technology and health behaviour change.",
+      "reasoning": "This topic is well-established in the field of healthcare and bioinformatics, particularly in the area of behavioral interventions for weight loss.",
+      "paper_count": 14,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -774,10 +807,11 @@
         "pandemic",
         "diffusion"
       ],
-      "label": "Crisis Information Diffusion on Social Media",
+      "label": "Social Media Crisis Information Diffusion",
       "taxonomy_category": "Social Sciences",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within established research areas of social media, crisis communication, and information diffusion.",
+      "reasoning": "This topic is well-established in the field of social sciences, particularly in the study of social media and its impact on crisis communication.",
+      "paper_count": 14,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -800,7 +834,8 @@
       "label": "Human-AI Interaction and Ethics",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in HCI research, focusing on the social and moral implications of AI.",
+      "reasoning": "This topic fits within established HCI research areas, focusing on human perceptions and interactions with AI systems.",
+      "paper_count": 14,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -823,7 +858,8 @@
       "label": "Healthcare Technology and Monitoring",
       "taxonomy_category": "Healthcare & Bioinformatics",
       "classification": "MAPPED",
-      "reasoning": "This topic falls within the well-established research area of healthcare informatics and medical technology.",
+      "reasoning": "This topic is well-established in the field of healthcare and bioinformatics, with a focus on the application of technology to improve health outcomes.",
+      "paper_count": 14,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -843,10 +879,11 @@
         "enquiry",
         "badges"
       ],
-      "label": "Participatory Design with Children",
+      "label": "Child-Centered Participatory Design Research",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within established HCI research on inclusive design and child-computer interaction.",
+      "reasoning": "This topic fits within established HCI research areas focusing on user-centered design and participatory approaches.",
+      "paper_count": 14,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -866,10 +903,11 @@
         "multichannel",
         "revelation"
       ],
-      "label": "Consumer Behavior in Digital Retail Environments",
+      "label": "Consumer Behavior in E-commerce Contexts",
       "taxonomy_category": "Social Sciences",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within established research areas in consumer psychology and marketing science.",
+      "reasoning": "This topic falls under social sciences due to its focus on consumer behavior, purchasing intentions, and online retailers' reputation.",
+      "paper_count": 13,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -889,10 +927,11 @@
         "cyberdeviancy",
         "autismguide"
       ],
-      "label": "Autism and Technology Interventions",
+      "label": "Autism Spectrum Disorder and Technology",
       "taxonomy_category": "Healthcare & Bioinformatics",
       "classification": "MAPPED",
-      "reasoning": "This topic falls under a well-established research area of using technology to support individuals with autism spectrum disorder.",
+      "reasoning": "This topic falls under a well-established research area in healthcare, focusing on autism spectrum disorder and its intersection with technology.",
+      "paper_count": 13,
       "validation_status": "DISAGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -915,7 +954,8 @@
       "label": "Virtual Team Dynamics and Collaboration",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in HCI research, focusing on team interactions and collaboration in virtual environments.",
+      "reasoning": "This topic is well-established in HCI research, focusing on the social and technical aspects of remote teams.",
+      "paper_count": 13,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -935,10 +975,11 @@
         "infringement",
         "files"
       ],
-      "label": "Software Piracy and Copyright Infringement",
+      "label": "Digital Copyright and Piracy Research",
       "taxonomy_category": "Information Systems",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-represented in the field of Information Systems, particularly in the subfields of software engineering and digital rights management.",
+      "reasoning": "This topic falls under Information Systems as it deals with the intersection of technology and copyright laws.",
+      "paper_count": 12,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -962,6 +1003,7 @@
       "taxonomy_category": "Social Sciences",
       "classification": "MAPPED",
       "reasoning": "This topic aligns with established research areas in social sciences, particularly in the study of trust, value co-creation, and online interactions.",
+      "paper_count": 12,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -984,7 +1026,8 @@
       "label": "Social Media Addiction and Mental Health",
       "taxonomy_category": "Social Sciences",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within established research areas in psychology and sociology, specifically examining the effects of social media on mental health.",
+      "reasoning": "This topic fits within established research areas of psychology and sociology studying the effects of social media on mental well-being.",
+      "paper_count": 12,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -1007,7 +1050,8 @@
       "label": "Human-Computer Speech Interfaces",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic falls under a well-established research area in HCI, focusing on voice-based interactions.",
+      "reasoning": "This topic falls within a well-established research area of human-computer interaction, focusing on speech-based interfaces.",
+      "paper_count": 12,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -1030,7 +1074,8 @@
       "label": "Smartphone Use and Psychological Well-being",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within established research on human-computer interaction and its impact on users' psychological well-being.",
+      "reasoning": "This topic fits within established research on human-computer interaction and its effects on users' psychological well-being.",
+      "paper_count": 12,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -1050,10 +1095,11 @@
         "restrictive",
         "shoulder"
       ],
-      "label": "Authentication and Secure Password Methods",
+      "label": "Secure Authentication Methods",
       "taxonomy_category": "Cybersecurity",
       "classification": "MAPPED",
-      "reasoning": "This topic falls under a well-established research area within cybersecurity, focusing on secure authentication and password management.",
+      "reasoning": "This topic falls under established research areas in cybersecurity, focusing on authentication techniques and methods.",
+      "paper_count": 12,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -1076,7 +1122,8 @@
       "label": "Online Review Sentiment Analysis",
       "taxonomy_category": "Information Systems",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within the well-established research area of Information Systems, specifically focusing on online review analysis.",
+      "reasoning": "This topic fits within established research areas in Information Systems, particularly in the subfield of Human-Computer Interaction.",
+      "paper_count": 12,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -1099,7 +1146,8 @@
       "label": "Collaborative Learning in Education",
       "taxonomy_category": "Education Technology",
       "classification": "MAPPED",
-      "reasoning": "This topic falls under a well-established area of research in education technology, focusing on collaborative learning methods and tools.",
+      "reasoning": "This topic fits within established research areas in education technology, focusing on collaborative learning methods and tools.",
+      "paper_count": 12,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -1119,10 +1167,11 @@
         "overloads",
         "mediates"
       ],
-      "label": "Social Media and Mental Health Impact",
+      "label": "Social Media and Mental Health Effects",
       "taxonomy_category": "Social Sciences",
       "classification": "MAPPED",
       "reasoning": "This topic is well-established in the field of social sciences, particularly in the study of human behavior and psychology.",
+      "paper_count": 11,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -1145,7 +1194,8 @@
       "label": "Virtual Reality and Human Experience",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within established research areas in HCI, particularly in understanding user experience and interaction in immersive environments.",
+      "reasoning": "This topic fits within established research areas in human-computer interaction, particularly in the subfield of virtual reality and its effects on human behavior and emotions.",
+      "paper_count": 11,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -1169,6 +1219,7 @@
       "taxonomy_category": "Education Technology",
       "classification": "MAPPED",
       "reasoning": "This topic is well-established in the field of Education Technology, focusing on the design and effectiveness of Massive Open Online Courses.",
+      "paper_count": 11,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -1191,7 +1242,8 @@
       "label": "Social Capital in Digital Networking",
       "taxonomy_category": "Social Sciences",
       "classification": "MAPPED",
-      "reasoning": "This topic aligns with established research areas in sociology and communication studies.",
+      "reasoning": "This topic fits within established research areas in social sciences, particularly in the study of social networks and their effects on human relationships.",
+      "paper_count": 11,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -1211,10 +1263,11 @@
         "record",
         "obstetric"
       ],
-      "label": "Healthcare Information Systems Adoption",
+      "label": "Health Information Technology Implementation",
       "taxonomy_category": "Healthcare & Bioinformatics",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in the field of healthcare and bioinformatics, focusing on the implementation and challenges of healthcare information systems.",
+      "reasoning": "This topic is well-established in the field of healthcare and bioinformatics, focusing on the challenges and best practices of implementing health information systems.",
+      "paper_count": 11,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -1234,10 +1287,11 @@
         "pdf",
         "papers"
       ],
-      "label": "Visual Learning and Reading Technologies",
+      "label": "Multimodal Learning and Visual Perception",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in HCI research, focusing on how people interact with digital displays and visual content.",
+      "reasoning": "This topic is well-established in HCI research, focusing on the interaction between humans and digital interfaces.",
+      "paper_count": 11,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -1257,10 +1311,11 @@
         "cultivation",
         "explicitness"
       ],
-      "label": "Cyberharassment and Digital Behaviour",
+      "label": "Cyber Behaviour and Online Harassment",
       "taxonomy_category": "Social Sciences",
       "classification": "MAPPED",
-      "reasoning": "This topic falls under social sciences as it involves the study of human behaviour and interactions in digital environments.",
+      "reasoning": "This topic fits within the established research area of social psychology and online interactions.",
+      "paper_count": 11,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -1283,7 +1338,8 @@
       "label": "Serious Games and Environmental Experience",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in HCI research, particularly in the subfield of game-based learning and environmental psychology.",
+      "reasoning": "This topic falls within established HCI research areas, focusing on the design and impact of interactive technologies.",
+      "paper_count": 11,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -1307,6 +1363,7 @@
       "taxonomy_category": "Cybersecurity",
       "classification": "MAPPED",
       "reasoning": "This topic falls under cybersecurity as it deals with the prevention and detection of online scams and phishing attacks.",
+      "paper_count": 10,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -1326,10 +1383,11 @@
         "usability",
         "stylus"
       ],
-      "label": "Usability in Aging and Mobile Devices",
+      "label": "Usability of Mobile Devices for Older Adults",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within established HCI research on accessibility and usability for older adults.",
+      "reasoning": "This topic fits within an established research area focused on designing accessible interfaces for aging populations.",
+      "paper_count": 10,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -1352,7 +1410,8 @@
       "label": "Persuasive Systems Design for Health",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic falls within established HCI research on persuasive technology and user experience.",
+      "reasoning": "This topic aligns with established HCI research on designing persuasive systems for health-related applications.",
+      "paper_count": 10,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -1375,7 +1434,8 @@
       "label": "Usability Evaluation Methods and Techniques",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established within the field of Human-Computer Interaction, focusing on usability evaluation methods and techniques.",
+      "reasoning": "This topic falls under a well-established research area in Human-Computer Interaction, focusing on usability evaluation methods and techniques.",
+      "paper_count": 10,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -1398,7 +1458,8 @@
       "label": "Blockchain in Banking and Finance",
       "taxonomy_category": "Finance & Economics",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within an established research area of financial technology and its applications in banking.",
+      "reasoning": "This topic falls within the established research area of financial technology and its applications in banking and finance.",
+      "paper_count": 10,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -1421,7 +1482,8 @@
       "label": "Virtual Reality in Education and Training",
       "taxonomy_category": "Education Technology",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within established research areas in educational technology and virtual reality applications.",
+      "reasoning": "This topic fits within established research areas of educational technology and virtual reality applications.",
+      "paper_count": 10,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -1441,12 +1503,13 @@
         "new",
         "agenda"
       ],
-      "label": "User Experience in Industrial Design",
+      "label": "User Experience in Industrial Settings",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within established HCI research areas, particularly design and user experience.",
-      "validation_status": "DISAGREED",
-      "confidence": "MEDIUM",
+      "reasoning": "This topic aligns with established HCI research on user experience and design in industrial contexts.",
+      "paper_count": 10,
+      "validation_status": "AGREED",
+      "confidence": "HIGH",
       "label_source": "groq"
     },
     {
@@ -1467,7 +1530,8 @@
       "label": "Technostress and Work-Related Stress Management",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in HCI research, focusing on the impact of technology on human well-being and productivity.",
+      "reasoning": "This topic is well-established in HCI research, focusing on the impact of technology on human well-being.",
+      "paper_count": 9,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -1490,7 +1554,8 @@
       "label": "Human-Computer Interaction Dynamics",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in the field of Human-Computer Interaction, focusing on user experience and social presence.",
+      "reasoning": "This topic aligns with established research areas in HCI, particularly in social presence, usability, and user experience.",
+      "paper_count": 9,
       "validation_status": "DISAGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -1510,11 +1575,12 @@
         "ubiquitous",
         "laptops"
       ],
-      "label": "Mobile Learning and Academic Performance",
+      "label": "Mobile Learning and Device Usage",
       "taxonomy_category": "Education Technology",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in the field of education technology, focusing on the impact of mobile devices on student learning.",
-      "validation_status": "DISAGREED",
+      "reasoning": "This topic fits within established research areas in education technology, focusing on the use of mobile devices in learning environments.",
+      "paper_count": 9,
+      "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
     },
@@ -1536,7 +1602,8 @@
       "label": "Student Engagement in Educational Media",
       "taxonomy_category": "Education Technology",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in the field of education technology, focusing on the intersection of learning and digital media.",
+      "reasoning": "This topic aligns with established research areas in EdTech, focusing on student engagement and learning effectiveness in digital educational platforms.",
+      "paper_count": 9,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -1556,10 +1623,11 @@
         "retailer",
         "sixth"
       ],
-      "label": "Eye Tracking and Human-Computer Interaction",
+      "label": "Human-Computer Interaction Studies",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in the field of Human-Computer Interaction, focusing on user behavior and interface design.",
+      "reasoning": "This topic is well-established in HCI research, focusing on user behavior and interface design.",
+      "paper_count": 9,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -1582,7 +1650,8 @@
       "label": "Online Dating and Human-Computer Interaction",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in HCI research, focusing on the design and user experience of online dating platforms.",
+      "reasoning": "This topic fits within established research areas in HCI, particularly in the subfield of user experience and interface design for online dating platforms.",
+      "paper_count": 9,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -1602,10 +1671,11 @@
         "referrals",
         "retransmission"
       ],
-      "label": "Misinformation and Online Content Analysis",
+      "label": "Misinformation and Content Analysis",
       "taxonomy_category": "Social Sciences",
       "classification": "MAPPED",
-      "reasoning": "This topic falls within the established research area of social sciences, particularly in the study of online behavior and information dissemination.",
+      "reasoning": "This topic fits within established research areas in social sciences, particularly media studies and communication.",
+      "paper_count": 9,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -1628,7 +1698,8 @@
       "label": "Location-Based Mobile Game Research",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within established HCI research areas, particularly in the context of spatial interaction and user experience.",
+      "reasoning": "This topic fits within established HCI research on spatial interaction and user experience.",
+      "paper_count": 9,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -1648,10 +1719,11 @@
         "illiteracy",
         "addressing"
       ],
-      "label": "EEG-based Human-Computer Interaction",
+      "label": "Neural Interfaces and Cognitive Load",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in the field of Human-Computer Interaction, particularly in the subfield of Brain-Computer Interfaces.",
+      "reasoning": "This topic fits within established HCI research areas focusing on user experience and interaction.",
+      "paper_count": 9,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -1674,7 +1746,8 @@
       "label": "Virtual Reality and Mental Health",
       "taxonomy_category": "Healthcare & Bioinformatics",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in the field of healthcare and bioinformatics, with numerous studies exploring the therapeutic applications of virtual reality for mental health conditions.",
+      "reasoning": "This topic falls within the established research area of using virtual reality for therapeutic purposes in healthcare.",
+      "paper_count": 9,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -1694,10 +1767,11 @@
         "fintechs",
         "conceptualisation"
       ],
-      "label": "User Continuance in Digital Services",
+      "label": "Continuance Intention in Digital Services",
       "taxonomy_category": "Information Systems",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in the field of Information Systems, particularly in the context of user adoption and retention of digital services.",
+      "reasoning": "This topic is well-established within the field of Information Systems, focusing on user behavior and digital service adoption.",
+      "paper_count": 9,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -1720,7 +1794,8 @@
       "label": "Fake News Detection and Misinformation",
       "taxonomy_category": "Information Systems",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in the field of Information Systems, particularly in the subfield of Information Retrieval and Human-Computer Interaction.",
+      "reasoning": "This topic falls under Information Systems as it deals with the detection and spread of misinformation in digital environments.",
+      "paper_count": 9,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -1743,7 +1818,8 @@
       "label": "Healthcare Collaboration and Informatics",
       "taxonomy_category": "Healthcare & Bioinformatics",
       "classification": "MAPPED",
-      "reasoning": "This topic falls within established research areas in healthcare informatics and collaboration.",
+      "reasoning": "This topic aligns with established research areas in healthcare informatics and collaboration.",
+      "paper_count": 9,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -1763,10 +1839,11 @@
         "msg",
         "sn"
       ],
-      "label": "Advertising and User Experience",
+      "label": "Advertising and User Behavior",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within established research areas in human-computer interaction, specifically focusing on user experience and advertising.",
+      "reasoning": "This topic falls under Human-Computer Interaction as it explores the psychological and behavioral responses of users to various types of advertisements in digital environments.",
+      "paper_count": 8,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -1789,7 +1866,8 @@
       "label": "Student Continuance Intention in Education",
       "taxonomy_category": "Education Technology",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within the established research area of educational technology and student engagement.",
+      "reasoning": "This topic is well-established in the field of education technology, focusing on student engagement and retention in digital learning environments.",
+      "paper_count": 8,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -1809,10 +1887,11 @@
         "depending",
         "criteria"
       ],
-      "label": "Recommender Systems and User Behavior",
-      "taxonomy_category": "Human-Computer Interaction",
+      "label": "Recommender Systems Design and Evaluation",
+      "taxonomy_category": "Information Systems",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in HCI, focusing on user interactions with recommendation systems.",
+      "reasoning": "This topic falls under Information Systems as it primarily deals with the design and evaluation of recommender systems, a subfield of information systems.",
+      "paper_count": 8,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -1832,10 +1911,11 @@
         "sheds",
         "situation"
       ],
-      "label": "Digital Storytelling and Engagement",
+      "label": "Digital Storytelling and Engagement Strategies",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within established HCI research on interactive narratives and user engagement.",
+      "reasoning": "This topic falls under Human-Computer Interaction as it involves the design and analysis of digital interfaces for engaging audiences.",
+      "paper_count": 8,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -1855,10 +1935,11 @@
         "indexing",
         "indexed"
       ],
-      "label": "Scientific Information Retrieval and Indexing",
+      "label": "Scientific Indexing and Information Retrieval",
       "taxonomy_category": "Information Systems",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within established research areas in Information Systems, particularly in the subfields of information retrieval and indexing.",
+      "reasoning": "This topic fits within established research areas in Information Systems, particularly in the subfield of Information Retrieval and Database Systems.",
+      "paper_count": 8,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -1881,7 +1962,8 @@
       "label": "Augmented Reality and Human Interaction",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in the field of Human-Computer Interaction, focusing on the design and usability of augmented reality interfaces.",
+      "reasoning": "This topic is well-established within the field of Human-Computer Interaction, focusing on the design and application of augmented reality interfaces.",
+      "paper_count": 8,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -1901,10 +1983,11 @@
         "ai",
         "challenges"
       ],
-      "label": "AI in Educational Practices",
+      "label": "AI in Education and Learning",
       "taxonomy_category": "Education Technology",
       "classification": "MAPPED",
-      "reasoning": "This topic falls within the established research area of using AI in educational settings.",
+      "reasoning": "This topic falls under a well-established research area in the intersection of AI and educational technology.",
+      "paper_count": 8,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -1927,7 +2010,8 @@
       "label": "Knowledge Management Strategies and Implementation",
       "taxonomy_category": "Information Systems",
       "classification": "MAPPED",
-      "reasoning": "This topic falls under Information Systems as it deals with the application and management of knowledge within organizational settings.",
+      "reasoning": "This topic is well-established in the field of Information Systems, focusing on the design, implementation, and management of knowledge management systems.",
+      "paper_count": 8,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -1950,7 +2034,8 @@
       "label": "Digital Inclusion and Exclusion Studies",
       "taxonomy_category": "Social Sciences",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within established research areas in sociology and anthropology, examining social disparities in digital access and usage.",
+      "reasoning": "This topic aligns with established research areas in sociology and anthropology, examining the social implications of digital technologies.",
+      "paper_count": 8,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -1973,7 +2058,8 @@
       "label": "Information Systems and Management Orientation",
       "taxonomy_category": "Information Systems",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in the field of Information Systems, focusing on organizational management and technology adoption.",
+      "reasoning": "This topic falls within the established research area of information systems, focusing on organizational management and technology adoption.",
+      "paper_count": 8,
       "validation_status": "DISAGREED",
       "confidence": "MEDIUM",
       "label_source": "groq"
@@ -1996,7 +2082,8 @@
       "label": "AI Trust and Interpretability Concerns",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in HCI research, focusing on the human side of AI interactions.",
+      "reasoning": "This topic aligns with established research areas in human-computer interaction, particularly in understanding user trust and acceptance of AI systems.",
+      "paper_count": 8,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -2019,7 +2106,8 @@
       "label": "Information Systems Adoption and Culture",
       "taxonomy_category": "Information Systems",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within the established research area of Information Systems, specifically focusing on the adoption of technology in various cultural contexts.",
+      "reasoning": "This topic is well-established in the field of Information Systems, particularly in the context of technology adoption and cultural influences.",
+      "paper_count": 8,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -2042,7 +2130,8 @@
       "label": "Human Behaviour in Technology Adoption",
       "taxonomy_category": "Information Systems",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within established research areas in Information Systems, particularly in the study of human-computer interaction and technology adoption.",
+      "reasoning": "This topic fits within the well-established research area of Information Systems, specifically focusing on human behaviour and technology adoption.",
+      "paper_count": 8,
       "validation_status": "DISAGREED",
       "confidence": "MEDIUM",
       "label_source": "groq"
@@ -2062,10 +2151,11 @@
         "tetra",
         "vaping"
       ],
-      "label": "Social Media and Human Behavior Analysis",
+      "label": "Social Media and Human Behavior",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within established HCI research areas, focusing on user behavior and interaction with social media platforms.",
+      "reasoning": "This topic fits within the established research area of HCI, focusing on user behavior and interaction with social media platforms.",
+      "paper_count": 8,
       "validation_status": "DISAGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -2088,7 +2178,8 @@
       "label": "Human-Robot Interaction and UX",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in HCI research, focusing on user experience and interaction with robots.",
+      "reasoning": "This topic fits within established research areas of human-computer interaction and robotics.",
+      "paper_count": 7,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -2111,7 +2202,8 @@
       "label": "Avatar Human Interaction Research",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within established HCI research areas, particularly in user experience and interface design.",
+      "reasoning": "This topic falls under HCI as it involves the study of user experiences and interactions with digital avatars.",
+      "paper_count": 7,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -2134,7 +2226,8 @@
       "label": "Smartphone Use and Sleep Quality",
       "taxonomy_category": "Healthcare & Bioinformatics",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in the field of healthcare and bioinformatics, particularly in the study of sleep disorders and digital health.",
+      "reasoning": "This topic fits within established research on the health impacts of technology use.",
+      "paper_count": 7,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -2157,7 +2250,8 @@
       "label": "Social Media Engagement Analysis",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in HCI research, focusing on user behavior and interaction with digital media.",
+      "reasoning": "This topic fits within established HCI research on user interaction and engagement with digital platforms.",
+      "paper_count": 7,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -2180,7 +2274,8 @@
       "label": "Usability in Software Development",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in the field of Human-Computer Interaction, focusing on user experience and software development.",
+      "reasoning": "This topic fits within established research areas in Human-Computer Interaction, focusing on usability and software development.",
+      "paper_count": 7,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -2200,10 +2295,11 @@
         "semi",
         "wiki"
       ],
-      "label": "Organisational Learning and Development",
+      "label": "Organisational Learning and Knowledge Management",
       "taxonomy_category": "Information Systems",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within established research areas in Information Systems, particularly in the subfield of organisational learning and knowledge management.",
+      "reasoning": "This topic is well-established in the field of Information Systems, particularly in the subfield of Knowledge Management.",
+      "paper_count": 7,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -2223,10 +2319,11 @@
         "vamping",
         "tactful"
       ],
-      "label": "Mobile Phone User Behavior and Communication",
+      "label": "Mobile Phone User Behavior and Rudeness",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within established research areas of HCI, focusing on user behavior and communication through mobile devices.",
+      "reasoning": "This topic is well-established in HCI research, focusing on user behavior, communication, and social interactions with technology.",
+      "paper_count": 7,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -2249,7 +2346,8 @@
       "label": "Consumer Adoption of Digital Payment Systems",
       "taxonomy_category": "Finance & Economics",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within the established research area of consumer behavior and digital finance.",
+      "reasoning": "This topic falls within the well-established research area of consumer behavior and digital payments.",
+      "paper_count": 7,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -2272,7 +2370,8 @@
       "label": "Enterprise Resource Planning Systems",
       "taxonomy_category": "Information Systems",
       "classification": "MAPPED",
-      "reasoning": "This topic falls within a well-established research area in Information Systems, specifically focusing on ERP systems and their implementation.",
+      "reasoning": "This topic fits within a well-established research area in Information Systems, specifically focusing on ERP systems and their implementation.",
+      "paper_count": 7,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -2292,11 +2391,12 @@
         "legal",
         "kinds"
       ],
-      "label": "Organizational Technology Adoption and Design",
+      "label": "Information Systems and Human Roles",
       "taxonomy_category": "Information Systems",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within the established research area of information systems, particularly in the context of technology adoption and organizational design.",
-      "validation_status": "DISAGREED",
+      "reasoning": "This topic is well-established in the field of Information Systems, focusing on the intersection of technology and human roles within organizations.",
+      "paper_count": 7,
+      "validation_status": "AGREED",
       "confidence": "MEDIUM",
       "label_source": "groq"
     },
@@ -2315,10 +2415,11 @@
         "satisfaction",
         "beyond"
       ],
-      "label": "Website Quality and User Satisfaction",
+      "label": "E-commerce Website Quality and User Satisfaction",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in the field of Human-Computer Interaction, focusing on user experience and website usability.",
+      "reasoning": "This topic is well-established in HCI research, focusing on user experience and satisfaction in online shopping environments.",
+      "paper_count": 6,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -2338,11 +2439,12 @@
         "synchronous",
         "pedagogical"
       ],
-      "label": "Collaborative Learning in Online Education",
+      "label": "Collaborative Learning in Education Technology",
       "taxonomy_category": "Education Technology",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in the field of education technology, focusing on online collaborative learning methods and tools.",
-      "validation_status": "DISAGREED",
+      "reasoning": "This topic fits well within established research areas in education technology, particularly in the application of technology to enhance collaborative learning.",
+      "paper_count": 6,
+      "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
     },
@@ -2364,7 +2466,8 @@
       "label": "Mental Health and AI Applications",
       "taxonomy_category": "Healthcare & Bioinformatics",
       "classification": "MAPPED",
-      "reasoning": "This topic falls under a well-established research area in healthcare and bioinformatics, specifically the intersection of AI and mental health.",
+      "reasoning": "This topic falls under a well-established research area in healthcare, leveraging AI and machine learning for mental health diagnosis and treatment.",
+      "paper_count": 6,
       "validation_status": "DISAGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -2384,10 +2487,11 @@
         "untrusted",
         "ttf"
       ],
-      "label": "Big Data in Healthcare Governance",
+      "label": "Big Data Analytics in Healthcare Governance",
       "taxonomy_category": "Healthcare & Bioinformatics",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in the intersection of healthcare and data analytics.",
+      "reasoning": "This topic falls within a well-established research area of applying big data analytics in healthcare settings.",
+      "paper_count": 6,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -2407,10 +2511,11 @@
         "companies",
         "techno"
       ],
-      "label": "Digital Leadership in Healthcare and Industry",
+      "label": "Digital Leadership in Healthcare and Technology",
       "taxonomy_category": "Healthcare & Bioinformatics",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in the intersection of healthcare management and information systems research.",
+      "reasoning": "This topic is well-established in the intersection of healthcare and information systems research.",
+      "paper_count": 6,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -2430,10 +2535,11 @@
         "momentary",
         "fathers"
       ],
-      "label": "Mental Health Mobile Application Design",
+      "label": "Mental Health App Design and Evaluation",
       "taxonomy_category": "Healthcare & Bioinformatics",
       "classification": "MAPPED",
-      "reasoning": "This topic falls under a well-established research area in healthcare technology and digital health interventions.",
+      "reasoning": "This topic falls within a well-established research area in healthcare technology and digital health interventions.",
+      "paper_count": 6,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -2453,10 +2559,11 @@
         "pitch",
         "shorter"
       ],
-      "label": "Human-Computer Interaction and Experience",
+      "label": "Human-Computer Interaction and Time Perception",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
       "reasoning": "This topic is well-established in HCI research, focusing on user experience and interaction design.",
+      "paper_count": 6,
       "validation_status": "DISAGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -2476,10 +2583,11 @@
         "multilevel",
         "curation"
       ],
-      "label": "Gender and Technology Interactions",
+      "label": "Human-Computer Interaction and Gender Dynamics",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in HCI research, examining how gender influences interactions with technology.",
+      "reasoning": "This topic is well-established in HCI research, examining the intersection of technology and human behavior, particularly in relation to gender differences.",
+      "paper_count": 6,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -2503,6 +2611,7 @@
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
       "reasoning": "This topic falls within established HCI research areas, particularly in the context of computer-mediated communication.",
+      "paper_count": 6,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -2525,9 +2634,10 @@
       "label": "Electronic Customer Relationship Management",
       "taxonomy_category": "Information Systems",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within the established research area of Information Systems, specifically focusing on CRM and electronic trading.",
+      "reasoning": "This topic is well-established within the field of Information Systems, particularly in the context of e-business and B2B electronic trading.",
+      "paper_count": 6,
       "validation_status": "AGREED",
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "label_source": "groq"
     },
     {
@@ -2549,7 +2659,8 @@
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
       "reasoning": "This topic is well-established in HCI research, focusing on user experience and emotional responses to digital interfaces.",
-      "validation_status": "DISAGREED",
+      "paper_count": 6,
+      "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
     },
@@ -2568,10 +2679,11 @@
         "lifestyles",
         "care"
       ],
-      "label": "Homecare and Virtual Assistant Integration",
+      "label": "Homecare and Virtual Assistant Interactions",
       "taxonomy_category": "Healthcare & Bioinformatics",
       "classification": "MAPPED",
-      "reasoning": "This topic falls under Healthcare & Bioinformatics as it involves the use of technology in homecare settings.",
+      "reasoning": "This topic fits within established research areas in healthcare technology and human-computer interaction.",
+      "paper_count": 6,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -2591,10 +2703,11 @@
         "select",
         "proximity"
       ],
-      "label": "Eye Tracking and Human-Computer Interaction",
+      "label": "Eye-Tracking and Human-Computer Interaction",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic fits well within established research areas in Human-Computer Interaction, particularly in the subfield of eye tracking and gaze-based interfaces.",
+      "reasoning": "This topic is well-established in the field of Human-Computer Interaction, focusing on the use of eye-tracking technology to improve user interfaces.",
+      "paper_count": 6,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -2617,7 +2730,8 @@
       "label": "Mobile Guide Interface Design",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic falls under a well-established area of research in HCI, focusing on designing interfaces for mobile devices.",
+      "reasoning": "This topic falls within the established field of HCI, focusing on user experience and interface design for mobile devices.",
+      "paper_count": 6,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -2640,7 +2754,8 @@
       "label": "Technology's Impact on Information Systems Performance",
       "taxonomy_category": "Information Systems",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within established research areas in information systems, examining technology's effects on performance and capture.",
+      "reasoning": "This topic aligns with established research areas in information systems, examining technology's effects on performance.",
+      "paper_count": 6,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -2663,8 +2778,9 @@
       "label": "Mobile Payment Continuation and Adoption",
       "taxonomy_category": "Finance & Economics",
       "classification": "MAPPED",
-      "reasoning": "This topic falls under Finance & Economics as it explores the factors influencing mobile payment adoption and continuation, a well-established area in the field.",
-      "validation_status": "AGREED",
+      "reasoning": "This topic is well-established in the field of finance and economics, particularly in the study of consumer behavior and technology adoption.",
+      "paper_count": 6,
+      "validation_status": "DISAGREED",
       "confidence": "HIGH",
       "label_source": "groq"
     },
@@ -2683,10 +2799,11 @@
         "palsy",
         "tale"
       ],
-      "label": "Assistive Technology for Children",
+      "label": "Assistive Technology for Children's Development",
       "taxonomy_category": "Healthcare & Bioinformatics",
       "classification": "MAPPED",
       "reasoning": "This topic is well-established in the field of assistive technology and healthcare for children with disabilities.",
+      "paper_count": 6,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -2706,10 +2823,11 @@
         "designed",
         "kinect"
       ],
-      "label": "Age-Friendly Technology and Accessibility",
-      "taxonomy_category": "Human-Computer Interaction",
+      "label": "Healthy Aging and Teleoperations",
+      "taxonomy_category": "Healthcare & Bioinformatics",
       "classification": "MAPPED",
-      "reasoning": "This topic falls under Human-Computer Interaction as it focuses on designing and evaluating technologies for older adults' needs and abilities.",
+      "reasoning": "This topic falls within established research areas of healthcare and bioinformatics, particularly in the context of aging and teleoperations.",
+      "paper_count": 6,
       "validation_status": "DISAGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -2732,7 +2850,8 @@
       "label": "Human-Computer Interaction with Intelligent Agents",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within established research areas in Human-Computer Interaction, particularly in the design and evaluation of conversational interfaces.",
+      "reasoning": "This topic falls under a well-established research area in Human-Computer Interaction, focusing on the design and evaluation of conversational interfaces.",
+      "paper_count": 6,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -2752,13 +2871,14 @@
         "antisocial",
         "ostracism"
       ],
-      "label": "Study on fear, avoidance, twitter",
-      "taxonomy_category": "Other",
+      "label": "Social Media Anxiety and Exclusion",
+      "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
-      "validation_status": "DISAGREED",
+      "reasoning": "This topic fits within the established research area of HCI, examining the psychological effects of social media interactions.",
+      "paper_count": 6,
+      "validation_status": "AGREED",
       "confidence": "HIGH",
-      "label_source": "fallback"
+      "label_source": "groq"
     },
     {
       "source": "titles",
@@ -2778,9 +2898,10 @@
       "label": "Human-Computer Interaction Innovations",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic falls under a well-established research area in Human-Computer Interaction, focusing on novel interfaces and user experiences.",
-      "validation_status": "AGREED",
-      "confidence": "HIGH",
+      "reasoning": "This topic falls under a well-established research area in HCI, focusing on novel interfaces and user experiences.",
+      "paper_count": 6,
+      "validation_status": "DISAGREED",
+      "confidence": "MEDIUM",
       "label_source": "groq"
     },
     {
@@ -2801,7 +2922,8 @@
       "label": "Human-Machine Decision Support Frameworks",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in the field of Human-Computer Interaction, focusing on designing effective decision support systems for human-machine teams.",
+      "reasoning": "This topic falls under Human-Computer Interaction as it focuses on designing and evaluating frameworks for human-machine collaboration in decision-making processes.",
+      "paper_count": 5,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -2824,7 +2946,8 @@
       "label": "Virtual Reality in Healthcare Applications",
       "taxonomy_category": "Healthcare & Bioinformatics",
       "classification": "MAPPED",
-      "reasoning": "This topic falls under a well-established area of research in healthcare, focusing on the use of virtual reality for medical training and patient care.",
+      "reasoning": "This topic is well-established in the field of healthcare, particularly in the use of virtual reality for medical training and patient care.",
+      "paper_count": 5,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -2844,10 +2967,11 @@
         "algorithmic",
         "assistants"
       ],
-      "label": "AI and Human Interaction Bias",
+      "label": "AI and Human Interaction Dynamics",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic falls under a well-established research area in Human-Computer Interaction, focusing on the social implications of AI and human interaction.",
+      "reasoning": "This topic fits within established research areas in human-computer interaction, specifically focusing on the social and psychological aspects of AI systems.",
+      "paper_count": 5,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -2867,10 +2991,11 @@
         "expressive",
         "selective"
       ],
-      "label": "Emotional Regulation and Social Interaction",
-      "taxonomy_category": "Human-Computer Interaction",
+      "label": "Mental Health and Social Interaction",
+      "taxonomy_category": "Social Sciences",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within established research areas in HCI, focusing on the psychological impact of technology use.",
+      "reasoning": "This topic fits within established research areas in psychology and sociology.",
+      "paper_count": 5,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -2893,7 +3018,8 @@
       "label": "Advertising and Reputation Dynamics",
       "taxonomy_category": "Information Systems",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in the field of Information Systems, particularly in the context of e-commerce and digital marketing.",
+      "reasoning": "This topic falls under Information Systems as it deals with the intersection of advertising, reputation, and credibility in digital contexts.",
+      "paper_count": 5,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -2913,10 +3039,11 @@
         "entropy",
         "others"
       ],
-      "label": "Information Organisation and Search Behaviour",
+      "label": "Information Organisation and Search",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within established HCI research areas, particularly user experience and information retrieval.",
+      "reasoning": "This topic fits within established HCI research areas, particularly user experience and interface design.",
+      "paper_count": 5,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -2936,10 +3063,11 @@
         "academia",
         "stem"
       ],
-      "label": "STEM Education in Saudi Arabia",
+      "label": "Education Technology in Saudi Arabia",
       "taxonomy_category": "Education Technology",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within established research areas of education technology, particularly in the context of STEM education in Saudi Arabia.",
+      "reasoning": "This topic is well-established in the field of education technology, particularly in the context of Saudi Arabia's higher education system.",
+      "paper_count": 5,
       "validation_status": "DISAGREED",
       "confidence": "MEDIUM",
       "label_source": "groq"
@@ -2962,7 +3090,8 @@
       "label": "Decentralized Identity and Empowerment",
       "taxonomy_category": "Information Systems",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within established research areas in Information Systems, particularly in the context of identity management and empowerment.",
+      "reasoning": "This topic aligns with existing research areas in IS, particularly in the context of identity management and empowerment.",
+      "paper_count": 5,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -2985,7 +3114,8 @@
       "label": "Human-Robot Interaction and Elderly Care",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic falls under Human-Computer Interaction as it focuses on the interaction between humans and robots in the context of elderly care.",
+      "reasoning": "This topic falls under Human-Computer Interaction as it involves the design and assessment of robots for elderly care and user acceptance.",
+      "paper_count": 5,
       "validation_status": "DISAGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -3008,7 +3138,8 @@
       "label": "Music Technology and Human Interaction",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within established HCI research areas, exploring music's role in human-computer interaction.",
+      "reasoning": "This topic fits within established HCI research areas, focusing on music and technology's impact on human experience.",
+      "paper_count": 5,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -3031,7 +3162,8 @@
       "label": "Facebook User Behavior Analysis",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic falls under Human-Computer Interaction as it focuses on understanding user behavior and interactions on social media platforms like Facebook.",
+      "reasoning": "This topic fits within established HCI research areas, focusing on user interactions and behavior on social media platforms.",
+      "paper_count": 5,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -3054,9 +3186,10 @@
       "label": "Information Systems User Behaviour and Management",
       "taxonomy_category": "Information Systems",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within the established research area of Information Systems, specifically focusing on user behaviour and management.",
+      "reasoning": "This topic fits well within the established research area of Information Systems, specifically focusing on user behaviour and management.",
+      "paper_count": 5,
       "validation_status": "DISAGREED",
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "label_source": "groq"
     },
     {
@@ -3074,10 +3207,11 @@
         "third",
         "gaming"
       ],
-      "label": "Adolescent Psychosocial Risk Factors",
+      "label": "Adolescent Psychosocial Risk Factors Online",
       "taxonomy_category": "Social Sciences",
       "classification": "MAPPED",
-      "reasoning": "This topic falls under the well-established research area of adolescent psychology and social development.",
+      "reasoning": "This topic falls under the established research area of adolescent psychology and social sciences.",
+      "paper_count": 5,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -3098,9 +3232,10 @@
         "reuse"
       ],
       "label": "Ontology Engineering and Knowledge Management",
-      "taxonomy_category": "Information Systems",
+      "taxonomy_category": "Artificial Intelligence",
       "classification": "MAPPED",
-      "reasoning": "This topic falls under Information Systems as it deals with the design, development, and reuse of ontologies for knowledge management.",
+      "reasoning": "This topic is well-established in the field of Artificial Intelligence, particularly in areas like knowledge representation and semantic search.",
+      "paper_count": 5,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -3123,7 +3258,8 @@
       "label": "Human-Computer Interaction for Older Adults",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within a well-established research area focusing on accessibility and usability for aging populations.",
+      "reasoning": "This topic fits well within established research areas in Human-Computer Interaction, particularly in accessibility and usability for older adults.",
+      "paper_count": 5,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -3143,10 +3279,11 @@
         "measure",
         "english"
       ],
-      "label": "Web Information Retrieval and Usability",
+      "label": "Web Usability and Information Retrieval",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic falls within a well-established research area in Human-Computer Interaction, focusing on improving web usability and information retrieval.",
+      "reasoning": "This topic aligns with established HCI research areas, such as user experience and interface design.",
+      "paper_count": 5,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -3169,7 +3306,8 @@
       "label": "Blog Continuance and User Experience",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in HCI research, focusing on user engagement and satisfaction with online platforms.",
+      "reasoning": "This topic is well-established in HCI research, focusing on user behavior and interface design.",
+      "paper_count": 5,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -3189,10 +3327,11 @@
         "",
         ""
       ],
-      "label": "Editorial and Guest Editorial Content",
+      "label": "Editorial and Guest Editorial Analysis",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in the field of Human-Computer Interaction, particularly in the context of academic publishing and conference proceedings.",
+      "reasoning": "This topic is mapped to Human-Computer Interaction as it likely involves the analysis of editorials and guest editorials within the context of human-computer interaction research.",
+      "paper_count": 5,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -3218,6 +3357,7 @@
       "taxonomy_category": "Artificial Intelligence",
       "classification": "MAPPED",
       "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 166,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "fallback"
@@ -3241,6 +3381,7 @@
       "taxonomy_category": "Other",
       "classification": "MAPPED",
       "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 62,
       "validation_status": "DISAGREED",
       "confidence": "HIGH",
       "label_source": "fallback"
@@ -3263,7 +3404,8 @@
       "label": "Digital Privacy and Security Concerns",
       "taxonomy_category": "Social Sciences",
       "classification": "MAPPED",
-      "reasoning": "This topic falls under the broader category of social sciences, specifically focusing on human behavior and interactions in digital environments.",
+      "reasoning": "This topic is well-established in the field of social sciences, particularly in the study of human behavior and online interactions.",
+      "paper_count": 58,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -3287,6 +3429,7 @@
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
       "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 52,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "fallback"
@@ -3310,7 +3453,8 @@
       "taxonomy_category": "Robotics & Automation",
       "classification": "MAPPED",
       "reasoning": "Generated via keyword heuristics due to LLM timeout.",
-      "validation_status": "DISAGREED",
+      "paper_count": 46,
+      "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "fallback"
     },
@@ -3332,7 +3476,8 @@
       "label": "Persuasive Systems Design in Health",
       "taxonomy_category": "Healthcare & Bioinformatics",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in the field of healthcare and bioinformatics, focusing on the design of persuasive systems for health-related behavior change.",
+      "reasoning": "This topic falls within a well-established area of research in healthcare and bioinformatics, focusing on the design of persuasive systems to promote healthy behaviors.",
+      "paper_count": 41,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -3356,6 +3501,7 @@
       "taxonomy_category": "Healthcare & Bioinformatics",
       "classification": "MAPPED",
       "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 33,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "fallback"
@@ -3375,13 +3521,14 @@
         "shoppers",
         "internet"
       ],
-      "label": "E-commerce and Consumer Behavior",
-      "taxonomy_category": "Finance & Economics",
+      "label": "Online Shopping Behavior and Consumer Experience",
+      "taxonomy_category": "Social Sciences",
       "classification": "MAPPED",
-      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "reasoning": "This topic falls under the well-established research area of consumer behavior and psychology within social sciences.",
+      "paper_count": 32,
       "validation_status": "AGREED",
       "confidence": "HIGH",
-      "label_source": "fallback"
+      "label_source": "groq"
     },
     {
       "source": "abstracts",
@@ -3402,6 +3549,7 @@
       "taxonomy_category": "Social Sciences",
       "classification": "MAPPED",
       "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 28,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "fallback"
@@ -3424,10 +3572,11 @@
       "label": "Gamification in Learning and Interaction",
       "taxonomy_category": "Education Technology",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established within the field of education technology, with numerous studies exploring its applications in learning and user engagement.",
+      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 27,
       "validation_status": "AGREED",
       "confidence": "HIGH",
-      "label_source": "groq"
+      "label_source": "fallback"
     },
     {
       "source": "abstracts",
@@ -3444,13 +3593,14 @@
         "street",
         "car"
       ],
-      "label": "Study on driving, drivers, driver",
-      "taxonomy_category": "Other",
+      "label": "Transportation Systems and Safety",
+      "taxonomy_category": "Information Systems",
       "classification": "MAPPED",
-      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
-      "validation_status": "DISAGREED",
+      "reasoning": "This topic falls under Information Systems as it involves the analysis and improvement of transportation systems, which is a well-established research area within the field.",
+      "paper_count": 26,
+      "validation_status": "AGREED",
       "confidence": "HIGH",
-      "label_source": "fallback"
+      "label_source": "groq"
     },
     {
       "source": "abstracts",
@@ -3467,13 +3617,14 @@
         "machine",
         "interaction"
       ],
-      "label": "Emotional Human-Computer Interaction",
-      "taxonomy_category": "Human-Computer Interaction",
+      "label": "Conversational AI and Human Interaction",
+      "taxonomy_category": "Artificial Intelligence",
       "classification": "MAPPED",
-      "reasoning": "This topic falls under a well-established research area in Human-Computer Interaction, focusing on the emotional aspects of user experience and interaction with technology.",
-      "validation_status": "AGREED",
+      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 26,
+      "validation_status": "DISAGREED",
       "confidence": "HIGH",
-      "label_source": "groq"
+      "label_source": "fallback"
     },
     {
       "source": "abstracts",
@@ -3494,6 +3645,7 @@
       "taxonomy_category": "Finance & Economics",
       "classification": "MAPPED",
       "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 24,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "fallback"
@@ -3513,13 +3665,14 @@
         "involvement",
         "managers"
       ],
-      "label": "Study on technology, adoption, acceptance",
-      "taxonomy_category": "Other",
+      "label": "Technology Adoption in Organisations",
+      "taxonomy_category": "Information Systems",
       "classification": "MAPPED",
-      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
-      "validation_status": "DISAGREED",
+      "reasoning": "This topic fits within the well-established research area of Information Systems, specifically focusing on the adoption and usage of technologies in organisational contexts.",
+      "paper_count": 24,
+      "validation_status": "AGREED",
       "confidence": "HIGH",
-      "label_source": "fallback"
+      "label_source": "groq"
     },
     {
       "source": "abstracts",
@@ -3536,13 +3689,14 @@
         "luxury",
         "complexity"
       ],
-      "label": "Human-Computer Interaction Aesthetics",
-      "taxonomy_category": "Human-Computer Interaction",
+      "label": "Study on aesthetics, aesthetic, visual",
+      "taxonomy_category": "Other",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in HCI research, focusing on user experience, perception, and interaction with digital products and interfaces.",
+      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 24,
       "validation_status": "AGREED",
       "confidence": "HIGH",
-      "label_source": "groq"
+      "label_source": "fallback"
     },
     {
       "source": "abstracts",
@@ -3563,6 +3717,7 @@
       "taxonomy_category": "Artificial Intelligence",
       "classification": "MAPPED",
       "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 24,
       "validation_status": "DISAGREED",
       "confidence": "HIGH",
       "label_source": "fallback"
@@ -3582,13 +3737,14 @@
         "consumers",
         "commerce"
       ],
-      "label": "E-commerce and Consumer Behavior",
-      "taxonomy_category": "Finance & Economics",
+      "label": "Mobile Commerce and Consumer Adoption",
+      "taxonomy_category": "Information Systems",
       "classification": "MAPPED",
-      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "reasoning": "This topic fits within the established research area of Information Systems, specifically focusing on the adoption and use of mobile commerce services.",
+      "paper_count": 24,
       "validation_status": "AGREED",
       "confidence": "HIGH",
-      "label_source": "fallback"
+      "label_source": "groq"
     },
     {
       "source": "abstracts",
@@ -3605,13 +3761,14 @@
         "communities",
         "perceived"
       ],
-      "label": "Online Community Continuance Intention",
-      "taxonomy_category": "Information Systems",
+      "label": "Study on community, continuance, oc",
+      "taxonomy_category": "Other",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within the established research area of information systems, specifically focusing on user behavior and engagement in online communities.",
-      "validation_status": "AGREED",
+      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 22,
+      "validation_status": "DISAGREED",
       "confidence": "HIGH",
-      "label_source": "groq"
+      "label_source": "fallback"
     },
     {
       "source": "abstracts",
@@ -3628,13 +3785,14 @@
         "leadership",
         "kms"
       ],
-      "label": "Knowledge Graphs and Relational Data",
-      "taxonomy_category": "Data Engineering",
+      "label": "Knowledge Management and Sharing",
+      "taxonomy_category": "Information Systems",
       "classification": "MAPPED",
-      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
-      "validation_status": "DISAGREED",
+      "reasoning": "This topic fits within the established research area of Information Systems, specifically focusing on knowledge management and sharing.",
+      "paper_count": 21,
+      "validation_status": "AGREED",
       "confidence": "HIGH",
-      "label_source": "fallback"
+      "label_source": "groq"
     },
     {
       "source": "abstracts",
@@ -3655,6 +3813,7 @@
       "taxonomy_category": "Other",
       "classification": "MAPPED",
       "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 20,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "fallback"
@@ -3677,7 +3836,8 @@
       "label": "Remote Workforce Management",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic is closely related to the study of human-computer interaction in the context of remote work.",
+      "reasoning": "This topic is closely related to the study of human-computer interaction, particularly in the context of remote work and employee performance.",
+      "paper_count": 19,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -3697,10 +3857,11 @@
         "aesthetics",
         "usability"
       ],
-      "label": "Mobile Interaction and Usability Design",
+      "label": "Mobile Device Design and Usability",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic falls within the established research area of HCI, focusing on user experience, usability, and design of mobile devices and services.",
+      "reasoning": "This topic falls within the established research area of HCI, focusing on user experience and interface design for mobile devices.",
+      "paper_count": 19,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -3724,6 +3885,7 @@
       "taxonomy_category": "Other",
       "classification": "MAPPED",
       "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 19,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "fallback"
@@ -3743,13 +3905,14 @@
         "thought",
         "tlx"
       ],
-      "label": "Cognitive Abilities in Human-Computer Interaction",
-      "taxonomy_category": "Human-Computer Interaction",
+      "label": "Study on aloud, memory, think",
+      "taxonomy_category": "Other",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within the established research area of understanding human cognition and its impact on interaction with technology.",
-      "validation_status": "AGREED",
+      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 18,
+      "validation_status": "DISAGREED",
       "confidence": "HIGH",
-      "label_source": "groq"
+      "label_source": "fallback"
     },
     {
       "source": "abstracts",
@@ -3766,13 +3929,14 @@
         "design",
         "households"
       ],
-      "label": "Study on end, smart, iot",
-      "taxonomy_category": "Other",
+      "label": "Smart Home Design and Sustainability",
+      "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
-      "validation_status": "DISAGREED",
+      "reasoning": "This topic fits within established HCI research areas, focusing on user experience, design, and interaction with smart home technologies.",
+      "paper_count": 18,
+      "validation_status": "AGREED",
       "confidence": "HIGH",
-      "label_source": "fallback"
+      "label_source": "groq"
     },
     {
       "source": "abstracts",
@@ -3793,6 +3957,7 @@
       "taxonomy_category": "Education Technology",
       "classification": "MAPPED",
       "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 18,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "fallback"
@@ -3812,13 +3977,14 @@
         "tweets",
         "hate"
       ],
-      "label": "Cyberbullying and Online Aggression Research",
+      "label": "Internet Addiction and Adolescent Behavior",
       "taxonomy_category": "Social Sciences",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within the established research area of social psychology and criminology, examining the causes and consequences of online aggression.",
-      "validation_status": "AGREED",
+      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 18,
+      "validation_status": "DISAGREED",
       "confidence": "HIGH",
-      "label_source": "groq"
+      "label_source": "fallback"
     },
     {
       "source": "abstracts",
@@ -3835,13 +4001,14 @@
         "heuristics",
         "interaction"
       ],
-      "label": "Conversational AI and Human Interaction",
-      "taxonomy_category": "Artificial Intelligence",
+      "label": "Human-Centered Design in Cyberinfrastructure",
+      "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
-      "validation_status": "DISAGREED",
+      "reasoning": "This topic is well-established in HCI, focusing on designing interactive systems that meet user needs and expectations.",
+      "paper_count": 17,
+      "validation_status": "AGREED",
       "confidence": "HIGH",
-      "label_source": "fallback"
+      "label_source": "groq"
     },
     {
       "source": "abstracts",
@@ -3858,13 +4025,14 @@
         "task",
         "search"
       ],
-      "label": "Data Visualisation and Human Performance",
-      "taxonomy_category": "Human-Computer Interaction",
+      "label": "Study on visualisation, visual, sonification",
+      "taxonomy_category": "Other",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in HCI research, focusing on the effects of visualisation on human performance and cognition.",
-      "validation_status": "AGREED",
+      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 17,
+      "validation_status": "DISAGREED",
       "confidence": "HIGH",
-      "label_source": "groq"
+      "label_source": "fallback"
     },
     {
       "source": "abstracts",
@@ -3885,6 +4053,7 @@
       "taxonomy_category": "Other",
       "classification": "MAPPED",
       "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 16,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "fallback"
@@ -3904,13 +4073,14 @@
         "social",
         "followers"
       ],
-      "label": "E-commerce and Consumer Behavior",
-      "taxonomy_category": "Finance & Economics",
+      "label": "Social Commerce and E-commerce Research",
+      "taxonomy_category": "Information Systems",
       "classification": "MAPPED",
-      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "reasoning": "This topic falls under Information Systems as it primarily focuses on the intersection of social media and e-commerce, examining various aspects of online commerce and user behavior.",
+      "paper_count": 16,
       "validation_status": "AGREED",
       "confidence": "HIGH",
-      "label_source": "fallback"
+      "label_source": "groq"
     },
     {
       "source": "abstracts",
@@ -3927,13 +4097,14 @@
         "education",
         "teachers"
       ],
-      "label": "Learning Analytics in Education",
-      "taxonomy_category": "Education Technology",
+      "label": "Digital Privacy and Security Risks",
+      "taxonomy_category": "Cybersecurity",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established within the field of education technology, focusing on the use of data and analytics to improve learning outcomes.",
-      "validation_status": "AGREED",
+      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 16,
+      "validation_status": "DISAGREED",
       "confidence": "HIGH",
-      "label_source": "groq"
+      "label_source": "fallback"
     },
     {
       "source": "abstracts",
@@ -3954,7 +4125,8 @@
       "taxonomy_category": "Other",
       "classification": "MAPPED",
       "reasoning": "Generated via keyword heuristics due to LLM timeout.",
-      "validation_status": "AGREED",
+      "paper_count": 15,
+      "validation_status": "DISAGREED",
       "confidence": "HIGH",
       "label_source": "fallback"
     },
@@ -3973,13 +4145,14 @@
         "student",
         "hoarding"
       ],
-      "label": "Gamification in Learning and Interaction",
+      "label": "Higher Education Technology Adoption",
       "taxonomy_category": "Education Technology",
       "classification": "MAPPED",
-      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "reasoning": "This topic fits within a well-established research area of education technology, focusing on the integration of technology in higher education settings.",
+      "paper_count": 14,
       "validation_status": "AGREED",
       "confidence": "HIGH",
-      "label_source": "fallback"
+      "label_source": "groq"
     },
     {
       "source": "abstracts",
@@ -3996,13 +4169,14 @@
         "media",
         "microblog"
       ],
-      "label": "Social Media Influence and Propagation",
-      "taxonomy_category": "Social Sciences",
+      "label": "Study on propagation, microblogs, content",
+      "taxonomy_category": "Other",
       "classification": "MAPPED",
-      "reasoning": "This topic falls under the well-established research area of social sciences, specifically studying human behavior and interactions in online environments.",
-      "validation_status": "AGREED",
+      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 13,
+      "validation_status": "DISAGREED",
       "confidence": "HIGH",
-      "label_source": "groq"
+      "label_source": "fallback"
     },
     {
       "source": "abstracts",
@@ -4023,6 +4197,7 @@
       "taxonomy_category": "Other",
       "classification": "MAPPED",
       "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 13,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "fallback"
@@ -4042,13 +4217,14 @@
         "organisational",
         "compliance"
       ],
-      "label": "Digital Privacy and Security Risks",
+      "label": "Information Security in Organisations",
       "taxonomy_category": "Cybersecurity",
       "classification": "MAPPED",
-      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "reasoning": "This topic fits well within the established research area of cybersecurity, focusing on information security policies, employee compliance, and organisational management.",
+      "paper_count": 13,
       "validation_status": "AGREED",
       "confidence": "HIGH",
-      "label_source": "fallback"
+      "label_source": "groq"
     },
     {
       "source": "abstracts",
@@ -4065,13 +4241,14 @@
         "motor",
         "mouse"
       ],
-      "label": "Human-Computer Interaction Design",
-      "taxonomy_category": "Human-Computer Interaction",
+      "label": "Study on pen, width, input",
+      "taxonomy_category": "Other",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in HCI research, focusing on designing interfaces for user efficiency and comfort.",
-      "validation_status": "AGREED",
-      "confidence": "MEDIUM",
-      "label_source": "groq"
+      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 13,
+      "validation_status": "DISAGREED",
+      "confidence": "HIGH",
+      "label_source": "fallback"
     },
     {
       "source": "abstracts",
@@ -4092,6 +4269,7 @@
       "taxonomy_category": "Other",
       "classification": "MAPPED",
       "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 13,
       "validation_status": "DISAGREED",
       "confidence": "HIGH",
       "label_source": "fallback"
@@ -4111,13 +4289,14 @@
         "twitter",
         "sense"
       ],
-      "label": "Study on emergency, crisis, disaster",
-      "taxonomy_category": "Other",
+      "label": "Social Media in Crisis Response",
+      "taxonomy_category": "Social Sciences",
       "classification": "MAPPED",
-      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "reasoning": "This topic fits within established research areas in social sciences, particularly in the study of human behavior and social interactions during crises.",
+      "paper_count": 13,
       "validation_status": "AGREED",
       "confidence": "HIGH",
-      "label_source": "fallback"
+      "label_source": "groq"
     },
     {
       "source": "abstracts",
@@ -4134,13 +4313,14 @@
         "poor",
         "habits"
       ],
-      "label": "Smartphone Use and Sleep Habits",
-      "taxonomy_category": "Healthcare & Bioinformatics",
+      "label": "Study on sleep, smartphone, overuse",
+      "taxonomy_category": "Other",
       "classification": "MAPPED",
-      "reasoning": "This topic falls under a well-established research area in healthcare, examining the impact of technology on physical and mental well-being.",
+      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 12,
       "validation_status": "AGREED",
       "confidence": "HIGH",
-      "label_source": "groq"
+      "label_source": "fallback"
     },
     {
       "source": "abstracts",
@@ -4161,6 +4341,7 @@
       "taxonomy_category": "Education Technology",
       "classification": "MAPPED",
       "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 12,
       "validation_status": "DISAGREED",
       "confidence": "HIGH",
       "label_source": "fallback"
@@ -4180,13 +4361,14 @@
         "stressors",
         "frustrating"
       ],
-      "label": "Study on work, nonwork, stress",
-      "taxonomy_category": "Other",
+      "label": "ICT-induced Work-related Stress and Burnout",
+      "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "reasoning": "This topic is well-established in HCI research, focusing on the psychological effects of technology on users.",
+      "paper_count": 12,
       "validation_status": "AGREED",
       "confidence": "HIGH",
-      "label_source": "fallback"
+      "label_source": "groq"
     },
     {
       "source": "abstracts",
@@ -4203,13 +4385,14 @@
         "sois",
         "industry"
       ],
-      "label": "Organisational Learning and Knowledge Management",
-      "taxonomy_category": "Information Systems",
+      "label": "Gamification in Learning and Interaction",
+      "taxonomy_category": "Education Technology",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within the established research area of Information Systems, specifically focusing on organisational learning and knowledge management.",
-      "validation_status": "AGREED",
+      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 12,
+      "validation_status": "DISAGREED",
       "confidence": "HIGH",
-      "label_source": "groq"
+      "label_source": "fallback"
     },
     {
       "source": "abstracts",
@@ -4230,6 +4413,7 @@
       "taxonomy_category": "Education Technology",
       "classification": "MAPPED",
       "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 12,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "fallback"
@@ -4249,13 +4433,14 @@
         "configuration",
         "members"
       ],
-      "label": "Virtual Reality and Immersive Training",
-      "taxonomy_category": "Robotics & Automation",
+      "label": "Virtual Team Collaboration and Leadership",
+      "taxonomy_category": "Social Sciences",
       "classification": "MAPPED",
-      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
-      "validation_status": "DISAGREED",
+      "reasoning": "This topic is well-established in the field of organizational behavior and management studies.",
+      "paper_count": 11,
+      "validation_status": "AGREED",
       "confidence": "HIGH",
-      "label_source": "fallback"
+      "label_source": "groq"
     },
     {
       "source": "abstracts",
@@ -4272,13 +4457,14 @@
         "selection",
         "interaction"
       ],
-      "label": "Virtual Reality Haptic Interaction",
-      "taxonomy_category": "Human-Computer Interaction",
+      "label": "Conversational AI and Human Interaction",
+      "taxonomy_category": "Artificial Intelligence",
       "classification": "MAPPED",
-      "reasoning": "This topic falls under a well-established research area in human-computer interaction, specifically focusing on the design and evaluation of haptic feedback in virtual reality environments.",
-      "validation_status": "AGREED",
+      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 11,
+      "validation_status": "DISAGREED",
       "confidence": "HIGH",
-      "label_source": "groq"
+      "label_source": "fallback"
     },
     {
       "source": "abstracts",
@@ -4299,7 +4485,8 @@
       "taxonomy_category": "Other",
       "classification": "MAPPED",
       "reasoning": "Generated via keyword heuristics due to LLM timeout.",
-      "validation_status": "AGREED",
+      "paper_count": 11,
+      "validation_status": "DISAGREED",
       "confidence": "HIGH",
       "label_source": "fallback"
     },
@@ -4318,13 +4505,14 @@
         "language",
         "skills"
       ],
-      "label": "Study on asd, children, autistic",
-      "taxonomy_category": "Other",
+      "label": "Autism Technology Intervention Research",
+      "taxonomy_category": "Healthcare & Bioinformatics",
       "classification": "MAPPED",
-      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "reasoning": "This topic falls under a well-established research area in healthcare, focusing on the application of technology to support individuals with autism spectrum disorder.",
+      "paper_count": 11,
       "validation_status": "AGREED",
       "confidence": "HIGH",
-      "label_source": "fallback"
+      "label_source": "groq"
     },
     {
       "source": "abstracts",
@@ -4341,13 +4529,14 @@
         "code",
         "listening"
       ],
-      "label": "Cognitive Load and Human-Computer Interaction",
-      "taxonomy_category": "Human-Computer Interaction",
+      "label": "Study on cognitive, load, task",
+      "taxonomy_category": "Other",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in the field of Human-Computer Interaction, focusing on understanding and mitigating cognitive load in various contexts.",
+      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 11,
       "validation_status": "AGREED",
       "confidence": "HIGH",
-      "label_source": "groq"
+      "label_source": "fallback"
     },
     {
       "source": "abstracts",
@@ -4364,13 +4553,14 @@
         "sh",
         "poc"
       ],
-      "label": "Healthcare Technology and Patient Care",
+      "label": "Healthcare Online Communities",
       "taxonomy_category": "Healthcare & Bioinformatics",
       "classification": "MAPPED",
-      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "reasoning": "This topic falls under a well-established research area in healthcare, focusing on online platforms and their impact on patient support and healthcare knowledge sharing.",
+      "paper_count": 11,
       "validation_status": "AGREED",
       "confidence": "HIGH",
-      "label_source": "fallback"
+      "label_source": "groq"
     },
     {
       "source": "abstracts",
@@ -4391,6 +4581,7 @@
       "taxonomy_category": "Social Sciences",
       "classification": "MAPPED",
       "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 11,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "fallback"
@@ -4410,13 +4601,14 @@
         "team",
         "programming"
       ],
-      "label": "Collaborative Learning in Education",
+      "label": "Gamification in Learning and Interaction",
       "taxonomy_category": "Education Technology",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in the field of education technology, with numerous studies and methodologies discussed.",
+      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 11,
       "validation_status": "AGREED",
       "confidence": "HIGH",
-      "label_source": "groq"
+      "label_source": "fallback"
     },
     {
       "source": "abstracts",
@@ -4433,13 +4625,14 @@
         "bridging",
         "psi"
       ],
-      "label": "Knowledge Graphs and Relational Data",
-      "taxonomy_category": "Data Engineering",
+      "label": "Social Media and Human Interaction",
+      "taxonomy_category": "Social Sciences",
       "classification": "MAPPED",
-      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
-      "validation_status": "DISAGREED",
+      "reasoning": "This topic falls under the well-established research area of social sciences, specifically focusing on the psychological and sociological aspects of human interaction on social media platforms.",
+      "paper_count": 11,
+      "validation_status": "AGREED",
       "confidence": "HIGH",
-      "label_source": "fallback"
+      "label_source": "groq"
     },
     {
       "source": "abstracts",
@@ -4456,13 +4649,14 @@
         "facebook",
         "disclosure"
       ],
-      "label": "Social Media and Human Behavior",
-      "taxonomy_category": "Social Sciences",
+      "label": "Study on self, ethno, racial",
+      "taxonomy_category": "Other",
       "classification": "MAPPED",
-      "reasoning": "This topic falls under the established research area of social sciences, specifically focusing on the psychological and sociological aspects of human behavior in online environments.",
-      "validation_status": "AGREED",
+      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 10,
+      "validation_status": "DISAGREED",
       "confidence": "HIGH",
-      "label_source": "groq"
+      "label_source": "fallback"
     },
     {
       "source": "abstracts",
@@ -4483,6 +4677,7 @@
       "taxonomy_category": "Other",
       "classification": "MAPPED",
       "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 10,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "fallback"
@@ -4502,13 +4697,14 @@
         "cloud",
         "records"
       ],
-      "label": "Healthcare Technology and Patient Care",
+      "label": "Healthcare Technology and Monitoring",
       "taxonomy_category": "Healthcare & Bioinformatics",
       "classification": "MAPPED",
-      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "reasoning": "This topic falls under a well-established research area in healthcare, focusing on the application of technology for monitoring and improving health outcomes.",
+      "paper_count": 10,
       "validation_status": "AGREED",
       "confidence": "HIGH",
-      "label_source": "fallback"
+      "label_source": "groq"
     },
     {
       "source": "abstracts",
@@ -4525,13 +4721,14 @@
         "gameplay",
         "go"
       ],
-      "label": "Urban Experience and Gamification",
-      "taxonomy_category": "Human-Computer Interaction",
+      "label": "Study on urban, cities, city",
+      "taxonomy_category": "Other",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within established HCI research areas, focusing on the intersection of technology and urban environments.",
+      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 10,
       "validation_status": "AGREED",
       "confidence": "HIGH",
-      "label_source": "groq"
+      "label_source": "fallback"
     },
     {
       "source": "abstracts",
@@ -4552,6 +4749,7 @@
       "taxonomy_category": "Other",
       "classification": "MAPPED",
       "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 10,
       "validation_status": "DISAGREED",
       "confidence": "HIGH",
       "label_source": "fallback"
@@ -4571,13 +4769,14 @@
         "household",
         "pandemic"
       ],
-      "label": "Study on digital, divide, exclusion",
-      "taxonomy_category": "Other",
+      "label": "Digital Divide and Inclusion",
+      "taxonomy_category": "Social Sciences",
       "classification": "MAPPED",
-      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "reasoning": "This topic falls under social sciences as it explores the societal implications and consequences of digital exclusion and inclusion.",
+      "paper_count": 10,
       "validation_status": "AGREED",
       "confidence": "HIGH",
-      "label_source": "fallback"
+      "label_source": "groq"
     },
     {
       "source": "abstracts",
@@ -4594,13 +4793,14 @@
         "self",
         "partners"
       ],
-      "label": "Social Media and Mental Health",
-      "taxonomy_category": "Social Sciences",
+      "label": "Study on esteem, depressed, jealousy",
+      "taxonomy_category": "Other",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within the well-established research area of social psychology and its applications to digital technologies.",
-      "validation_status": "AGREED",
+      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 10,
+      "validation_status": "DISAGREED",
       "confidence": "HIGH",
-      "label_source": "groq"
+      "label_source": "fallback"
     },
     {
       "source": "abstracts",
@@ -4617,13 +4817,14 @@
         "information",
         "nudge"
       ],
-      "label": "Digital Privacy and Security Risks",
+      "label": "Cybersecurity Awareness and Threat Mitigation",
       "taxonomy_category": "Cybersecurity",
       "classification": "MAPPED",
-      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "reasoning": "This topic falls within an established research area with a clear focus on cybersecurity and threat mitigation strategies.",
+      "paper_count": 9,
       "validation_status": "AGREED",
       "confidence": "HIGH",
-      "label_source": "fallback"
+      "label_source": "groq"
     },
     {
       "source": "abstracts",
@@ -4644,6 +4845,7 @@
       "taxonomy_category": "Other",
       "classification": "MAPPED",
       "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 9,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "fallback"
@@ -4663,13 +4865,14 @@
         "learning",
         "environment"
       ],
-      "label": "Intelligent Learning Environments",
+      "label": "Gamification in Learning and Interaction",
       "taxonomy_category": "Education Technology",
       "classification": "MAPPED",
-      "reasoning": "This topic falls under a well-established research area in education technology, focusing on the design and development of intelligent learning systems and environments.",
-      "validation_status": "AGREED",
-      "confidence": "MEDIUM",
-      "label_source": "groq"
+      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 9,
+      "validation_status": "DISAGREED",
+      "confidence": "HIGH",
+      "label_source": "fallback"
     },
     {
       "source": "abstracts",
@@ -4686,13 +4889,14 @@
         "truth",
         "misperception"
       ],
-      "label": "Study on misinformation, news, fake",
-      "taxonomy_category": "Other",
+      "label": "Misinformation Detection and Correction",
+      "taxonomy_category": "Social Sciences",
       "classification": "MAPPED",
-      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "reasoning": "This topic falls under the broader category of social sciences, specifically focusing on the psychological and sociological aspects of misinformation.",
+      "paper_count": 9,
       "validation_status": "AGREED",
       "confidence": "HIGH",
-      "label_source": "fallback"
+      "label_source": "groq"
     },
     {
       "source": "abstracts",
@@ -4713,6 +4917,7 @@
       "taxonomy_category": "Other",
       "classification": "MAPPED",
       "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 9,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "fallback"
@@ -4735,7 +4940,8 @@
       "label": "Website Quality and User Satisfaction",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic falls under a well-established research area in Human-Computer Interaction, focusing on user experience and website usability.",
+      "reasoning": "This topic is well-established in the field of Human-Computer Interaction, focusing on the design and evaluation of user experiences on websites.",
+      "paper_count": 9,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -4759,6 +4965,7 @@
       "taxonomy_category": "Other",
       "classification": "MAPPED",
       "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 9,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "fallback"
@@ -4782,6 +4989,7 @@
       "taxonomy_category": "Other",
       "classification": "MAPPED",
       "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 9,
       "validation_status": "DISAGREED",
       "confidence": "HIGH",
       "label_source": "fallback"
@@ -4801,11 +5009,12 @@
         "initial",
         "healthcare"
       ],
-      "label": "Trust in Information Systems",
+      "label": "Trust in Information Systems Development",
       "taxonomy_category": "Information Systems",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in the field of Information Systems, with a focus on user trust and its development in various contexts.",
-      "validation_status": "DISAGREED",
+      "reasoning": "This topic is well-established within the field of Information Systems, focusing on the development and maintenance of trust in various IS contexts.",
+      "paper_count": 9,
+      "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
     },
@@ -4828,6 +5037,7 @@
       "taxonomy_category": "Other",
       "classification": "MAPPED",
       "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 9,
       "validation_status": "DISAGREED",
       "confidence": "HIGH",
       "label_source": "fallback"
@@ -4847,13 +5057,14 @@
         "educational",
         "solving"
       ],
-      "label": "Human-Robot Interaction in Education",
+      "label": "Gamification in Learning and Interaction",
       "taxonomy_category": "Education Technology",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within the established research area of using technology to enhance educational experiences.",
+      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 8,
       "validation_status": "AGREED",
       "confidence": "HIGH",
-      "label_source": "groq"
+      "label_source": "fallback"
     },
     {
       "source": "abstracts",
@@ -4870,13 +5081,14 @@
         "organizational",
         "operational"
       ],
-      "label": "Study on erp, enterprise, post",
-      "taxonomy_category": "Other",
+      "label": "Enterprise Resource Planning and Management",
+      "taxonomy_category": "Information Systems",
       "classification": "MAPPED",
-      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
-      "validation_status": "DISAGREED",
+      "reasoning": "This topic fits within a well-established research area in Information Systems, focusing on the implementation, assimilation, and performance of ERP systems in various organizational contexts.",
+      "paper_count": 8,
+      "validation_status": "AGREED",
       "confidence": "HIGH",
-      "label_source": "fallback"
+      "label_source": "groq"
     },
     {
       "source": "abstracts",
@@ -4897,6 +5109,7 @@
       "taxonomy_category": "Other",
       "classification": "MAPPED",
       "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 8,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "fallback"
@@ -4916,13 +5129,14 @@
         "job",
         "techno"
       ],
-      "label": "Cyberloafing and Employee Behavior",
-      "taxonomy_category": "Information Systems",
+      "label": "Study on cyberloafing, employees, employee",
+      "taxonomy_category": "Other",
       "classification": "MAPPED",
-      "reasoning": "This topic falls under Information Systems as it primarily deals with the impact of technology on employee behavior and workplace productivity.",
+      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 8,
       "validation_status": "AGREED",
       "confidence": "HIGH",
-      "label_source": "groq"
+      "label_source": "fallback"
     },
     {
       "source": "abstracts",
@@ -4939,13 +5153,14 @@
         "tailorability",
         "theory"
       ],
-      "label": "Study on design, hci, spaces",
-      "taxonomy_category": "Other",
+      "label": "Human-Centered Design and Interaction",
+      "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "reasoning": "This topic is well-established in the field of Human-Computer Interaction, focusing on design approaches and user experiences.",
+      "paper_count": 8,
       "validation_status": "AGREED",
       "confidence": "HIGH",
-      "label_source": "fallback"
+      "label_source": "groq"
     },
     {
       "source": "abstracts",
@@ -4966,6 +5181,7 @@
       "taxonomy_category": "Education Technology",
       "classification": "MAPPED",
       "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 8,
       "validation_status": "DISAGREED",
       "confidence": "HIGH",
       "label_source": "fallback"
@@ -4985,10 +5201,11 @@
         "interruptions",
         "interruption"
       ],
-      "label": "Remote Work and Communication Dynamics",
+      "label": "Remote Work and Communication Challenges",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in HCI research, focusing on the effects of remote work on employee communication and productivity.",
+      "reasoning": "This topic fits within the well-established research area of human-computer interaction, specifically focusing on the effects of remote work on communication and employee well-being.",
+      "paper_count": 8,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -5012,6 +5229,7 @@
       "taxonomy_category": "Other",
       "classification": "MAPPED",
       "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 8,
       "validation_status": "DISAGREED",
       "confidence": "HIGH",
       "label_source": "fallback"
@@ -5035,6 +5253,7 @@
       "taxonomy_category": "Other",
       "classification": "MAPPED",
       "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 8,
       "validation_status": "DISAGREED",
       "confidence": "HIGH",
       "label_source": "fallback"
@@ -5057,7 +5276,8 @@
       "label": "Software Engineering and Usability",
       "taxonomy_category": "Information Systems",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in the field of Information Systems, focusing on the intersection of software engineering and usability.",
+      "reasoning": "This topic falls under a well-established research area in Information Systems, focusing on the intersection of software engineering and usability.",
+      "paper_count": 8,
       "validation_status": "DISAGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -5081,6 +5301,7 @@
       "taxonomy_category": "Other",
       "classification": "MAPPED",
       "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 8,
       "validation_status": "DISAGREED",
       "confidence": "HIGH",
       "label_source": "fallback"
@@ -5104,6 +5325,7 @@
       "taxonomy_category": "Other",
       "classification": "MAPPED",
       "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 7,
       "validation_status": "DISAGREED",
       "confidence": "HIGH",
       "label_source": "fallback"
@@ -5126,7 +5348,8 @@
       "label": "Password Security and Memorability",
       "taxonomy_category": "Cybersecurity",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established within the field of cybersecurity, focusing on password authentication and protection.",
+      "reasoning": "This topic falls within the well-established research area of cybersecurity, specifically focusing on password security and memorability.",
+      "paper_count": 7,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -5150,6 +5373,7 @@
       "taxonomy_category": "Other",
       "classification": "MAPPED",
       "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 7,
       "validation_status": "DISAGREED",
       "confidence": "HIGH",
       "label_source": "fallback"
@@ -5173,6 +5397,7 @@
       "taxonomy_category": "Other",
       "classification": "MAPPED",
       "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 7,
       "validation_status": "DISAGREED",
       "confidence": "HIGH",
       "label_source": "fallback"
@@ -5195,7 +5420,8 @@
       "label": "Human-Computer Interaction in Games",
       "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic falls under a well-established research area in HCI, focusing on the design and experience of interactive games.",
+      "reasoning": "This topic is well-established in HCI research, focusing on user experience, game design, and interaction techniques.",
+      "paper_count": 7,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"
@@ -5219,7 +5445,8 @@
       "taxonomy_category": "Other",
       "classification": "MAPPED",
       "reasoning": "Generated via keyword heuristics due to LLM timeout.",
-      "validation_status": "AGREED",
+      "paper_count": 7,
+      "validation_status": "DISAGREED",
       "confidence": "HIGH",
       "label_source": "fallback"
     },
@@ -5238,13 +5465,14 @@
         "signs",
         "owl"
       ],
-      "label": "Knowledge Graphs and Relational Data",
-      "taxonomy_category": "Data Engineering",
+      "label": "Knowledge Representation and Ontology Engineering",
+      "taxonomy_category": "Information Systems",
       "classification": "MAPPED",
-      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "reasoning": "This topic fits within the established research area of Information Systems, specifically focusing on knowledge representation and ontology engineering.",
+      "paper_count": 7,
       "validation_status": "AGREED",
       "confidence": "HIGH",
-      "label_source": "fallback"
+      "label_source": "groq"
     },
     {
       "source": "abstracts",
@@ -5261,13 +5489,14 @@
         "cultural",
         "middle"
       ],
-      "label": "Human-Computer Interaction in Aging Populations",
-      "taxonomy_category": "Human-Computer Interaction",
+      "label": "Virtual Reality and Immersive Training",
+      "taxonomy_category": "Robotics & Automation",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within the established research area of HCI, focusing on designing technologies for older adults.",
+      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 7,
       "validation_status": "DISAGREED",
       "confidence": "HIGH",
-      "label_source": "groq"
+      "label_source": "fallback"
     },
     {
       "source": "abstracts",
@@ -5288,6 +5517,7 @@
       "taxonomy_category": "Other",
       "classification": "MAPPED",
       "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 7,
       "validation_status": "DISAGREED",
       "confidence": "HIGH",
       "label_source": "fallback"
@@ -5307,13 +5537,14 @@
         "green",
         "objects"
       ],
-      "label": "Study on eye, aberration, image",
-      "taxonomy_category": "Other",
+      "label": "Eye Tracking and Visual Perception",
+      "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
-      "validation_status": "AGREED",
+      "reasoning": "This topic is well-established in the field of Human-Computer Interaction, with a focus on understanding user behavior and visual perception.",
+      "paper_count": 7,
+      "validation_status": "DISAGREED",
       "confidence": "HIGH",
-      "label_source": "fallback"
+      "label_source": "groq"
     },
     {
       "source": "abstracts",
@@ -5330,13 +5561,14 @@
         "csds",
         "musicking"
       ],
-      "label": "Human Creativity and Technology Support",
-      "taxonomy_category": "Education Technology",
+      "label": "Study on creativity, creative, erep",
+      "taxonomy_category": "Other",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within established research areas in education technology, specifically focusing on the intersection of creativity and technology-enhanced learning.",
-      "validation_status": "AGREED",
+      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 7,
+      "validation_status": "DISAGREED",
       "confidence": "HIGH",
-      "label_source": "groq"
+      "label_source": "fallback"
     },
     {
       "source": "abstracts",
@@ -5353,13 +5585,14 @@
         "immigrants",
         "norms"
       ],
-      "label": "Study on ditv, iptv, stv",
-      "taxonomy_category": "Other",
+      "label": "Digital Television and Interactive Services",
+      "taxonomy_category": "Information Systems",
       "classification": "MAPPED",
-      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "reasoning": "This topic fits within the established research area of information systems, specifically focusing on the adoption and use of digital television and interactive services.",
+      "paper_count": 6,
       "validation_status": "AGREED",
       "confidence": "HIGH",
-      "label_source": "fallback"
+      "label_source": "groq"
     },
     {
       "source": "abstracts",
@@ -5380,6 +5613,7 @@
       "taxonomy_category": "Other",
       "classification": "MAPPED",
       "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 6,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "fallback"
@@ -5399,13 +5633,14 @@
         "uncivil",
         "polarized"
       ],
-      "label": "Social Media Misinformation and Polarization",
-      "taxonomy_category": "Social Sciences",
+      "label": "Study on fake, partisan, news",
+      "taxonomy_category": "Other",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within established research areas in social sciences, such as communication studies and sociology.",
+      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 6,
       "validation_status": "AGREED",
       "confidence": "HIGH",
-      "label_source": "groq"
+      "label_source": "fallback"
     },
     {
       "source": "abstracts",
@@ -5422,13 +5657,14 @@
         "photos",
         "body"
       ],
-      "label": "Deep Learning Architectures",
-      "taxonomy_category": "Machine Learning",
+      "label": "Social Media and Self-Perception",
+      "taxonomy_category": "Social Sciences",
       "classification": "MAPPED",
-      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
-      "validation_status": "DISAGREED",
+      "reasoning": "This topic is well-established in the field of social psychology and media studies.",
+      "paper_count": 6,
+      "validation_status": "AGREED",
       "confidence": "HIGH",
-      "label_source": "fallback"
+      "label_source": "groq"
     },
     {
       "source": "abstracts",
@@ -5445,13 +5681,14 @@
         "sites",
         "intimates"
       ],
-      "label": "Algorithmic Dating and Relationship Dynamics",
-      "taxonomy_category": "Social Sciences",
+      "label": "Study on dating, arm, intimacy",
+      "taxonomy_category": "Other",
       "classification": "MAPPED",
-      "reasoning": "This topic falls under the broader category of social sciences, specifically examining the intersection of technology and human relationships.",
-      "validation_status": "AGREED",
+      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 6,
+      "validation_status": "DISAGREED",
       "confidence": "HIGH",
-      "label_source": "groq"
+      "label_source": "fallback"
     },
     {
       "source": "abstracts",
@@ -5472,6 +5709,7 @@
       "taxonomy_category": "Other",
       "classification": "MAPPED",
       "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 6,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "fallback"
@@ -5491,13 +5729,14 @@
         "pe",
         "social"
       ],
-      "label": "Study on facebook, sns, sct",
-      "taxonomy_category": "Other",
+      "label": "Social Network Service Adoption and Usage",
+      "taxonomy_category": "Information Systems",
       "classification": "MAPPED",
-      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
-      "validation_status": "DISAGREED",
+      "reasoning": "This topic is well-established in the field of Information Systems, focusing on the adoption, usage, and impact of social network services.",
+      "paper_count": 6,
+      "validation_status": "AGREED",
       "confidence": "HIGH",
-      "label_source": "fallback"
+      "label_source": "groq"
     },
     {
       "source": "abstracts",
@@ -5514,13 +5753,14 @@
         "training",
         "pu"
       ],
-      "label": "Technology Acceptance and E-Learning Adoption",
-      "taxonomy_category": "Information Systems",
+      "label": "Virtual Reality and Immersive Training",
+      "taxonomy_category": "Robotics & Automation",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in the field of Information Systems, particularly in the context of e-learning adoption and technology acceptance models.",
-      "validation_status": "AGREED",
+      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 6,
+      "validation_status": "DISAGREED",
       "confidence": "HIGH",
-      "label_source": "groq"
+      "label_source": "fallback"
     },
     {
       "source": "abstracts",
@@ -5537,13 +5777,14 @@
         "anxiety",
         "phobia"
       ],
-      "label": "Study on loneliness, problematic, isolation",
-      "taxonomy_category": "Other",
+      "label": "Mental Health and Digital Technology",
+      "taxonomy_category": "Healthcare & Bioinformatics",
       "classification": "MAPPED",
-      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "reasoning": "This topic is well-established in the field of healthcare and bioinformatics, with a focus on the psychological impacts of digital technology.",
+      "paper_count": 6,
       "validation_status": "AGREED",
       "confidence": "HIGH",
-      "label_source": "fallback"
+      "label_source": "groq"
     },
     {
       "source": "abstracts",
@@ -5564,6 +5805,7 @@
       "taxonomy_category": "Other",
       "classification": "MAPPED",
       "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 6,
       "validation_status": "DISAGREED",
       "confidence": "HIGH",
       "label_source": "fallback"
@@ -5583,13 +5825,14 @@
         "attentional",
         "problematic"
       ],
-      "label": "Internet Addiction and Attention Research",
+      "label": "Internet Addiction and Adolescent Behavior",
       "taxonomy_category": "Social Sciences",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within established research areas in psychology and sociology, specifically studying human behavior and technology use.",
+      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 6,
       "validation_status": "AGREED",
       "confidence": "HIGH",
-      "label_source": "groq"
+      "label_source": "fallback"
     },
     {
       "source": "abstracts",
@@ -5606,13 +5849,14 @@
         "passive",
         "qos"
       ],
-      "label": "Study on waiting, refresh, loading",
-      "taxonomy_category": "Other",
+      "label": "Mobile User Experience and Interaction",
+      "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "reasoning": "This topic is well-established in the field of Human-Computer Interaction, focusing on user experience and interaction with mobile devices.",
+      "paper_count": 6,
       "validation_status": "AGREED",
       "confidence": "HIGH",
-      "label_source": "fallback"
+      "label_source": "groq"
     },
     {
       "source": "abstracts",
@@ -5629,13 +5873,14 @@
         "health",
         "smoking"
       ],
-      "label": "Mobile Health and User Engagement",
-      "taxonomy_category": "Healthcare & Bioinformatics",
+      "label": "Gaming and User Engagement Patterns",
+      "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "This topic falls within an established research area in healthcare, focusing on the use of mobile technologies for health management and user engagement.",
-      "validation_status": "AGREED",
+      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 6,
+      "validation_status": "DISAGREED",
       "confidence": "HIGH",
-      "label_source": "groq"
+      "label_source": "fallback"
     },
     {
       "source": "abstracts",
@@ -5656,6 +5901,7 @@
       "taxonomy_category": "Other",
       "classification": "MAPPED",
       "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 6,
       "validation_status": "DISAGREED",
       "confidence": "HIGH",
       "label_source": "fallback"
@@ -5675,13 +5921,14 @@
         "asde",
         "classmates"
       ],
-      "label": "Gamification in Learning and Interaction",
+      "label": "Presence in Distance Education Environments",
       "taxonomy_category": "Education Technology",
       "classification": "MAPPED",
-      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
-      "validation_status": "DISAGREED",
+      "reasoning": "This topic is well-established in the field of education technology, particularly in the context of online learning and virtual classrooms.",
+      "paper_count": 6,
+      "validation_status": "AGREED",
       "confidence": "HIGH",
-      "label_source": "fallback"
+      "label_source": "groq"
     },
     {
       "source": "abstracts",
@@ -5698,13 +5945,14 @@
         "motive",
         "acculturation"
       ],
-      "label": "Social Media and Narcissistic Behavior",
-      "taxonomy_category": "Social Sciences",
+      "label": "Study on narcissism, phubbing, trolling",
+      "taxonomy_category": "Other",
       "classification": "MAPPED",
-      "reasoning": "This topic fits within the established research area of social psychology, specifically examining the relationship between social media use and narcissistic tendencies.",
-      "validation_status": "AGREED",
+      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 6,
+      "validation_status": "DISAGREED",
       "confidence": "HIGH",
-      "label_source": "groq"
+      "label_source": "fallback"
     },
     {
       "source": "abstracts",
@@ -5725,6 +5973,7 @@
       "taxonomy_category": "Cybersecurity",
       "classification": "MAPPED",
       "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 5,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "fallback"
@@ -5744,13 +5993,14 @@
         "heart",
         "ecg"
       ],
-      "label": "Study on coping, jit, chatgpt",
-      "taxonomy_category": "Other",
+      "label": "Stress Detection and Coping Mechanisms",
+      "taxonomy_category": "Healthcare & Bioinformatics",
       "classification": "MAPPED",
-      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
-      "validation_status": "DISAGREED",
+      "reasoning": "This topic falls under the broader category of healthcare and bioinformatics due to its focus on stress detection and its implications for mental health.",
+      "paper_count": 5,
+      "validation_status": "AGREED",
       "confidence": "HIGH",
-      "label_source": "fallback"
+      "label_source": "groq"
     },
     {
       "source": "abstracts",
@@ -5767,13 +6017,14 @@
         "mental",
         "passive"
       ],
-      "label": "Mental Health and Social Media",
-      "taxonomy_category": "Healthcare & Bioinformatics",
+      "label": "Study on smu, depression, depressive",
+      "taxonomy_category": "Other",
       "classification": "MAPPED",
-      "reasoning": "This topic is well-established in the field of healthcare and bioinformatics, with a focus on the intersection of mental health and social media.",
+      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 5,
       "validation_status": "DISAGREED",
       "confidence": "HIGH",
-      "label_source": "groq"
+      "label_source": "fallback"
     },
     {
       "source": "abstracts",
@@ -5794,6 +6045,7 @@
       "taxonomy_category": "Other",
       "classification": "MAPPED",
       "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 5,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "fallback"
@@ -5813,13 +6065,14 @@
         "misinformation",
         "misleading"
       ],
-      "label": "Study on vaccine, hesitancy, memes",
-      "taxonomy_category": "Other",
+      "label": "Misinformation and Social Media Polarisation",
+      "taxonomy_category": "Social Sciences",
       "classification": "MAPPED",
-      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
-      "validation_status": "DISAGREED",
+      "reasoning": "This topic fits within established research areas in social sciences, particularly in the study of online behaviour and its impact on public health.",
+      "paper_count": 5,
+      "validation_status": "AGREED",
       "confidence": "HIGH",
-      "label_source": "fallback"
+      "label_source": "groq"
     },
     {
       "source": "abstracts",
@@ -5836,13 +6089,14 @@
         "predictions",
         "feed"
       ],
-      "label": "MOOC Learning and Feedback Strategies",
-      "taxonomy_category": "Education Technology",
+      "label": "Study on mooc, moocs, course",
+      "taxonomy_category": "Other",
       "classification": "MAPPED",
-      "reasoning": "This topic falls under a well-established research area in education technology, focusing on the design, implementation, and evaluation of online learning platforms and strategies.",
+      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 5,
       "validation_status": "AGREED",
       "confidence": "HIGH",
-      "label_source": "groq"
+      "label_source": "fallback"
     },
     {
       "source": "abstracts",
@@ -5863,6 +6117,7 @@
       "taxonomy_category": "Other",
       "classification": "MAPPED",
       "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 5,
       "validation_status": "DISAGREED",
       "confidence": "HIGH",
       "label_source": "fallback"
@@ -5882,13 +6137,14 @@
         "continuance",
         "government"
       ],
-      "label": "Study on precipitating, usage, tefs",
-      "taxonomy_category": "Other",
+      "label": "Information Systems Usage and Adoption",
+      "taxonomy_category": "Information Systems",
       "classification": "MAPPED",
-      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "reasoning": "This topic falls within the well-established research area of Information Systems, specifically focusing on usage and adoption of various IS.",
+      "paper_count": 5,
       "validation_status": "DISAGREED",
-      "confidence": "HIGH",
-      "label_source": "fallback"
+      "confidence": "MEDIUM",
+      "label_source": "groq"
     },
     {
       "source": "abstracts",
@@ -5905,13 +6161,14 @@
         "obligation",
         "anxiety"
       ],
-      "label": "Smartphone Addiction and Mental Health",
-      "taxonomy_category": "Healthcare & Bioinformatics",
+      "label": "Internet Addiction and Adolescent Behavior",
+      "taxonomy_category": "Social Sciences",
       "classification": "MAPPED",
-      "reasoning": "This topic falls under the well-established research area of the psychological effects of technology use on mental health.",
-      "validation_status": "AGREED",
+      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 5,
+      "validation_status": "DISAGREED",
       "confidence": "HIGH",
-      "label_source": "groq"
+      "label_source": "fallback"
     },
     {
       "source": "abstracts",
@@ -5932,6 +6189,7 @@
       "taxonomy_category": "Other",
       "classification": "MAPPED",
       "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 5,
       "validation_status": "DISAGREED",
       "confidence": "HIGH",
       "label_source": "fallback"
@@ -5951,13 +6209,14 @@
         "shortened",
         "gapped"
       ],
-      "label": "Study on menu, menus, icon",
-      "taxonomy_category": "Other",
+      "label": "Smartphone Menu Design and Usability",
+      "taxonomy_category": "Human-Computer Interaction",
       "classification": "MAPPED",
-      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "reasoning": "This topic fits within the established research area of human-computer interaction, specifically focusing on user interface design and usability.",
+      "paper_count": 5,
       "validation_status": "AGREED",
       "confidence": "HIGH",
-      "label_source": "fallback"
+      "label_source": "groq"
     },
     {
       "source": "abstracts",
@@ -5974,13 +6233,14 @@
         "incoherent",
         "office"
       ],
-      "label": "Hypertext and Cognitive Abilities",
-      "taxonomy_category": "Human-Computer Interaction",
+      "label": "Study on hypertext, dyslexia, proficiency",
+      "taxonomy_category": "Other",
       "classification": "MAPPED",
-      "reasoning": "This topic falls under Human-Computer Interaction as it explores the effects of hypertext on user cognition and behavior.",
-      "validation_status": "AGREED",
+      "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 5,
+      "validation_status": "DISAGREED",
       "confidence": "HIGH",
-      "label_source": "groq"
+      "label_source": "fallback"
     },
     {
       "source": "abstracts",
@@ -6001,6 +6261,7 @@
       "taxonomy_category": "Other",
       "classification": "MAPPED",
       "reasoning": "Generated via keyword heuristics due to LLM timeout.",
+      "paper_count": 5,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "fallback"
@@ -6022,8 +6283,9 @@
       ],
       "label": "Research Availability and Accessibility",
       "taxonomy_category": "Information Systems",
-      "classification": "MAPPED",
-      "reasoning": "This topic is mapped to Information Systems as it likely deals with the availability and accessibility of research documents or information systems.",
+      "classification": "NOVEL",
+      "reasoning": "This topic seems to focus on the availability and accessibility of research, which is a novel theme not well-represented in standard taxonomies.",
+      "paper_count": 5,
       "validation_status": "AGREED",
       "confidence": "HIGH",
       "label_source": "groq"

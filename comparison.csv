@@ -1,124 +1,124 @@
-topic_id,title_label,title_category,title_classification,abstract_label,abstract_category,abstract_classification,overlap_keywords,difference_note
-0,Digital Privacy and Disclosure Concerns,Human-Computer Interaction,MAPPED,Conversational AI and Human Interaction,Artificial Intelligence,MAPPED,trust,"The most meaningful difference between the two topic representations is that one focuses on digital privacy and human-computer interaction, while the other focuses on conversational AI and human interaction, indicating distinct areas of study."
-1,Gaming Disorder and Online Behavior,Healthcare & Bioinformatics,MAPPED,"Study on older, adults, elderly",Other,MAPPED,none,"The most meaningful difference between these two topic representations is that one focuses on gaming disorder and online behavior, while the other focuses on older adults and technology use."
-2,Technology Adoption and Acceptance Factors,Information Systems,MAPPED,Digital Privacy and Security Concerns,Social Sciences,MAPPED,none,"The most meaningful difference between these two topic representations is that they have distinct labels and categories, with one focusing on technology adoption and the other on digital privacy and security concerns."
-3,Human-Computer Interaction Techniques,Human-Computer Interaction,MAPPED,Gaming and User Engagement Patterns,Human-Computer Interaction,MAPPED,none,"The most meaningful difference between the two topic representations is that the title-based topic focuses on human-computer interaction techniques, while the abstract-based topic focuses on gaming and user engagement patterns, despite both being categorized under Human-Computer Interaction."
-4,Cybersecurity and Information Protection,Cybersecurity,MAPPED,Virtual Reality and Immersive Training,Robotics & Automation,MAPPED,none,"The most meaningful difference between the two topic representations is that they have distinct labels and categories, indicating a shift in focus from cybersecurity to virtual reality and immersive training."
-5,Consumer Behavior in E-commerce,Social Sciences,MAPPED,Persuasive Systems Design in Health,Healthcare & Bioinformatics,MAPPED,none,"The most meaningful difference between the two topic representations is that they have distinct labels and categories, indicating that they are unrelated topics despite sharing some common keywords."
-6,Gamification and Motivation in Learning,Education Technology,MAPPED,Healthcare Technology and Patient Care,Healthcare & Bioinformatics,MAPPED,none,Minor or no significant difference
-7,Internet Addiction in Adolescents,Healthcare & Bioinformatics,MAPPED,E-commerce and Consumer Behavior,Finance & Economics,MAPPED,internet,Minor or no significant difference
-8,Knowledge Sharing in Virtual Communities,Information Systems,MAPPED,Internet Addiction and Adolescent Behavior,Social Sciences,MAPPED,none,Minor or no significant difference
-9,Human-Computer Interaction in Software Development,Human-Computer Interaction,MAPPED,Gamification in Learning and Interaction,Education Technology,MAPPED,none,Minor or no significant difference
-10,Enterprise Social Media and Employee Resilience,Social Sciences,MAPPED,"Study on driving, drivers, driver",Other,MAPPED,none,Minor or no significant difference
-11,Chatbot Design and Human Interaction,Human-Computer Interaction,MAPPED,Emotional Human-Computer Interaction,Human-Computer Interaction,MAPPED,none,Minor or no significant difference
-12,Wayfinding and Navigation Systems,Human-Computer Interaction,MAPPED,E-commerce and Consumer Behavior,Finance & Economics,MAPPED,none,Minor or no significant difference
-13,Education Technology and Learning Analytics,Education Technology,MAPPED,"Study on technology, adoption, acceptance",Other,MAPPED,none,Minor or no significant difference
-14,Emotional AI and Human Interaction,Human-Computer Interaction,MAPPED,Human-Computer Interaction Aesthetics,Human-Computer Interaction,MAPPED,none,Minor or no significant difference
-15,Visual Aesthetics in User Interface Design,Human-Computer Interaction,MAPPED,Conversational AI and Human Interaction,Artificial Intelligence,MAPPED,none,Minor or no significant difference
-16,Sustainable Design and Energy Efficiency,Human-Computer Interaction,MAPPED,E-commerce and Consumer Behavior,Finance & Economics,MAPPED,none,Minor or no significant difference
-17,Autonomous Vehicle Technology,Robotics & Automation,MAPPED,Online Community Continuance Intention,Information Systems,MAPPED,none,Minor or no significant difference
-18,Smartphone Addiction and Mental Wellbeing,Human-Computer Interaction,MAPPED,Knowledge Graphs and Relational Data,Data Engineering,MAPPED,none,Minor or no significant difference
-19,Cyberloafing and Digital Workplace Wellness,Human-Computer Interaction,MAPPED,"Study on accessibility, disabilities, web",Other,MAPPED,none,Minor or no significant difference
-20,Online Learning and Motivation Strategies,Education Technology,MAPPED,Remote Workforce Management,Human-Computer Interaction,MAPPED,none,Minor or no significant difference
-21,Conversational AI in Healthcare Applications,Healthcare & Bioinformatics,MAPPED,Mobile Interaction and Usability Design,Human-Computer Interaction,MAPPED,none,Minor or no significant difference
-22,Crowdsourcing and Contest Participation,Information Systems,MAPPED,"Study on usability, problems, evaluation",Other,MAPPED,none,Minor or no significant difference
-23,Web Accessibility for Impaired Users,Human-Computer Interaction,MAPPED,Cognitive Abilities in Human-Computer Interaction,Human-Computer Interaction,MAPPED,none,Minor or no significant difference
-24,Social Media and Political Engagement,Social Sciences,MAPPED,"Study on end, smart, iot",Other,MAPPED,none,Minor or no significant difference
-25,Gerontechnology and Aging Support,Human-Computer Interaction,MAPPED,Gamification in Learning and Interaction,Education Technology,MAPPED,none,Minor or no significant difference
-26,Online Health Communities and Empathy,Healthcare & Bioinformatics,MAPPED,Cyberbullying and Online Aggression Research,Social Sciences,MAPPED,none,Minor or no significant difference
-27,Mobile Device User Experience,Human-Computer Interaction,MAPPED,Conversational AI and Human Interaction,Artificial Intelligence,MAPPED,none,Minor or no significant difference
-28,Visual Search and Information Design,Human-Computer Interaction,MAPPED,Data Visualisation and Human Performance,Human-Computer Interaction,MAPPED,"visual, search",Minor or no significant difference
-29,Human Mental Workload and Performance,Human-Computer Interaction,MAPPED,"Study on crowdsourcing, solvers, contests",Other,MAPPED,task,Minor or no significant difference
-30,Cyberbullying and Online Victimization,Social Sciences,MAPPED,E-commerce and Consumer Behavior,Finance & Economics,MAPPED,none,Minor or no significant difference
-31,Social Media and Mental Health,Healthcare & Bioinformatics,MAPPED,Learning Analytics in Education,Education Technology,MAPPED,none,Minor or no significant difference
-32,Health Behaviour Change and Technology,Healthcare & Bioinformatics,MAPPED,"Study on investors, banking, financial",Other,MAPPED,none,Minor or no significant difference
-33,Crisis Information Diffusion on Social Media,Social Sciences,MAPPED,Gamification in Learning and Interaction,Education Technology,MAPPED,none,Minor or no significant difference
-34,Human-AI Interaction and Ethics,Human-Computer Interaction,MAPPED,Social Media Influence and Propagation,Social Sciences,MAPPED,none,Minor or no significant difference
-35,Healthcare Technology and Monitoring,Healthcare & Bioinformatics,MAPPED,"Study on piracy, software, moral",Other,MAPPED,none,Minor or no significant difference
-36,Participatory Design with Children,Human-Computer Interaction,MAPPED,Digital Privacy and Security Risks,Cybersecurity,MAPPED,none,Minor or no significant difference
-37,Consumer Behavior in Digital Retail Environments,Social Sciences,MAPPED,Human-Computer Interaction Design,Human-Computer Interaction,MAPPED,none,Minor or no significant difference
-38,Autism and Technology Interventions,Healthcare & Bioinformatics,MAPPED,"Study on children, parents, co",Other,MAPPED,children,Minor or no significant difference
-39,Virtual Team Dynamics and Collaboration,Human-Computer Interaction,MAPPED,"Study on emergency, crisis, disaster",Other,MAPPED,none,"The most meaningful difference between the two topic representations is that they have distinct labels and keywords, with the title-based topic focusing on virtual team dynamics and the abstract-based topic focusing on emergency and crisis studies."
-40,Software Piracy and Copyright Infringement,Information Systems,MAPPED,Smartphone Use and Sleep Habits,Healthcare & Bioinformatics,MAPPED,none,Minor or no significant difference
-41,Trust and Value Co-Creation in Online Interactions,Social Sciences,MAPPED,Gamification in Learning and Interaction,Education Technology,MAPPED,none,Minor or no significant difference
-42,Social Media Addiction and Mental Health,Social Sciences,MAPPED,"Study on work, nonwork, stress",Other,MAPPED,none,Minor or no significant difference
-43,Human-Computer Speech Interfaces,Human-Computer Interaction,MAPPED,Organisational Learning and Knowledge Management,Information Systems,MAPPED,none,Minor or no significant difference
-44,Smartphone Use and Psychological Well-being,Human-Computer Interaction,MAPPED,Gamification in Learning and Interaction,Education Technology,MAPPED,none,Minor or no significant difference
-45,Authentication and Secure Password Methods,Cybersecurity,MAPPED,Virtual Reality and Immersive Training,Robotics & Automation,MAPPED,none,Minor or no significant difference
-46,Online Review Sentiment Analysis,Information Systems,MAPPED,Virtual Reality Haptic Interaction,Human-Computer Interaction,MAPPED,none,Minor or no significant difference
-47,Collaborative Learning in Education,Education Technology,MAPPED,"Study on smartphone, psu, use",Other,MAPPED,none,Minor or no significant difference
-48,Social Media and Mental Health Impact,Social Sciences,MAPPED,"Study on asd, children, autistic",Other,MAPPED,none,Minor or no significant difference
-49,Virtual Reality and Human Experience,Human-Computer Interaction,MAPPED,Cognitive Load and Human-Computer Interaction,Human-Computer Interaction,MAPPED,none,Minor or no significant difference
-50,MOOC Design and Learning Outcomes,Education Technology,MAPPED,Healthcare Technology and Patient Care,Healthcare & Bioinformatics,MAPPED,none,Minor or no significant difference
-51,Social Capital in Digital Networking,Social Sciences,MAPPED,Internet Addiction and Adolescent Behavior,Social Sciences,MAPPED,none,Minor or no significant difference
-52,Healthcare Information Systems Adoption,Healthcare & Bioinformatics,MAPPED,Collaborative Learning in Education,Education Technology,MAPPED,none,Minor or no significant difference
-53,Visual Learning and Reading Technologies,Human-Computer Interaction,MAPPED,Knowledge Graphs and Relational Data,Data Engineering,MAPPED,none,Minor or no significant difference
-54,Cyberharassment and Digital Behaviour,Social Sciences,MAPPED,Social Media and Human Behavior,Social Sciences,MAPPED,none,Minor or no significant difference
-55,Serious Games and Environmental Experience,Human-Computer Interaction,MAPPED,"Study on phishing, fraud, scams",Other,MAPPED,none,Minor or no significant difference
-56,Online Scam Detection and Prevention,Cybersecurity,MAPPED,Healthcare Technology and Patient Care,Healthcare & Bioinformatics,MAPPED,none,Minor or no significant difference
-57,Usability in Aging and Mobile Devices,Human-Computer Interaction,MAPPED,Urban Experience and Gamification,Human-Computer Interaction,MAPPED,none,Minor or no significant difference
-58,Persuasive Systems Design for Health,Human-Computer Interaction,MAPPED,"Study on overload, media, social",Other,MAPPED,none,Minor or no significant difference
-59,Usability Evaluation Methods and Techniques,Human-Computer Interaction,MAPPED,"Study on digital, divide, exclusion",Other,MAPPED,none,Minor or no significant difference
-60,Blockchain in Banking and Finance,Finance & Economics,MAPPED,Social Media and Mental Health,Social Sciences,MAPPED,none,Minor or no significant difference
-61,Virtual Reality in Education and Training,Education Technology,MAPPED,Digital Privacy and Security Risks,Cybersecurity,MAPPED,none,Minor or no significant difference
-62,User Experience in Industrial Design,Human-Computer Interaction,MAPPED,"Study on advertising, app, advertisements",Other,MAPPED,none,Minor or no significant difference
-63,Technostress and Work-Related Stress Management,Human-Computer Interaction,MAPPED,Intelligent Learning Environments,Education Technology,MAPPED,none,Minor or no significant difference
-64,Human-Computer Interaction Dynamics,Human-Computer Interaction,MAPPED,"Study on misinformation, news, fake",Other,MAPPED,none,Minor or no significant difference
-65,Mobile Learning and Academic Performance,Education Technology,MAPPED,"Study on navigation, route, instructions",Other,MAPPED,none,Minor or no significant difference
-66,Student Engagement in Educational Media,Education Technology,MAPPED,Website Quality and User Satisfaction,Human-Computer Interaction,MAPPED,none,Minor or no significant difference
-67,Eye Tracking and Human-Computer Interaction,Human-Computer Interaction,MAPPED,"Study on reading, text, characters",Other,MAPPED,none,Minor or no significant difference
-68,Online Dating and Human-Computer Interaction,Human-Computer Interaction,MAPPED,"Study on eb, telework, climate",Other,MAPPED,none,Minor or no significant difference
-69,Misinformation and Online Content Analysis,Social Sciences,MAPPED,Trust in Information Systems,Information Systems,MAPPED,none,Minor or no significant difference
-70,Location-Based Mobile Game Research,Human-Computer Interaction,MAPPED,"Study on availability, presence, spheres",Other,MAPPED,none,Minor or no significant difference
-71,EEG-based Human-Computer Interaction,Human-Computer Interaction,MAPPED,Human-Robot Interaction in Education,Education Technology,MAPPED,none,Minor or no significant difference
-72,Virtual Reality and Mental Health,Healthcare & Bioinformatics,MAPPED,"Study on erp, enterprise, post",Other,MAPPED,none,Minor or no significant difference
-73,User Continuance in Digital Services,Information Systems,MAPPED,"Study on ux, uxcmms, experience",Other,MAPPED,none,Minor or no significant difference
-74,Fake News Detection and Misinformation,Information Systems,MAPPED,Cyberloafing and Employee Behavior,Information Systems,MAPPED,none,Minor or no significant difference
-75,Healthcare Collaboration and Informatics,Healthcare & Bioinformatics,MAPPED,"Study on design, hci, spaces",Other,MAPPED,none,Minor or no significant difference
-76,Advertising and User Experience,Human-Computer Interaction,MAPPED,Gamification in Learning and Interaction,Education Technology,MAPPED,none,Minor or no significant difference
-77,Student Continuance Intention in Education,Education Technology,MAPPED,Remote Work and Communication Dynamics,Human-Computer Interaction,MAPPED,none,Minor or no significant difference
-78,Recommender Systems and User Behavior,Human-Computer Interaction,MAPPED,"Study on older, adults, pda",Other,MAPPED,none,Minor or no significant difference
-79,Digital Storytelling and Engagement,Human-Computer Interaction,MAPPED,"Study on eye, pages, tracking",Other,MAPPED,none,Minor or no significant difference
-80,Scientific Information Retrieval and Indexing,Information Systems,MAPPED,Software Engineering and Usability,Information Systems,MAPPED,none,Minor or no significant difference
-81,Augmented Reality and Human Interaction,Human-Computer Interaction,MAPPED,"Study on search, database, engine",Other,MAPPED,none,Minor or no significant difference
-82,AI in Educational Practices,Education Technology,MAPPED,"Study on colides, pic, page",Other,MAPPED,none,Minor or no significant difference
-83,Knowledge Management Strategies and Implementation,Information Systems,MAPPED,Password Security and Memorability,Cybersecurity,MAPPED,none,Minor or no significant difference
-84,Digital Inclusion and Exclusion Studies,Social Sciences,MAPPED,"Study on innovation, business, investment",Other,MAPPED,none,Minor or no significant difference
-85,Information Systems and Management Orientation,Information Systems,MAPPED,"Study on mental, dta, health",Other,MAPPED,none,Minor or no significant difference
-86,AI Trust and Interpretability Concerns,Human-Computer Interaction,MAPPED,Human-Computer Interaction in Games,Human-Computer Interaction,MAPPED,none,Minor or no significant difference
-87,Information Systems Adoption and Culture,Information Systems,MAPPED,"Study on telecommuting, ism, technology",Other,MAPPED,none,Minor or no significant difference
-88,Human Behaviour in Technology Adoption,Information Systems,MAPPED,Knowledge Graphs and Relational Data,Data Engineering,MAPPED,none,Minor or no significant difference
-89,Social Media and Human Behavior Analysis,Human-Computer Interaction,MAPPED,Human-Computer Interaction in Aging Populations,Human-Computer Interaction,MAPPED,none,Minor or no significant difference
-90,Human-Robot Interaction and UX,Human-Computer Interaction,MAPPED,"Study on speech, overdraft, metaphor",Other,MAPPED,none,Minor or no significant difference
-91,Avatar Human Interaction Research,Human-Computer Interaction,MAPPED,"Study on eye, aberration, image",Other,MAPPED,none,Minor or no significant difference
-92,Smartphone Use and Sleep Quality,Healthcare & Bioinformatics,MAPPED,Human Creativity and Technology Support,Education Technology,MAPPED,none,Minor or no significant difference
-93,Social Media Engagement Analysis,Human-Computer Interaction,MAPPED,"Study on ditv, iptv, stv",Other,MAPPED,none,Minor or no significant difference
-94,Usability in Software Development,Human-Computer Interaction,MAPPED,"Study on blog, bloggers, blogging",Other,MAPPED,none,Minor or no significant difference
-95,Organisational Learning and Development,Information Systems,MAPPED,Social Media Misinformation and Polarization,Social Sciences,MAPPED,none,Minor or no significant difference
-96,Mobile Phone User Behavior and Communication,Human-Computer Interaction,MAPPED,Deep Learning Architectures,Machine Learning,MAPPED,none,Minor or no significant difference
-97,Consumer Adoption of Digital Payment Systems,Finance & Economics,MAPPED,Algorithmic Dating and Relationship Dynamics,Social Sciences,MAPPED,none,Minor or no significant difference
-98,Enterprise Resource Planning Systems,Information Systems,MAPPED,"Study on disinformation, opinion, spreading",Other,MAPPED,none,Minor or no significant difference
-99,Organizational Technology Adoption and Design,Information Systems,MAPPED,"Study on facebook, sns, sct",Other,MAPPED,none,Minor or no significant difference
-100,Website Quality and User Satisfaction,Human-Computer Interaction,MAPPED,Technology Acceptance and E-Learning Adoption,Information Systems,MAPPED,none,Minor or no significant difference
-101,Collaborative Learning in Online Education,Education Technology,MAPPED,"Study on loneliness, problematic, isolation",Other,MAPPED,none,Minor or no significant difference
-102,Mental Health and AI Applications,Healthcare & Bioinformatics,MAPPED,"Study on teachers, teaching, cyberloafing",Other,MAPPED,none,Minor or no significant difference
-103,Big Data in Healthcare Governance,Healthcare & Bioinformatics,MAPPED,Internet Addiction and Attention Research,Social Sciences,MAPPED,none,Minor or no significant difference
-104,Digital Leadership in Healthcare and Industry,Healthcare & Bioinformatics,MAPPED,"Study on waiting, refresh, loading",Other,MAPPED,none,Minor or no significant difference
-105,Mental Health Mobile Application Design,Healthcare & Bioinformatics,MAPPED,Mobile Health and User Engagement,Healthcare & Bioinformatics,MAPPED,"mhealth, health",Minor or no significant difference
-106,Human-Computer Interaction and Experience,Human-Computer Interaction,MAPPED,"Study on wom, qol, ended",Other,MAPPED,none,Minor or no significant difference
-107,Gender and Technology Interactions,Human-Computer Interaction,MAPPED,Gamification in Learning and Interaction,Education Technology,MAPPED,presence,Minor or no significant difference
-108,Communication Interruptions and Punctuation,Human-Computer Interaction,MAPPED,Social Media and Narcissistic Behavior,Social Sciences,MAPPED,none,Minor or no significant difference
-109,Electronic Customer Relationship Management,Information Systems,MAPPED,Digital Privacy and Security Risks,Cybersecurity,MAPPED,none,Minor or no significant difference
-110,Consumer Emotions in Online Interactions,Human-Computer Interaction,MAPPED,"Study on coping, jit, chatgpt",Other,MAPPED,none,Minor or no significant difference
-111,Homecare and Virtual Assistant Integration,Healthcare & Bioinformatics,MAPPED,Mental Health and Social Media,Healthcare & Bioinformatics,MAPPED,none,Minor or no significant difference
-112,Eye Tracking and Human-Computer Interaction,Human-Computer Interaction,MAPPED,"Study on gaze, mouse, magnification",Other,MAPPED,gaze,Minor or no significant difference
-113,Mobile Guide Interface Design,Human-Computer Interaction,MAPPED,"Study on vaccine, hesitancy, memes",Other,MAPPED,none,Minor or no significant difference
-114,Technology's Impact on Information Systems Performance,Information Systems,MAPPED,MOOC Learning and Feedback Strategies,Education Technology,MAPPED,none,"The most meaningful difference between the two topic representations is that they belong to distinct categories, with the title-based topic focused on Information Systems and the abstract-based topic centered on Education Technology."
-115,Mobile Payment Continuation and Adoption,Finance & Economics,MAPPED,"Study on older, balance, game",Other,MAPPED,none,Minor or no significant difference
-116,Assistive Technology for Children,Healthcare & Bioinformatics,MAPPED,"Study on precipitating, usage, tefs",Other,MAPPED,none,Minor or no significant difference
-117,Age-Friendly Technology and Accessibility,Human-Computer Interaction,MAPPED,Smartphone Addiction and Mental Health,Healthcare & Bioinformatics,MAPPED,none,Minor or no significant difference
-118,Human-Computer Interaction with Intelligent Agents,Human-Computer Interaction,MAPPED,"Study on children, color, colors",Other,MAPPED,none,Minor or no significant difference
-119,"Study on fear, avoidance, twitter",Other,MAPPED,"Study on menu, menus, icon",Other,MAPPED,none,Minor or no significant difference
-120,Human-Computer Interaction Innovations,Human-Computer Interaction,MAPPED,Hypertext and Cognitive Abilities,Human-Computer Interaction,MAPPED,none,Minor or no significant difference
-121,Human-Machine Decision Support Frameworks,Human-Computer Interaction,MAPPED,"Study on ott, viewer, viewers",Other,MAPPED,none,Minor or no significant difference
-122,Virtual Reality in Healthcare Applications,Healthcare & Bioinformatics,MAPPED,Research Availability and Accessibility,Information Systems,MAPPED,none,Minor or no significant difference
+topic_id,title_label,title_category,title_classification,abstract_label,abstract_category,abstract_classification,overlap_keywords,difference_note,title_paper_count,abstract_paper_count
+0,Digital Privacy and Disclosure Concerns,Human-Computer Interaction,MAPPED,Conversational AI and Human Interaction,Artificial Intelligence,MAPPED,trust,The most meaningful difference between the two topic representations is the focus on digital privacy and human-computer interaction in the title-based topic versus the emphasis on conversational AI and human interaction in the abstract-based topic.,55,166
+1,Gaming Disorder and Online Behavior,Healthcare & Bioinformatics,MAPPED,"Study on older, adults, elderly",Other,MAPPED,none,"The most meaningful difference between the two topic representations is that the title-based topic focuses on gaming disorder and online behavior, while the abstract-based topic focuses on a study of older adults and their technology use.",52,62
+2,Technology Adoption and Acceptance Factors,Information Systems,MAPPED,Digital Privacy and Security Concerns,Social Sciences,MAPPED,none,"The most meaningful difference between the two topic representations is that they have distinct labels, categories, and keywords, indicating that they focus on different aspects of technology, with one emphasizing adoption and acceptance and the other digital privacy and security concerns.",47,58
+3,Human-Computer Interaction Techniques,Human-Computer Interaction,MAPPED,Gaming and User Engagement Patterns,Human-Computer Interaction,MAPPED,none,"The most meaningful difference between the two topic representations is that the title-based topic focuses on interaction techniques, while the abstract-based topic focuses on gaming and user engagement patterns within the context of human-computer interaction.",45,52
+4,Cybersecurity and Employee Behaviour,Cybersecurity,MAPPED,Virtual Reality and Immersive Training,Robotics & Automation,MAPPED,none,"The most meaningful difference between the two topic representations is that they have distinct labels and categories, with one focusing on cybersecurity and the other on robotics and automation.",41,46
+5,Consumer Behavior in E-commerce,Social Sciences,MAPPED,Persuasive Systems Design in Health,Healthcare & Bioinformatics,MAPPED,none,"The most meaningful difference between these two topic representations is that they describe distinct concepts, with one focused on consumer behavior in e-commerce and the other on persuasive systems design in health.",38,41
+6,Gamification and Motivation in Learning,Education Technology,MAPPED,Healthcare Technology and Patient Care,Healthcare & Bioinformatics,MAPPED,none,"The most meaningful difference between the two topic representations is that they have distinct labels, categories, and keywords, indicating that they represent different topics despite both being classified as ""MAPPED"".",29,33
+7,Internet Addiction in Adolescents and Families,Healthcare & Bioinformatics,MAPPED,Online Shopping Behavior and Consumer Experience,Social Sciences,MAPPED,internet,Minor or no significant difference,28,32
+8,Knowledge Sharing in Virtual Communities,Information Systems,MAPPED,Internet Addiction and Adolescent Behavior,Social Sciences,MAPPED,none,Minor or no significant difference,27,28
+9,Human-Computer Interaction in Software Development,Human-Computer Interaction,MAPPED,Gamification in Learning and Interaction,Education Technology,MAPPED,none,Minor or no significant difference,23,27
+10,Employee Resilience and Social Media,Social Sciences,MAPPED,Transportation Systems and Safety,Information Systems,MAPPED,none,Minor or no significant difference,22,26
+11,Chatbot Anthropomorphism and Trust,Human-Computer Interaction,MAPPED,Conversational AI and Human Interaction,Artificial Intelligence,MAPPED,none,Minor or no significant difference,21,26
+12,Wayfinding and Navigation Systems,Human-Computer Interaction,MAPPED,E-commerce and Consumer Behavior,Finance & Economics,MAPPED,none,Minor or no significant difference,21,24
+13,Education Technology and Learning Analytics,Education Technology,MAPPED,Technology Adoption in Organisations,Information Systems,MAPPED,none,Minor or no significant difference,21,24
+14,Emotional AI and Human Interaction,Human-Computer Interaction,MAPPED,"Study on aesthetics, aesthetic, visual",Other,MAPPED,none,Minor or no significant difference,20,24
+15,Visual Aesthetics in User Interface Design,Human-Computer Interaction,MAPPED,Conversational AI and Human Interaction,Artificial Intelligence,MAPPED,none,Minor or no significant difference,20,24
+16,Sustainable Design and Energy Efficiency,Human-Computer Interaction,MAPPED,Mobile Commerce and Consumer Adoption,Information Systems,MAPPED,none,Minor or no significant difference,20,24
+17,Autonomous Vehicle Technology and Transportation,Robotics & Automation,MAPPED,"Study on community, continuance, oc",Other,MAPPED,none,Minor or no significant difference,20,22
+18,Smartphone Addiction and Mental Wellbeing,Human-Computer Interaction,MAPPED,Knowledge Management and Sharing,Information Systems,MAPPED,none,Minor or no significant difference,18,21
+19,Cyberloafing and Digital Workplace Stress,Human-Computer Interaction,MAPPED,"Study on accessibility, disabilities, web",Other,MAPPED,none,Minor or no significant difference,18,20
+20,Online Learning and Motivation Strategies,Education Technology,MAPPED,Remote Workforce Management,Human-Computer Interaction,MAPPED,none,Minor or no significant difference,17,19
+21,Conversational AI in Healthcare Applications,Healthcare & Bioinformatics,MAPPED,Mobile Device Design and Usability,Human-Computer Interaction,MAPPED,none,Minor or no significant difference,17,19
+22,Crowdsourcing and Contest Participation,Information Systems,MAPPED,"Study on usability, problems, evaluation",Other,MAPPED,none,Minor or no significant difference,17,19
+23,Web Accessibility for Impaired Users,Human-Computer Interaction,MAPPED,"Study on aloud, memory, think",Other,MAPPED,none,Minor or no significant difference,17,18
+24,Social Media and Political Engagement,Social Sciences,MAPPED,Smart Home Design and Sustainability,Human-Computer Interaction,MAPPED,none,Minor or no significant difference,17,18
+25,Gerontechnology and Aging Support,Human-Computer Interaction,MAPPED,Gamification in Learning and Interaction,Education Technology,MAPPED,none,Minor or no significant difference,16,18
+26,Online Health Community Dynamics,Healthcare & Bioinformatics,MAPPED,Internet Addiction and Adolescent Behavior,Social Sciences,MAPPED,none,Minor or no significant difference,16,18
+27,Mobile Device User Experience,Human-Computer Interaction,MAPPED,Human-Centered Design in Cyberinfrastructure,Human-Computer Interaction,MAPPED,none,Minor or no significant difference,16,17
+28,Visual Information Design and Perception,Human-Computer Interaction,MAPPED,"Study on visualisation, visual, sonification",Other,MAPPED,"search, visual",Minor or no significant difference,16,17
+29,Human Mental Workload and Task Performance,Human-Computer Interaction,MAPPED,"Study on crowdsourcing, solvers, contests",Other,MAPPED,task,Minor or no significant difference,16,16
+30,Cyberbullying and Online Victimization,Social Sciences,MAPPED,Social Commerce and E-commerce Research,Information Systems,MAPPED,none,Minor or no significant difference,15,16
+31,Social Media and Mental Health,Healthcare & Bioinformatics,MAPPED,Digital Privacy and Security Risks,Cybersecurity,MAPPED,none,Minor or no significant difference,14,16
+32,Physical Activity and Weight Loss Interventions,Healthcare & Bioinformatics,MAPPED,"Study on investors, banking, financial",Other,MAPPED,none,Minor or no significant difference,14,15
+33,Social Media Crisis Information Diffusion,Social Sciences,MAPPED,Higher Education Technology Adoption,Education Technology,MAPPED,none,Minor or no significant difference,14,14
+34,Human-AI Interaction and Ethics,Human-Computer Interaction,MAPPED,"Study on propagation, microblogs, content",Other,MAPPED,none,Minor or no significant difference,14,13
+35,Healthcare Technology and Monitoring,Healthcare & Bioinformatics,MAPPED,"Study on piracy, software, moral",Other,MAPPED,none,Minor or no significant difference,14,13
+36,Child-Centered Participatory Design Research,Human-Computer Interaction,MAPPED,Information Security in Organisations,Cybersecurity,MAPPED,none,Minor or no significant difference,14,13
+37,Consumer Behavior in E-commerce Contexts,Social Sciences,MAPPED,"Study on pen, width, input",Other,MAPPED,none,Minor or no significant difference,13,13
+38,Autism Spectrum Disorder and Technology,Healthcare & Bioinformatics,MAPPED,"Study on children, parents, co",Other,MAPPED,children,Minor or no significant difference,13,13
+39,Virtual Team Dynamics and Collaboration,Human-Computer Interaction,MAPPED,Social Media in Crisis Response,Social Sciences,MAPPED,none,"The most meaningful difference between the two topic representations is that they have distinct labels and categories, indicating different research focuses, despite both being mapped topics.",13,13
+40,Digital Copyright and Piracy Research,Information Systems,MAPPED,"Study on sleep, smartphone, overuse",Other,MAPPED,none,Minor or no significant difference,12,12
+41,Trust and Value Co-Creation in Online Interactions,Social Sciences,MAPPED,Gamification in Learning and Interaction,Education Technology,MAPPED,none,Minor or no significant difference,12,12
+42,Social Media Addiction and Mental Health,Social Sciences,MAPPED,ICT-induced Work-related Stress and Burnout,Human-Computer Interaction,MAPPED,none,Minor or no significant difference,12,12
+43,Human-Computer Speech Interfaces,Human-Computer Interaction,MAPPED,Gamification in Learning and Interaction,Education Technology,MAPPED,none,Minor or no significant difference,12,12
+44,Smartphone Use and Psychological Well-being,Human-Computer Interaction,MAPPED,Gamification in Learning and Interaction,Education Technology,MAPPED,none,Minor or no significant difference,12,12
+45,Secure Authentication Methods,Cybersecurity,MAPPED,Virtual Team Collaboration and Leadership,Social Sciences,MAPPED,none,Minor or no significant difference,12,11
+46,Online Review Sentiment Analysis,Information Systems,MAPPED,Conversational AI and Human Interaction,Artificial Intelligence,MAPPED,none,Minor or no significant difference,12,11
+47,Collaborative Learning in Education,Education Technology,MAPPED,"Study on smartphone, psu, use",Other,MAPPED,none,Minor or no significant difference,12,11
+48,Social Media and Mental Health Effects,Social Sciences,MAPPED,Autism Technology Intervention Research,Healthcare & Bioinformatics,MAPPED,none,Minor or no significant difference,11,11
+49,Virtual Reality and Human Experience,Human-Computer Interaction,MAPPED,"Study on cognitive, load, task",Other,MAPPED,none,Minor or no significant difference,11,11
+50,MOOC Design and Learning Outcomes,Education Technology,MAPPED,Healthcare Online Communities,Healthcare & Bioinformatics,MAPPED,none,Minor or no significant difference,11,11
+51,Social Capital in Digital Networking,Social Sciences,MAPPED,Internet Addiction and Adolescent Behavior,Social Sciences,MAPPED,none,Minor or no significant difference,11,11
+52,Health Information Technology Implementation,Healthcare & Bioinformatics,MAPPED,Gamification in Learning and Interaction,Education Technology,MAPPED,none,Minor or no significant difference,11,11
+53,Multimodal Learning and Visual Perception,Human-Computer Interaction,MAPPED,Social Media and Human Interaction,Social Sciences,MAPPED,none,Minor or no significant difference,11,11
+54,Cyber Behaviour and Online Harassment,Social Sciences,MAPPED,"Study on self, ethno, racial",Other,MAPPED,none,Minor or no significant difference,11,10
+55,Serious Games and Environmental Experience,Human-Computer Interaction,MAPPED,"Study on phishing, fraud, scams",Other,MAPPED,none,Minor or no significant difference,11,10
+56,Online Scam Detection and Prevention,Cybersecurity,MAPPED,Healthcare Technology and Monitoring,Healthcare & Bioinformatics,MAPPED,none,Minor or no significant difference,10,10
+57,Usability of Mobile Devices for Older Adults,Human-Computer Interaction,MAPPED,"Study on urban, cities, city",Other,MAPPED,none,Minor or no significant difference,10,10
+58,Persuasive Systems Design for Health,Human-Computer Interaction,MAPPED,"Study on overload, media, social",Other,MAPPED,none,Minor or no significant difference,10,10
+59,Usability Evaluation Methods and Techniques,Human-Computer Interaction,MAPPED,Digital Divide and Inclusion,Social Sciences,MAPPED,none,Minor or no significant difference,10,10
+60,Blockchain in Banking and Finance,Finance & Economics,MAPPED,"Study on esteem, depressed, jealousy",Other,MAPPED,none,Minor or no significant difference,10,10
+61,Virtual Reality in Education and Training,Education Technology,MAPPED,Cybersecurity Awareness and Threat Mitigation,Cybersecurity,MAPPED,none,Minor or no significant difference,10,9
+62,User Experience in Industrial Settings,Human-Computer Interaction,MAPPED,"Study on advertising, app, advertisements",Other,MAPPED,none,Minor or no significant difference,10,9
+63,Technostress and Work-Related Stress Management,Human-Computer Interaction,MAPPED,Gamification in Learning and Interaction,Education Technology,MAPPED,none,Minor or no significant difference,9,9
+64,Human-Computer Interaction Dynamics,Human-Computer Interaction,MAPPED,Misinformation Detection and Correction,Social Sciences,MAPPED,none,Minor or no significant difference,9,9
+65,Mobile Learning and Device Usage,Education Technology,MAPPED,"Study on navigation, route, instructions",Other,MAPPED,none,Minor or no significant difference,9,9
+66,Student Engagement in Educational Media,Education Technology,MAPPED,Website Quality and User Satisfaction,Human-Computer Interaction,MAPPED,none,Minor or no significant difference,9,9
+67,Human-Computer Interaction Studies,Human-Computer Interaction,MAPPED,"Study on reading, text, characters",Other,MAPPED,none,Minor or no significant difference,9,9
+68,Online Dating and Human-Computer Interaction,Human-Computer Interaction,MAPPED,"Study on eb, telework, climate",Other,MAPPED,none,Minor or no significant difference,9,9
+69,Misinformation and Content Analysis,Social Sciences,MAPPED,Trust in Information Systems Development,Information Systems,MAPPED,none,Minor or no significant difference,9,9
+70,Location-Based Mobile Game Research,Human-Computer Interaction,MAPPED,"Study on availability, presence, spheres",Other,MAPPED,none,Minor or no significant difference,9,9
+71,Neural Interfaces and Cognitive Load,Human-Computer Interaction,MAPPED,Gamification in Learning and Interaction,Education Technology,MAPPED,none,Minor or no significant difference,9,8
+72,Virtual Reality and Mental Health,Healthcare & Bioinformatics,MAPPED,Enterprise Resource Planning and Management,Information Systems,MAPPED,none,Minor or no significant difference,9,8
+73,Continuance Intention in Digital Services,Information Systems,MAPPED,"Study on ux, uxcmms, experience",Other,MAPPED,none,Minor or no significant difference,9,8
+74,Fake News Detection and Misinformation,Information Systems,MAPPED,"Study on cyberloafing, employees, employee",Other,MAPPED,none,Minor or no significant difference,9,8
+75,Healthcare Collaboration and Informatics,Healthcare & Bioinformatics,MAPPED,Human-Centered Design and Interaction,Human-Computer Interaction,MAPPED,none,Minor or no significant difference,9,8
+76,Advertising and User Behavior,Human-Computer Interaction,MAPPED,Gamification in Learning and Interaction,Education Technology,MAPPED,none,Minor or no significant difference,8,8
+77,Student Continuance Intention in Education,Education Technology,MAPPED,Remote Work and Communication Challenges,Human-Computer Interaction,MAPPED,none,Minor or no significant difference,8,8
+78,Recommender Systems Design and Evaluation,Information Systems,MAPPED,"Study on older, adults, pda",Other,MAPPED,none,Minor or no significant difference,8,8
+79,Digital Storytelling and Engagement Strategies,Human-Computer Interaction,MAPPED,"Study on eye, pages, tracking",Other,MAPPED,none,Minor or no significant difference,8,8
+80,Scientific Indexing and Information Retrieval,Information Systems,MAPPED,Software Engineering and Usability,Information Systems,MAPPED,none,Minor or no significant difference,8,8
+81,Augmented Reality and Human Interaction,Human-Computer Interaction,MAPPED,"Study on search, database, engine",Other,MAPPED,none,Minor or no significant difference,8,8
+82,AI in Education and Learning,Education Technology,MAPPED,"Study on colides, pic, page",Other,MAPPED,none,Minor or no significant difference,8,7
+83,Knowledge Management Strategies and Implementation,Information Systems,MAPPED,Password Security and Memorability,Cybersecurity,MAPPED,none,Minor or no significant difference,8,7
+84,Digital Inclusion and Exclusion Studies,Social Sciences,MAPPED,"Study on innovation, business, investment",Other,MAPPED,none,Minor or no significant difference,8,7
+85,Information Systems and Management Orientation,Information Systems,MAPPED,"Study on mental, dta, health",Other,MAPPED,none,Minor or no significant difference,8,7
+86,AI Trust and Interpretability Concerns,Human-Computer Interaction,MAPPED,Human-Computer Interaction in Games,Human-Computer Interaction,MAPPED,none,Minor or no significant difference,8,7
+87,Information Systems Adoption and Culture,Information Systems,MAPPED,"Study on telecommuting, ism, technology",Other,MAPPED,none,Minor or no significant difference,8,7
+88,Human Behaviour in Technology Adoption,Information Systems,MAPPED,Knowledge Representation and Ontology Engineering,Information Systems,MAPPED,none,Minor or no significant difference,8,7
+89,Social Media and Human Behavior,Human-Computer Interaction,MAPPED,Virtual Reality and Immersive Training,Robotics & Automation,MAPPED,none,"The most meaningful difference between the two topic representations is that they have distinct labels, categories, and keywords, indicating a mismatch between the title-based topic's focus on social media and human behavior and the abstract-based topic's focus on virtual reality and immersive training.",8,7
+90,Human-Robot Interaction and UX,Human-Computer Interaction,MAPPED,"Study on speech, overdraft, metaphor",Other,MAPPED,none,Minor or no significant difference,7,7
+91,Avatar Human Interaction Research,Human-Computer Interaction,MAPPED,Eye Tracking and Visual Perception,Human-Computer Interaction,MAPPED,none,Minor or no significant difference,7,7
+92,Smartphone Use and Sleep Quality,Healthcare & Bioinformatics,MAPPED,"Study on creativity, creative, erep",Other,MAPPED,none,Minor or no significant difference,7,7
+93,Social Media Engagement Analysis,Human-Computer Interaction,MAPPED,Digital Television and Interactive Services,Information Systems,MAPPED,none,Minor or no significant difference,7,6
+94,Usability in Software Development,Human-Computer Interaction,MAPPED,"Study on blog, bloggers, blogging",Other,MAPPED,none,Minor or no significant difference,7,6
+95,Organisational Learning and Knowledge Management,Information Systems,MAPPED,"Study on fake, partisan, news",Other,MAPPED,none,Minor or no significant difference,7,6
+96,Mobile Phone User Behavior and Rudeness,Human-Computer Interaction,MAPPED,Social Media and Self-Perception,Social Sciences,MAPPED,none,Minor or no significant difference,7,6
+97,Consumer Adoption of Digital Payment Systems,Finance & Economics,MAPPED,"Study on dating, arm, intimacy",Other,MAPPED,none,Minor or no significant difference,7,6
+98,Enterprise Resource Planning Systems,Information Systems,MAPPED,"Study on disinformation, opinion, spreading",Other,MAPPED,none,Minor or no significant difference,7,6
+99,Information Systems and Human Roles,Information Systems,MAPPED,Social Network Service Adoption and Usage,Information Systems,MAPPED,none,Minor or no significant difference,7,6
+100,E-commerce Website Quality and User Satisfaction,Human-Computer Interaction,MAPPED,Virtual Reality and Immersive Training,Robotics & Automation,MAPPED,none,Minor or no significant difference,6,6
+101,Collaborative Learning in Education Technology,Education Technology,MAPPED,Mental Health and Digital Technology,Healthcare & Bioinformatics,MAPPED,none,Minor or no significant difference,6,6
+102,Mental Health and AI Applications,Healthcare & Bioinformatics,MAPPED,"Study on teachers, teaching, cyberloafing",Other,MAPPED,none,Minor or no significant difference,6,6
+103,Big Data Analytics in Healthcare Governance,Healthcare & Bioinformatics,MAPPED,Internet Addiction and Adolescent Behavior,Social Sciences,MAPPED,none,Minor or no significant difference,6,6
+104,Digital Leadership in Healthcare and Technology,Healthcare & Bioinformatics,MAPPED,Mobile User Experience and Interaction,Human-Computer Interaction,MAPPED,none,Minor or no significant difference,6,6
+105,Mental Health App Design and Evaluation,Healthcare & Bioinformatics,MAPPED,Gaming and User Engagement Patterns,Human-Computer Interaction,MAPPED,"health, mhealth",Minor or no significant difference,6,6
+106,Human-Computer Interaction and Time Perception,Human-Computer Interaction,MAPPED,"Study on wom, qol, ended",Other,MAPPED,none,Minor or no significant difference,6,6
+107,Human-Computer Interaction and Gender Dynamics,Human-Computer Interaction,MAPPED,Presence in Distance Education Environments,Education Technology,MAPPED,presence,Minor or no significant difference,6,6
+108,Communication Interruptions and Punctuation,Human-Computer Interaction,MAPPED,"Study on narcissism, phubbing, trolling",Other,MAPPED,none,Minor or no significant difference,6,6
+109,Electronic Customer Relationship Management,Information Systems,MAPPED,Digital Privacy and Security Risks,Cybersecurity,MAPPED,none,Minor or no significant difference,6,5
+110,Consumer Emotions in Online Interactions,Human-Computer Interaction,MAPPED,Stress Detection and Coping Mechanisms,Healthcare & Bioinformatics,MAPPED,none,Minor or no significant difference,6,5
+111,Homecare and Virtual Assistant Interactions,Healthcare & Bioinformatics,MAPPED,"Study on smu, depression, depressive",Other,MAPPED,none,Minor or no significant difference,6,5
+112,Eye-Tracking and Human-Computer Interaction,Human-Computer Interaction,MAPPED,"Study on gaze, mouse, magnification",Other,MAPPED,gaze,Minor or no significant difference,6,5
+113,Mobile Guide Interface Design,Human-Computer Interaction,MAPPED,Misinformation and Social Media Polarisation,Social Sciences,MAPPED,none,Minor or no significant difference,6,5
+114,Technology's Impact on Information Systems Performance,Information Systems,MAPPED,"Study on mooc, moocs, course",Other,MAPPED,none,Minor or no significant difference,6,5
+115,Mobile Payment Continuation and Adoption,Finance & Economics,MAPPED,"Study on older, balance, game",Other,MAPPED,none,Minor or no significant difference,6,5
+116,Assistive Technology for Children's Development,Healthcare & Bioinformatics,MAPPED,Information Systems Usage and Adoption,Information Systems,MAPPED,none,Minor or no significant difference,6,5
+117,Healthy Aging and Teleoperations,Healthcare & Bioinformatics,MAPPED,Internet Addiction and Adolescent Behavior,Social Sciences,MAPPED,none,Minor or no significant difference,6,5
+118,Human-Computer Interaction with Intelligent Agents,Human-Computer Interaction,MAPPED,"Study on children, color, colors",Other,MAPPED,none,Minor or no significant difference,6,5
+119,Social Media Anxiety and Exclusion,Human-Computer Interaction,MAPPED,Smartphone Menu Design and Usability,Human-Computer Interaction,MAPPED,none,Minor or no significant difference,6,5
+120,Human-Computer Interaction Innovations,Human-Computer Interaction,MAPPED,"Study on hypertext, dyslexia, proficiency",Other,MAPPED,none,Minor or no significant difference,6,5
+121,Human-Machine Decision Support Frameworks,Human-Computer Interaction,MAPPED,"Study on ott, viewer, viewers",Other,MAPPED,none,Minor or no significant difference,5,5
+122,Virtual Reality in Healthcare Applications,Healthcare & Bioinformatics,MAPPED,Research Availability and Accessibility,Information Systems,NOVEL,none,Minor or no significant difference,5,5

@@ -1,13 +1,12 @@
 """
-streamlit_app.py
-----------------
-Streamlit UI for the BERTopic + Dual LLM (Groq + Mistral) research paper analysis pipeline.
+app.py
+------
+Streamlit UI for the upgraded BERTopic + 3-LLM Ensemble research paper analysis pipeline.
 """
 
 import os
 import json
 import tempfile
-
 import pandas as pd
 import streamlit as st
 
@@ -19,25 +18,16 @@ from agent import run_agent
 # ---------------------------------------------------------------------------
 st.set_page_config(page_title="Research Topic Analyzer", layout="wide")
 st.title("Research Topic Analyzer")
-st.caption("BERTopic + Groq + Mistral dual-validation pipeline")
+st.caption("BERTopic (Specter2) + Groq + Mistral + Gemini 3-LLM Ensemble")
 
 # ---------------------------------------------------------------------------
-# API Key Handling (env-first, blank input as fallback)
+# API Key Handling
 # ---------------------------------------------------------------------------
 with st.sidebar:
     st.header("API Keys")
-    groq_key_input = st.text_input(
-        "Groq API Key",
-        value="",
-        type="password",
-        placeholder="Uses GROQ_API_KEY env var if blank",
-    )
-    mistral_key_input = st.text_input(
-        "Mistral API Key (optional)",
-        value="",
-        type="password",
-        placeholder="Uses MISTRAL_API_KEY env var if blank",
-    )
+    groq_key_input = st.text_input("Groq API Key", type="password", placeholder="Uses GROQ_API_KEY env var if blank")
+    mistral_key_input = st.text_input("Mistral API Key", type="password", placeholder="Uses MISTRAL_API_KEY env var if blank")
+    gemini_key_input = st.text_input("Gemini API Key", type="password", placeholder="Uses GEMINI_API_KEY env var if blank")
     st.caption("Keys are never stored. Leave blank to use environment variables.")
 
     st.divider()
@@ -49,6 +39,7 @@ with st.sidebar:
 
 groq_api_key = groq_key_input.strip() or os.getenv("GROQ_API_KEY")
 mistral_api_key = mistral_key_input.strip() or os.getenv("MISTRAL_API_KEY")
+gemini_api_key = gemini_key_input.strip() or os.getenv("GEMINI_API_KEY")
 
 # ---------------------------------------------------------------------------
 # Dataset Loading
@@ -58,10 +49,7 @@ use_sample = st.checkbox("Use sample dataset", value=False)
 
 uploaded_file = None
 if not use_sample:
-    uploaded_file = st.file_uploader(
-        "Upload CSV with 'title' and 'abstract' columns",
-        type=["csv"],
-    )
+    uploaded_file = st.file_uploader("Upload CSV with 'title' and 'abstract' columns", type=["csv"])
 
 # ---------------------------------------------------------------------------
 # Run Pipeline
@@ -69,43 +57,18 @@ if not use_sample:
 run_btn = st.button("Run Pipeline", type="primary")
 
 if run_btn:
-    # --- Validate inputs ---
-    if not groq_api_key:
-        st.error("Groq API key is required. Provide it in the sidebar or set GROQ_API_KEY.")
+    if not groq_api_key or not mistral_api_key or not gemini_api_key:
+        st.error("All 3 API keys (Groq, Mistral, Gemini) are required for the ensemble.")
         st.stop()
 
     if not use_sample and uploaded_file is None:
         st.error("Please upload a CSV file or enable the sample dataset.")
         st.stop()
 
-    # --- Resolve CSV path ---
     if use_sample:
-        # Inline sample data
         sample_data = {
-            "title": [
-                "Deep Learning for Image Classification",
-                "Neural Networks in Healthcare",
-                "Transformer Models for NLP",
-                "BERT in Question Answering",
-                "Blockchain and Distributed Ledger Technology",
-                "Smart Contracts in Finance",
-                "Federated Learning for Privacy",
-                "Differential Privacy in ML",
-                "Graph Neural Networks",
-                "Knowledge Graph Embeddings",
-            ],
-            "abstract": [
-                "We propose a deep learning model achieving state-of-the-art accuracy on image benchmarks.",
-                "A convolutional network trained for medical image classification tasks.",
-                "We introduce a transformer-based approach for text understanding.",
-                "Fine-tuning BERT achieves strong results on reading comprehension datasets.",
-                "This paper surveys blockchain consensus mechanisms and distributed ledger architectures.",
-                "We implement smart contracts for automated financial transactions on a public blockchain.",
-                "Federated learning enables collaborative model training without sharing raw data.",
-                "Differential privacy provides formal privacy guarantees for machine learning models.",
-                "Graph neural networks learn from relational data structures effectively.",
-                "Knowledge graph embeddings enable link prediction and entity classification.",
-            ],
+            "title": ["Deep Learning for Image Classification", "Neural Networks in Healthcare", "Transformer Models for NLP", "BERT in Question Answering", "Blockchain and Distributed Ledger", "Smart Contracts in Finance", "Federated Learning for Privacy", "Differential Privacy in ML", "Graph Neural Networks", "Knowledge Graph Embeddings"] * 5,
+            "abstract": ["We propose deep learning models for classification.", "Neural networks applied in clinical settings.", "Transformers are state-of-the-art for NLP.", "BERT models improve reading comprehension.", "Blockchain provides secure distributed ledgers.", "Smart contracts automate transactions.", "Federated learning preserves privacy.", "Differential privacy adds noise to protect data.", "GNNs are effective for graph data.", "KG embeddings help in link prediction."] * 5
         }
         df_sample = pd.DataFrame(sample_data)
         tmp = tempfile.NamedTemporaryFile(delete=False, suffix=".csv")
@@ -117,39 +80,20 @@ if run_btn:
         tmp.flush()
         csv_path = tmp.name
 
-    # ---------------------------------------------------------------------------
-    # Step 1: Topic Modeling
-    # ---------------------------------------------------------------------------
-    with st.spinner("Running BERTopic (this may take a minute)…"):
+    with st.spinner("Step 1: Running BERTopic with Specter2 and Constraints..."):
         try:
             topic_results = run_topic_modeling(csv_path, min_topic_size=min_topic_size)
         except Exception as exc:
             st.error(f"Topic modeling failed: {exc}")
             st.stop()
 
-    abstract_res = topic_results["abstracts"]
-    title_res = topic_results["titles"]
-
-    # Reload df for raw texts
-    df = pd.read_csv(csv_path)
-    df.columns = df.columns.str.lower()
-    raw_titles = df["title"].fillna("").tolist()
-    raw_abstracts = df["abstract"].fillna("").tolist()
-
-    # ---------------------------------------------------------------------------
-    # Step 2: Agent (LLM interpretation + dual validation)
-    # ---------------------------------------------------------------------------
-    with st.spinner("Running LLM interpretation and Mistral validation…"):
+    with st.spinner("Step 2: Running 3-LLM Ensemble for Topic Interpretation..."):
         try:
             st.session_state["agent_results"] = run_agent(
-                title_topic_keywords=title_res["topic_keywords"],
-                abstract_topic_keywords=abstract_res["topic_keywords"],
-                title_topic_assignments=title_res["topics"],
-                abstract_topic_assignments=abstract_res["topics"],
-                raw_titles=raw_titles,
-                raw_abstracts=raw_abstracts,
-                api_key=groq_api_key,
-                mistral_api_key=mistral_api_key,
+                topic_results=topic_results,
+                groq_key=groq_api_key,
+                mistral_key=mistral_api_key,
+                gemini_key=gemini_api_key
             )
             st.success("Pipeline complete!")
         except Exception as exc:
@@ -157,105 +101,50 @@ if run_btn:
             st.stop()
 
 # ---------------------------------------------------------------------------
-# Display Logic (Outside if run_btn to persist during interactions)
+# Display Logic
 # ---------------------------------------------------------------------------
-agent_results = st.session_state.get("agent_results")
+results = st.session_state.get("agent_results")
 
-if agent_results:
-    # ---------------------------------------------------------------------------
-    # Display: Title Topics
-    # ---------------------------------------------------------------------------
-    st.subheader("Title Topics")
-    title_interps = agent_results.get("title_interpretations", {})
-    if title_interps:
-        title_rows = []
-        for tid, interp in sorted(title_interps.items()):
-            title_rows.append({
+if results:
+    st.subheader("Discovered Topics")
+    interps = results.get("interpretations", {})
+    if interps:
+        rows = []
+        for tid, interp in sorted(interps.items()):
+            rows.append({
                 "Topic ID": tid,
+                "Paper Count": interp.paper_count,
                 "Label": interp.label,
-                "Category": interp.taxonomy_category,
+                "Category": interp.category,
                 "Classification": interp.classification,
-                "Validation Status": interp.validation_status,
-                "Confidence": interp.confidence,
-                "Keywords": ", ".join(interp.keywords[:8]),
+                "Keywords": ", ".join(interp.keywords[:8])
             })
-        st.dataframe(pd.DataFrame(title_rows), use_container_width=True)
+        df_res = pd.DataFrame(rows)
+        
+        st.write(f"**Total number of topics:** {len(df_res)}")
+        df_res = df_res.sort_values(by="Paper Count", ascending=False).reset_index(drop=True)
+        
+        categories = ["All"] + sorted(df_res["Category"].unique().tolist())
+        selected_cat = st.selectbox("Filter by Category", categories)
+        if selected_cat != "All":
+            df_filtered = df_res[df_res["Category"] == selected_cat]
+        else:
+            df_filtered = df_res
+            
+        st.dataframe(df_filtered, use_container_width=True)
+        
+        st.caption("Topic Frequency Distribution")
+        df_chart = df_filtered.copy()
+        df_chart["Short Label"] = df_chart["Label"].apply(lambda x: x[:30] + "..." if len(x) > 30 else x)
+        st.bar_chart(df_chart.set_index("Short Label")["Paper Count"])
     else:
-        st.info("No title topics found.")
+        st.info("No topics found.")
 
-    # ---------------------------------------------------------------------------
-    # Display: Abstract Topics
-    # ---------------------------------------------------------------------------
-    st.subheader("Abstract Topics")
-    abstract_interps = agent_results.get("abstract_interpretations", {})
-    if abstract_interps:
-        abstract_rows = []
-        for tid, interp in sorted(abstract_interps.items()):
-            abstract_rows.append({
-                "Topic ID": tid,
-                "Label": interp.label,
-                "Category": interp.taxonomy_category,
-                "Classification": interp.classification,
-                "Validation Status": interp.validation_status,
-                "Confidence": interp.confidence,
-                "Keywords": ", ".join(interp.keywords[:8]),
-            })
-        st.dataframe(pd.DataFrame(abstract_rows), use_container_width=True)
-    else:
-        st.info("No abstract topics found.")
-
-    # ---------------------------------------------------------------------------
-    # Display: Taxonomy Map
-    # ---------------------------------------------------------------------------
-    st.subheader("Taxonomy Map")
-    taxonomy_map = agent_results.get("taxonomy_map", {})
-    tabs = st.tabs(["Titles", "Abstracts"])
-    for tab, section in zip(tabs, ["titles", "abstracts"]):
-        with tab:
-            entries = taxonomy_map.get(section, [])
-            if entries:
-                st.dataframe(
-                    pd.DataFrame(entries)[[
-                        "topic_id", "label", "taxonomy_category",
-                        "classification", "validation_status", "confidence", "reasoning"
-                    ]],
-                    use_container_width=True,
-                )
-            else:
-                st.info(f"No {section} taxonomy entries.")
-
-    # ---------------------------------------------------------------------------
-    # Display: Comparison Table
-    # ---------------------------------------------------------------------------
-    st.subheader("Title vs Abstract Comparison")
-    comparison_rows = agent_results.get("comparison_rows", [])
-    if comparison_rows:
-        from dataclasses import asdict
-        comp_df = pd.DataFrame([asdict(r) for r in comparison_rows])
-        st.dataframe(comp_df, use_container_width=True)
-    else:
-        st.info("No overlapping topics to compare.")
-
-    # ---------------------------------------------------------------------------
-    # Downloads
-    # ---------------------------------------------------------------------------
     st.subheader("Downloads")
     col1, col2 = st.columns(2)
     with col1:
-        st.download_button(
-            "Download taxonomy_map.json",
-            json.dumps(agent_results["taxonomy_map"], indent=2),
-            file_name="taxonomy_map.json",
-            mime="application/json",
-            key="dl_json"
-        )
+        with open(results["json_path"], "r") as f:
+            st.download_button("Download topics.json", f.read(), file_name="topics.json", mime="application/json")
     with col2:
-        from dataclasses import asdict
-        comp_df = pd.DataFrame([asdict(r) for r in agent_results["comparison_rows"]])
-        st.download_button(
-            "Download comparison.csv",
-            comp_df.to_csv(index=False),
-            file_name="comparison.csv",
-            mime="text/csv",
-            key="dl_csv"
-        )   
+        df_csv = pd.read_csv(results["csv_path"])
+        st.download_button("Download topics.csv", df_csv.to_csv(index=False), file_name="topics.csv", mime="text/csv")
