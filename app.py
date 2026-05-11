@@ -11,7 +11,42 @@ import pandas as pd
 import streamlit as st
 
 from tools import run_topic_modeling
-from agent import run_agent
+from agent import run_agent, build_groq_client, _call_llm_json
+
+def ai_optimize_clustering(metrics, groq_key):
+    prompt = f"""You are an AI optimizing a BERTopic clustering pipeline.
+The current metrics are:
+- Topic Count (excluding outliers): {metrics['topic_count']}
+- Largest Cluster Size: {metrics['largest_cluster']}
+- Smallest Cluster Size: {metrics['smallest_cluster']}
+- Average Cluster Size: {metrics['average_cluster']}
+
+The goal is to achieve:
+1. Topic count strictly between 15 and 30.
+2. No oversized cluster (largest_cluster < 200).
+3. Balanced distribution.
+
+Suggest new parameters to improve the clustering.
+You can ONLY tune:
+- min_cluster_size (integer, typically 5-20)
+- n_neighbors (integer, typically 10-30 for UMAP)
+- similarity_threshold (float, typically 0.4-0.7)
+
+Respond ONLY in JSON format:
+{{
+  "min_cluster_size": <int>,
+  "n_neighbors": <int>,
+  "similarity_threshold": <float>
+}}
+"""
+    try:
+        client = build_groq_client(groq_key)
+        res = _call_llm_json(client, prompt, "llama-3.1-8b-instant")
+        if res and "min_cluster_size" in res:
+            return res
+    except Exception as e:
+        pass
+    return None
 
 # ---------------------------------------------------------------------------
 # Page Config
@@ -80,12 +115,76 @@ if run_btn:
         tmp.flush()
         csv_path = tmp.name
 
-    with st.spinner("Step 1: Running BERTopic with Specter2 and Constraints..."):
-        try:
-            topic_results = run_topic_modeling(csv_path, min_topic_size=min_topic_size)
-        except Exception as exc:
-            st.error(f"Topic modeling failed: {exc}")
-            st.stop()
+    with st.spinner("Step 1: Running AI-Optimized BERTopic Clustering..."):
+        current_params = {
+            "min_cluster_size": 5,
+            "n_neighbors": 15,
+            "similarity_threshold": 0.55
+        }
+        
+        from sentence_transformers import SentenceTransformer
+        from tools import load_csv, preprocess_text
+        import logging
+        app_logger = logging.getLogger(__name__)
+
+        # Precompute embeddings once
+        df = load_csv(csv_path)
+        df["combined"] = df["title"].fillna("") + ". " + df["abstract"].fillna("")
+        documents = preprocess_text(df["combined"])
+        
+        embedding_model = SentenceTransformer("allenai/specter2_base")
+        valid_docs = [d if d.strip() else "empty" for d in documents]
+        embeddings = embedding_model.encode(valid_docs, show_progress_bar=False)
+        
+        for iteration in range(2):
+            st.toast(f"Clustering Iteration {iteration+1}/2 with params: {current_params}")
+            try:
+                topic_results = run_topic_modeling(
+                    min_topic_size=min_topic_size,
+                    min_cluster_size=int(current_params["min_cluster_size"]),
+                    n_neighbors=int(current_params["n_neighbors"]),
+                    similarity_threshold=float(current_params["similarity_threshold"]),
+                    documents=documents,
+                    embedding_model=embedding_model,
+                    embeddings=embeddings
+                )
+            except Exception as exc:
+                st.error(f"Topic modeling failed: {exc}")
+                st.stop()
+                
+            res = topic_results["documents"]
+            valid_topics = [t for t in res["topics"] if t != -1]
+            topic_count = len(set(valid_topics))
+            
+            cluster_sizes = pd.Series(valid_topics).value_counts()
+            largest_cluster = int(cluster_sizes.max()) if not cluster_sizes.empty else 0
+            smallest_cluster = int(cluster_sizes.min()) if not cluster_sizes.empty else 0
+            avg_cluster = float(cluster_sizes.mean()) if not cluster_sizes.empty else 0
+            
+            if 15 <= topic_count <= 30 and largest_cluster < 200:
+                app_logger.info("Optimization complete. Stopping iterations.")
+                st.toast(f"Optimal clustering achieved! Topics: {topic_count}, Largest: {largest_cluster}")
+                break
+                
+            if iteration == 0:
+                # Optimize
+                metrics = {
+                    "topic_count": topic_count,
+                    "largest_cluster": largest_cluster,
+                    "smallest_cluster": smallest_cluster,
+                    "average_cluster": avg_cluster
+                }
+                new_params = ai_optimize_clustering(metrics, groq_api_key)
+                if new_params:
+                    # Check if params actually changed
+                    if (int(new_params.get("min_cluster_size", current_params["min_cluster_size"])) == int(current_params["min_cluster_size"]) and
+                        int(new_params.get("n_neighbors", current_params["n_neighbors"])) == int(current_params["n_neighbors"]) and
+                        float(new_params.get("similarity_threshold", current_params["similarity_threshold"])) == float(current_params["similarity_threshold"])):
+                        app_logger.info("No parameter changes suggested. Stopping iterations.")
+                        break
+                    current_params.update(new_params)
+                else:
+                    break
 
     with st.spinner("Step 2: Running 3-LLM Ensemble for Topic Interpretation..."):
         try:
@@ -114,10 +213,16 @@ if results:
             rows.append({
                 "Topic ID": tid,
                 "Paper Count": interp.paper_count,
-                "Label": interp.label,
+                "Groq Label": interp.groq_label,
+                "Mistral Label": interp.mistral_label,
+                "Gemini Label": interp.gemini_label,
+                "Final Label": interp.final_label,
+                "Validation": interp.validation_status,
+                "Confidence": f"{interp.confidence_score:.2f}",
+                "Agreement": f"{interp.agreement_score:.2f}",
                 "Category": interp.category,
-                "Classification": interp.classification,
-                "Keywords": ", ".join(interp.keywords[:8])
+                "Representative Titles": " | ".join(interp.representative_titles) if interp.representative_titles else "",
+                "Keywords": ", ".join(interp.keywords[:8]) if interp.keywords else ""
             })
         df_res = pd.DataFrame(rows)
         
@@ -135,7 +240,7 @@ if results:
         
         st.caption("Topic Frequency Distribution")
         df_chart = df_filtered.copy()
-        df_chart["Short Label"] = df_chart["Label"].apply(lambda x: x[:30] + "..." if len(x) > 30 else x)
+        df_chart["Short Label"] = df_chart["Final Label"].apply(lambda x: x[:30] + "..." if len(x) > 30 else x)
         st.bar_chart(df_chart.set_index("Short Label")["Paper Count"])
     else:
         st.info("No topics found.")

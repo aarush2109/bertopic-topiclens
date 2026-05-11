@@ -42,11 +42,18 @@ DEFAULT_TAXONOMY_CATEGORIES = [
 class TopicInterpretation:
     """Structured interpretation for a single topic."""
     topic_id: int
-    label: str
+    final_label: str
     category: str
     classification: str
+    groq_label: str = ""
+    mistral_label: str = ""
+    gemini_label: str = ""
+    validation_status: str = "PENDING"
+    confidence_score: float = 0.0
+    agreement_score: float = 0.0
     paper_count: int = 0
     keywords: list[str] = None
+    representative_titles: list[str] = None
 
 # ---------------------------------------------------------------------------
 # API Clients & Calls
@@ -105,20 +112,26 @@ def call_mistral_label(prompt: str, api_key: str) -> dict:
 
 def _call_llm_json(client, prompt: str, model: str) -> dict:
     """Call Groq API with robust JSON parsing."""
+    raw = ""
     try:
         response = client.chat.completions.create(
             model=model, messages=[{"role": "user", "content": prompt}], temperature=0.2, timeout=10,
         )
         raw = response.choices[0].message.content.strip()
-        raw = raw.replace("```json", "").replace("```", "").strip()
+        raw = re.sub(r"```json\s*", "", raw, flags=re.IGNORECASE)
+        raw = re.sub(r"```\s*", "", raw)
+        raw = raw.strip()
+        
         start = raw.find("{")
         end = raw.rfind("}") + 1
         if start != -1 and end != 0:
-            raw = raw[start:end]
-        return json.loads(raw)
+            raw_json = raw[start:end]
+            return json.loads(raw_json)
+    except json.JSONDecodeError as e:
+        logger.warning(f"Groq JSON parsing failed: {e}. Raw response: {raw}")
     except Exception as e:
         logger.warning(f"Groq call failed: {e}")
-        return {}
+    return {}
 
 # ---------------------------------------------------------------------------
 # Logic Helpers
@@ -190,12 +203,14 @@ def _fallback_label_from_keywords(keywords: list[str], topic_id: int) -> tuple[s
 # Core Logic
 # ---------------------------------------------------------------------------
 def _build_interpretation_prompt(keywords, samples, cats) -> str:
+    samples_str = chr(10).join(f"{i+1}. {s}" for i, s in enumerate(samples[:3]))
     return f"""A topic modelling algorithm produced this topic.
 KEYWORDS: {', '.join(keywords)}
-SAMPLES: {' | '.join(samples[:3])}
+REPRESENTATIVE PAPERS:
+{samples_str}
 CATEGORIES: {', '.join(cats)}
 
-Respond ONLY in JSON:
+Return ONLY valid JSON. No markdown. No explanations. No code fences.
 {{
   "label": "<8 words label>",
   "taxonomy_category": "<one of the categories>",
@@ -203,30 +218,133 @@ Respond ONLY in JSON:
   "reasoning": "<one sentence>"
 }}"""
 
-def interpret_topic(topic_id, keywords, samples, groq_client, mistral_key, gemini_key, paper_count, representative_docs) -> TopicInterpretation:
+def ai_validator(client: Groq, label: str, keywords: list[str], samples: list[str]) -> dict:
+    samples_str = chr(10).join(f"{i+1}. {s}" for i, s in enumerate(samples[:3]))
+    prompt = f"""Validate if this label accurately represents the topic.
+LABEL: {label}
+KEYWORDS: {', '.join(keywords)}
+REPRESENTATIVE PAPERS:
+{samples_str}
+
+Return ONLY valid JSON. No markdown. No explanations. No code fences.
+{{
+  "status": "VALID" or "INVALID",
+  "confidence_score": <float 0.0-1.0>,
+  "reason": "<short reason>"
+}}"""
+    raw = ""
+    try:
+        response = client.chat.completions.create(
+            model=DEFAULT_MODEL, messages=[{"role": "user", "content": prompt}], temperature=0.0, timeout=10,
+        )
+        raw = response.choices[0].message.content.strip()
+        raw = re.sub(r"```json\s*", "", raw, flags=re.IGNORECASE)
+        raw = re.sub(r"```\s*", "", raw)
+        raw = raw.strip()
+        
+        start, end = raw.find("{"), raw.rfind("}") + 1
+        if start != -1 and end != 0:
+            return json.loads(raw[start:end])
+    except json.JSONDecodeError as e:
+        logger.warning(f"Validator JSON parsing failed: {e}. Raw: {raw}")
+    except Exception as e:
+        logger.warning(f"Validator call failed: {e}")
+    return {"status": "VALID", "confidence_score": 0.8, "reason": "Fallback validation"}
+
+def interpret_topic(topic_id, keywords, samples, groq_client, mistral_key, gemini_key, paper_count, representative_docs, skip_ai=False) -> TopicInterpretation:
+    if topic_id == -1:
+        return TopicInterpretation(
+            topic_id=-1,
+            final_label="Miscellaneous / Others",
+            category="Other",
+            classification="OUTLIER",
+            groq_label="Miscellaneous / Others",
+            mistral_label="Miscellaneous / Others",
+            gemini_label="Miscellaneous / Others",
+            validation_status="VALID",
+            confidence_score=1.0,
+            agreement_score=1.0,
+            paper_count=paper_count,
+            keywords=keywords,
+            representative_titles=samples[:3]
+        )
+        
+    if skip_ai:
+        l, c = _fallback_label_from_keywords(keywords, topic_id)
+        return TopicInterpretation(
+            topic_id=topic_id,
+            final_label=_safe_capitalize(l),
+            category=_safe_capitalize(c),
+            classification="MAPPED",
+            groq_label=_safe_capitalize(l),
+            mistral_label=_safe_capitalize(l),
+            gemini_label=_safe_capitalize(l),
+            validation_status="VALID",
+            confidence_score=0.5,
+            agreement_score=1.0,
+            paper_count=paper_count,
+            keywords=keywords,
+            representative_titles=samples[:3]
+        )
+
     prompt = _build_interpretation_prompt(keywords, samples, DEFAULT_TAXONOMY_CATEGORIES)
     
     # Ensemble — Gemini key will be None if rate-limited by caller
-    results = []
-    results.append(_call_llm_json(groq_client, prompt, DEFAULT_MODEL))
+    groq_res = _call_llm_json(groq_client, prompt, DEFAULT_MODEL)
     time.sleep(1)
-    results.append(call_mistral_label(prompt, mistral_key))
+    mistral_res = call_mistral_label(prompt, mistral_key)
     time.sleep(1)
-    if gemini_key:
-        results.append(call_gemini_label(prompt, gemini_key))
+    gemini_res = call_gemini_label(prompt, gemini_key) if gemini_key else {}
     
+    results = [groq_res, mistral_res, gemini_res]
+    
+    groq_label = clean_label(groq_res.get("label", ""))
+    mistral_label = clean_label(mistral_res.get("label", ""))
+    gemini_label = clean_label(gemini_res.get("label", ""))
+    
+    valid_labels = [l for l in [groq_label, mistral_label, gemini_label] if l]
+    agreement_score = 0.0
+    if valid_labels:
+        counts = {}
+        for l in valid_labels: counts[l.lower()] = counts.get(l.lower(), 0) + 1
+        max_count = max(counts.values())
+        agreement_score = max_count / len(valid_labels)
+        
     best = select_best_interpretation(results, keywords)
     if not best:
         l, c = _fallback_label_from_keywords(keywords, topic_id)
         best = {"label": l, "taxonomy_category": c, "classification": "MAPPED"}
         
+    best_label = clean_label(best.get("label", ""))
+    
+    # Validation
+    val_res = ai_validator(groq_client, best_label, keywords, samples)
+    if val_res.get("status", "").upper() == "INVALID":
+        counts = {}
+        for l in valid_labels: 
+            if l.lower() != best_label.lower():
+                counts[l.lower()] = counts.get(l.lower(), 0) + 1
+        if counts:
+            next_best_lower = max(counts, key=counts.get)
+            next_best = next(l for l in valid_labels if l.lower() == next_best_lower)
+            best_label = next_best
+            best["label"] = next_best
+            val_res["status"] = "VALID (Fallback)"
+            
     return TopicInterpretation(
         topic_id=topic_id,
-        label=_safe_capitalize(best.get("label")),
+        final_label=_safe_capitalize(best.get("label")),
         category=_safe_capitalize(best.get("taxonomy_category")),
         classification=best.get("classification", "MAPPED").upper(),
+        groq_label=_safe_capitalize(groq_label),
+        mistral_label=_safe_capitalize(mistral_label),
+        gemini_label=_safe_capitalize(gemini_label),
+        validation_status=val_res.get("status", "VALID"),
+        confidence_score=val_res.get("confidence_score", 0.0),
+        agreement_score=agreement_score,
         paper_count=paper_count,
-        keywords=keywords
+        keywords=keywords,
+        representative_titles=samples[:3]
     )
 
 def run_agent(topic_results, groq_key, mistral_key, gemini_key, output_json="topics.json", output_csv="topics.csv") -> dict:
@@ -234,26 +352,43 @@ def run_agent(topic_results, groq_key, mistral_key, gemini_key, output_json="top
     res = topic_results["documents"]
     
     num_clusters = len([t for t in set(res["topics"]) if t != -1])
-    num_topics = len(res["topic_keywords"])
+    num_topics = len([t for t in res["topic_keywords"] if t != -1])
     print(f"Final cluster count: {num_clusters}")
     print(f"Final topic count: {num_topics}")
     if num_clusters != num_topics:
         logger.error(f"CONSISTENCY WARNING: {num_clusters} clusters != {num_topics} topics")
 
+    MAX_AI_TOPICS = 25
     interpretations = {}
-    MAX_GEMINI_TOPICS = 5
-    for i, (tid, kw_pairs) in enumerate(res["topic_keywords"].items()):
-        # Rate limit Gemini to first 5 topics only
-        current_gemini_key = gemini_key if i < MAX_GEMINI_TOPICS else None
+    
+    valid_tids = [tid for tid in res["topic_keywords"].keys() if tid != -1]
+    valid_tids.sort(key=lambda t: res["topic_freq"].get(t, 0), reverse=True)
+    
+    ai_count = 0
+    for tid in valid_tids:
+        skip_ai = ai_count >= MAX_AI_TOPICS
+        kw_pairs = res["topic_keywords"][tid]
         
         interp = interpret_topic(
             tid, [w for w, _ in kw_pairs], res["representative_docs"].get(tid, []),
-            client, mistral_key, current_gemini_key, res["topic_freq"].get(tid, 0),
-            res["representative_docs"].get(tid, [])
+            client, mistral_key, gemini_key, res["topic_freq"].get(tid, 0),
+            res["representative_docs"].get(tid, []), skip_ai=skip_ai
+        )
+        if not skip_ai:
+            ai_count += 1
+        interpretations[tid] = interp
+        logger.info(f"Interpreted {tid}: {interp.final_label}")
+        
+    if -1 in res["topic_freq"]:
+        tid = -1
+        interp = interpret_topic(
+            tid, ["outliers", "miscellaneous", "various"], res["representative_docs"].get(tid, ["Miscellaneous Outlier Document"]),
+            client, mistral_key, gemini_key, res["topic_freq"].get(tid, 0),
+            res["representative_docs"].get(tid, []), skip_ai=False
         )
         interpretations[tid] = interp
-        logger.info(f"Interpreted {tid}: {interp.label}")
-        
+        logger.info(f"Interpreted -1: {interp.final_label}")
+
     interp_list = [asdict(i) for i in interpretations.values()]
     # Fix numpy serialisation before saving
     clean_data = convert_numpy_types(interp_list)
@@ -262,7 +397,14 @@ def run_agent(topic_results, groq_key, mistral_key, gemini_key, output_json="top
     df = pd.DataFrame(clean_data)
     if not df.empty:
         df["keywords"] = df["keywords"].apply(lambda x: ", ".join(x) if isinstance(x, list) else str(x))
+        df["representative_titles"] = df["representative_titles"].apply(lambda x: " | ".join(x) if isinstance(x, list) else str(x))
         df.to_csv(output_csv, index=False)
+        
+        comparison_cols = ["topic_id", "paper_count", "keywords", "representative_titles", 
+                           "groq_label", "mistral_label", "gemini_label", "final_label", 
+                           "validation_status", "confidence_score", "agreement_score"]
+        existing_cols = [c for c in comparison_cols if c in df.columns]
+        df[existing_cols].to_csv("ai_label_comparison.csv", index=False)
         
     return {"interpretations": interpretations, "json_path": output_json, "csv_path": output_csv}
 

@@ -75,12 +75,17 @@ def preprocess_text(texts: pd.Series) -> list[str]:
 # ---------------------------------------------------------------------------
 # Model Construction
 # ---------------------------------------------------------------------------
-def build_bertopic_model(embedding_model: SentenceTransformer, min_topic_size: int = 5) -> BERTopic:
+def build_bertopic_model(
+    embedding_model: SentenceTransformer, 
+    min_topic_size: int = 5,
+    min_cluster_size: int = 5,
+    n_neighbors: int = 15,
+) -> BERTopic:
     # --- Cluster Balancing Logic ---
     # (embedding_model is passed explicitly from run_topic_modeling)
 
     umap_model = UMAP(
-        n_neighbors=15,
+        n_neighbors=n_neighbors,
         n_components=5,
         min_dist=0.0,
         metric="cosine",
@@ -89,7 +94,7 @@ def build_bertopic_model(embedding_model: SentenceTransformer, min_topic_size: i
 
     # Updated HDBSCAN constraints
     hdbscan_model = HDBSCAN(
-        min_cluster_size=5,
+        min_cluster_size=min_cluster_size,
         min_samples=3,
         metric="euclidean",
         cluster_selection_method="eom",
@@ -100,10 +105,10 @@ def build_bertopic_model(embedding_model: SentenceTransformer, min_topic_size: i
         embedding_model=embedding_model,
         umap_model=umap_model,
         hdbscan_model=hdbscan_model,
-        min_topic_size=5,
+        min_topic_size=min_topic_size,
         verbose=False,
     )
-    logger.info("BERTopic model created with HDBSCAN (min_cluster_size=5, min_samples=3).")
+    logger.info(f"BERTopic model created with HDBSCAN (min_cluster_size={min_cluster_size}, min_samples=3) and UMAP (n_neighbors={n_neighbors}).")
     return model
 
 
@@ -283,6 +288,8 @@ def enforce_total_clusters(
     final_count = len([t for t in set(topics) if t != -1])
     logger.info("Final cluster count: %d", final_count)
     print(f"Final cluster count: {final_count}")
+    
+    assert 15 <= final_count <= 30, f"Failed to enforce cluster bounds: got {final_count}"
             
     return topics
 
@@ -354,7 +361,7 @@ def reassign_outliers(
     Otherwise keep as -1.
     """
     topics = list(topics)
-    MAX_CLUSTER_SIZE = 150
+    MAX_CLUSTER_SIZE = 100  # Per instructor spec: max 100 papers per cluster
 
     # Build centroid map and current sizes
     cluster_docs: dict[int, list[int]] = {}
@@ -401,10 +408,13 @@ def extract_topics(
     model: BERTopic,
     documents: list[str],
     embedding_model: SentenceTransformer,
+    similarity_threshold: float = 0.55,
+    embeddings: Optional[np.ndarray] = None,
 ) -> dict:
 
     valid_docs = [d if d.strip() else "empty" for d in documents]
-    embeddings = embedding_model.encode(valid_docs, show_progress_bar=False)
+    if embeddings is None:
+        embeddings = embedding_model.encode(valid_docs, show_progress_bar=False)
 
     topics, _ = model.fit_transform(valid_docs, embeddings=embeddings)
 
@@ -414,17 +424,18 @@ def extract_topics(
     # 2. Enforce total cluster count (15-30)
     topics = enforce_total_clusters(topics, embeddings, min_clusters=15, max_clusters=30)
 
-    # 3. Reassign outliers to nearest cluster (threshold=0.55)
-    topics = reassign_outliers(topics, embeddings, similarity_threshold=0.55)
+    # 3. Reassign outliers to nearest cluster
+    topics = reassign_outliers(topics, embeddings, similarity_threshold=similarity_threshold)
 
     # 3.5 Re-balance after reassignment (Ensures clusters remain within limits)
     topics = balance_clusters(topics, valid_docs, embedding_model, embeddings=embeddings)
+    topics = enforce_total_clusters(topics, embeddings, min_clusters=15, max_clusters=30)
 
     # 4. Rebuild keywords from final cluster assignments
     topic_keywords = rebuild_topic_keywords(topics, valid_docs)
     
-    # 5. Recompute topic_freq from FINAL topics
-    topic_freq = Counter(t for t in topics if t != -1)
+    # 5. Recompute topic_freq from FINAL topics (INCLUDING -1 for outliers)
+    topic_freq = Counter(topics)
     
     # 6. Get top-3 central documents
     representative_docs = get_top_3_central_docs(topics, embeddings, documents)
@@ -435,14 +446,20 @@ def extract_topics(
     print(f"total_docs = {total_docs}")
     print(f"total_counted = {total_counted}")
     
+    assert total_docs == total_counted, f"Validation failed: total_docs={total_docs} but total_counted={total_counted}"
+    
     final_cluster_count = len([t for t in set(topics) if t != -1])
-    final_topic_count = len(topic_keywords)
+    semantic_topic_count = len([t for t in topic_keywords if t != -1])
+    outlier_count = topic_freq.get(-1, 0)
     
-    print(f"Cluster count: {final_cluster_count}")
-    print(f"Topic count: {final_topic_count}")
+    print(f"Total input papers: {total_docs}")
+    print(f"Total output papers: {total_counted}")
+    print(f"Semantic topic count: {semantic_topic_count}")
+    print(f"Outlier count: {outlier_count}")
+    print(f"Cluster count (excluding -1): {final_cluster_count}")
     
-    if final_cluster_count != final_topic_count:
-        logger.error(f"CONSISTENCY ERROR: {final_cluster_count} clusters != {final_topic_count} topics")
+    if final_cluster_count != semantic_topic_count:
+        logger.error(f"CONSISTENCY ERROR: {final_cluster_count} clusters != {semantic_topic_count} topics")
 
     return {
         "topics": topics,
@@ -456,21 +473,39 @@ def extract_topics(
 # High-Level Pipeline
 # ---------------------------------------------------------------------------
 def run_topic_modeling(
-    filepath: str,
+    filepath: Optional[str] = None,
     min_topic_size: int = 5,
+    min_cluster_size: int = 5,
+    n_neighbors: int = 15,
+    similarity_threshold: float = 0.55,
+    documents: Optional[list[str]] = None,
+    embedding_model: Optional[SentenceTransformer] = None,
+    embeddings: Optional[np.ndarray] = None,
 ) -> dict:
 
-    df = load_csv(filepath)
-    
-    # Combined column
-    df["combined"] = df["title"].fillna("") + ". " + df["abstract"].fillna("")
-    clean_docs = preprocess_text(df["combined"])
+    if documents is None:
+        if not filepath:
+            raise ValueError("Must provide either filepath or documents.")
+        df = load_csv(filepath)
+        df["combined"] = df["title"].fillna("") + ". " + df["abstract"].fillna("")
+        documents = preprocess_text(df["combined"])
 
-    # New embedding model
-    embedding_model = SentenceTransformer("allenai/specter2_base")
+    if embedding_model is None:
+        embedding_model = SentenceTransformer("allenai/specter2_base")
 
-    model = build_bertopic_model(embedding_model, min_topic_size=min_topic_size)
-    results = extract_topics(model, clean_docs, embedding_model)
+    model = build_bertopic_model(
+        embedding_model, 
+        min_topic_size=min_topic_size,
+        min_cluster_size=min_cluster_size,
+        n_neighbors=n_neighbors,
+    )
+    results = extract_topics(
+        model, 
+        documents, 
+        embedding_model,
+        similarity_threshold=similarity_threshold,
+        embeddings=embeddings,
+    )
 
     return {
         "documents": results
